@@ -9,3 +9,4 @@ SQLAlchemy==1.4.47
 streamlit==1.20.0
 tenacity==8.2.1
 toml==0.10.2
+snowflake-connector-python == 3.0.1
