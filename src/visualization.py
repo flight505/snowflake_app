@@ -1,6 +1,5 @@
 """Define classes that return Altair/Plotly/Matplotlib figures
 """
-from tkinter import N
 from typing import List
 
 import altair as alt
