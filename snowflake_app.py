@@ -5,7 +5,7 @@ import json
 import math
 from datetime import date
 import re
-from turtle import title
+# from turtle import title
 from typing import List
 import openai
 import altair as alt
