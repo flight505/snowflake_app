@@ -2,7 +2,7 @@ import snowflake.connector
 
 account = "qpgirsc-cr13281"
 user = "FLIGHT505"
-password = "joXfyt-zojwom-behsi2"
+password = ""
 warehouse = "COMPUTE_WH"
 database = "Nordic_HDM_and_Nopho_database"
 schema = "PUBLIC"
