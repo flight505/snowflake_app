@@ -1,0 +1,11 @@
+{
+    "column_name": "saeother",
+    "description": "Description: Column 'saeother' contains information on adverse events related to childhood Leukemia cancer treatment, including Somnolence, Arachnoiditis, Leucoencephalopathy, Unbearable paresthesia, and Grade 3-4 neurotox. not rel. to others.",
+    "details": {
+        "1": "Somnolence",
+        "2": "Arachnoiditis",
+        "3": "Leucoencephalopathy",
+        "4": "Unbearable paresthesia",
+        "5": "Grade 3-4 neurotox. not rel. to others"
+    }
+}

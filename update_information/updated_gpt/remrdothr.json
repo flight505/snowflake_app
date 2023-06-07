@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdothr",
+    "description": "Description: Relative early response to other protocol response in childhood Leukemia treatment, measured as >10^-3, (10^-3)-(10^-4), or <10^-4.",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

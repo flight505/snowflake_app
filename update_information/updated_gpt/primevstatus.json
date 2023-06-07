@@ -1,0 +1,12 @@
+{
+    "column_name": "primevstatus",
+    "description": "Description: The primevstatus column indicates the current status of a patient's childhood Leukemia treatment, including CR1 (complete remission 1), induction failure, resistant disease, relapse, DCR1 (disease control remission 1), and SMN (stable minimal residual disease).",
+    "details": {
+        "0": "CR1",
+        "1": "induction failure",
+        "2": "resistant disease",
+        "3": "relapse",
+        "4": "DCR1",
+        "5": "SMN"
+    }
+}

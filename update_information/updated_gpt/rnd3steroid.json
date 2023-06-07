@@ -1,0 +1,9 @@
+{
+    "column_name": "rnd3steroid",
+    "description": "Description: Rand 3 glokocorticosteroid used for childhood Leukemia cancer treatment, including Prednisolon sodium succinate (Precortalon, Di-Adreson-F), Methylprednisolon sodium succinate (e.g. Solu-Medrol), and Other.",
+    "details": {
+        "1": "Prednisolon sodium succinate (Precortalon, Di-Adreson-F)",
+        "2": "Methylprednisolon sodium succinate (e.g. Solu-Medrol)",
+        "3": "Other"
+    }
+}

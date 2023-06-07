@@ -1,0 +1,8 @@
+{
+    "column_name": "rndconteaspyn",
+    "description": "Description: Indicates whether a patient continued treatment with Erwinia Asp (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

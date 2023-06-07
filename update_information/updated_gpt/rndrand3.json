@@ -1,0 +1,8 @@
+{
+    "column_name": "rndrand3",
+    "description": "Description: Result of Randomization 3, which determines the type of treatment for childhood Leukemia.",
+    "details": {
+        "1": "Standard it Triple arm",
+        "2": "DepoCyte arm"
+    }
+}

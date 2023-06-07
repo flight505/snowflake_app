@@ -1,0 +1,13 @@
+{
+    "column_name": "PPriAResultGroup",
+    "description": "Description: PPriAResultGroup column indicates the percentage of leukemia cells in a patient's sample, ranging from greater than or equal to 25%, less than 25%, greater than or equal to 0.1% to less than 5%, less than 0.1%, no marker found and/or monitoring not feasible.",
+    "details": {
+        "1": ">=25%",
+        "2": "<25%",
+        "3": ">=0.1% - <5%",
+        "4": "<0.1%",
+        "5": "<0.1%",
+        "8": "Sample not taken",
+        "9": "No marker found and/or monitoring not feasible"
+    }
+}

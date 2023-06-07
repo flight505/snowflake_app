@@ -1,0 +1,8 @@
+{
+    "column_name": "testisrespons",
+    "description": "Description: Testisrespons indicates if testis is positive at diagnosis of childhood Leukemia cancer.",
+    "details": {
+        "1": "no remaining leukemia (Ultrasound+possibly biopsy)",
+        "2": "remaining leukemia = Event"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "column_name": "cnsresponse",
+    "description": "Description: The cnsresponse column indicates the CNS-response (Central Nervous System) status at diagnosis and after 2TIT (Intrathecal Triple Therapy) and/or DepoCyte (Cytarabine) treatment for childhood Leukemia.",
+    "details": {
+        "1": "CNS1 at diagnosis",
+        "2": "CNS2 with CNS-CR after 2TIT",
+        "3": "CNS3 at diagnosis CNS-CR after 2TIT",
+        "4": "CNS2/3 at dx, no CR after 2TIT but CR after DepoCyte",
+        "5": "CNS2/3 at Dx no CR after DepoCyte=Event"
+    }
+}

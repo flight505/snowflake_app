@@ -1,0 +1,10 @@
+{
+    "column_name": "cnsstatus",
+    "description": "Description: The cnsstatus column contains information about the presence of leukemia cells in the cerebral spinal fluid (CSF) of patients with childhood Leukemia cancer, according to the 2008 protocol.",
+    "details": {
+        "1": "CNS1",
+        "2": "CNS2",
+        "3": "CNS3",
+        "9": "data missing"
+    }
+}

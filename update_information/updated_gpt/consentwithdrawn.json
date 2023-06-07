@@ -1,0 +1,8 @@
+{
+    "column_name": "consentwithdrawn",
+    "description": "Description: Indicates whether consent to participate in the childhood Leukemia cancer treatment study was withdrawn (1) or not (0).",
+    "details": {
+        "0": "not withdrawn",
+        "1": "withdrawn consent to participate"
+    }
+}

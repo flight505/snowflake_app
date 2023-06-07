@@ -1,0 +1,8 @@
+{
+    "column_name": "rndarduringrand2yn",
+    "description": "Description: Indicates whether a patient had an allergic reaction during randomization 2 (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

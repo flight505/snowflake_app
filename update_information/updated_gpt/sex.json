@@ -1,0 +1,8 @@
+{
+    "column_name": "sex",
+    "description": "Description: Gender of patient (Male/Female) in relation to childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Male",
+        "2": "Female"
+    }
+}

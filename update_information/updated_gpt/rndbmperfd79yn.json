@@ -1,0 +1,8 @@
+{
+    "column_name": "rndbmperfd79yn",
+    "description": "Description: Indicates if Bone Marrow was performed on Day 79 (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

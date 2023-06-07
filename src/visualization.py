@@ -1,11 +1,14 @@
 """Define classes that return Altair/Plotly/Matplotlib figures
 """
+from tkinter import N
 from typing import List
 
 import altair as alt
 import pandas as pd
 import plotly.express as px
 import plotly.io as pio
+
+
 
 from src.constants import *
 from src.diagnostics import DiagnoseTypes
@@ -158,29 +161,74 @@ def visualize_summary_detection(diagnostics: List[DiagnoseTypes]) -> alt.Chart:
     return chart
 
 
+# def beta_visualize_dme(samples_with_treatment_no: pd.DataFrame, nopho_nr):
+#     data = samples_with_treatment_no[
+#         (samples_with_treatment_no[P_CODE] == "NPU02739")
+#         & (samples_with_treatment_no[PATIENT_ID] == nopho_nr)
+#     ].copy()
+#     data[INFUSION_NO] = data[INFUSION_NO].astype(str)
+#     fig = (
+#         px.scatter(
+#             data,
+#             x=DIFFERENCE_SAMPLETIME_TO_INF_STARTDATE,
+#             y=VALUE,
+#             color=INFUSION_NO,
+#             hover_data=[
+#                 PATIENT_ID,
+#                 INFUSION_NO,
+#                 SAMPLE_TIME,
+#                 INF_STARTDATE,
+#                 DIFFERENCE_SAMPLETIME_TO_INF_STARTDATE,
+#                 VALUE,
+#             ],
+#         )
+#         .update_traces(mode="lines+markers", marker=dict(size=6), line=dict(width=1))
+#         .update_layout(yaxis_type="log")
+#     )
+#     return fig
+
+
+
 def beta_visualize_dme(samples_with_treatment_no: pd.DataFrame, nopho_nr):
     data = samples_with_treatment_no[
         (samples_with_treatment_no[P_CODE] == "NPU02739")
         & (samples_with_treatment_no[PATIENT_ID] == nopho_nr)
     ].copy()
     data[INFUSION_NO] = data[INFUSION_NO].astype(str)
-    fig = (
-        px.scatter(
-            data,
-            x=DIFFERENCE_SAMPLETIME_TO_INF_STARTDATE,
-            y=VALUE,
-            color=INFUSION_NO,
-            hover_data=[
+
+    # Check if there are any missing or null values for the VALUE variable
+    if pd.isna(VALUE):
+        # Remove patients with missing or null values for the VALUE variable
+        data = data.dropna(subset=['VALUE'])
+
+    # Add interactivity to the chart to allow filtering of data based on selected values
+    selection = alt.selection_multi(fields=[INFUSION_NO], bind='legend')
+    color = alt.condition(selection,
+                        alt.Color(INFUSION_NO, title='Infusion number', type='nominal'),
+                        alt.value('lightgray'))
+
+    chart = (
+        alt.Chart(data)
+        .mark_line(point=True, size=2)
+        .encode(
+            x=alt.X(DIFFERENCE_SAMPLETIME_TO_INF_STARTDATE, title='Hours after infusion start time'),
+            y=alt.Y(VALUE, title='Value', scale=alt.Scale(type='log')),
+            color=color,
+            tooltip=[
                 PATIENT_ID,
                 INFUSION_NO,
                 SAMPLE_TIME,
                 INF_STARTDATE,
                 DIFFERENCE_SAMPLETIME_TO_INF_STARTDATE,
-                VALUE,
-            ],
+                VALUE
+            ]
         )
-        .update_traces(mode="lines+markers", marker=dict(size=6), line=dict(width=1))
-        .update_layout(yaxis_type="log")
     )
-    return fig
+
+    chart = chart + chart.mark_circle(size=40, opacity=0.8)
+
+    chart = chart.add_selection(selection)
+
+    return chart
+
 

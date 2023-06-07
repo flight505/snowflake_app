@@ -1,0 +1,12 @@
+{
+    "column_name": "toxevent",
+    "description": "Description: Toxocity event reg, which includes InducFail, ResistDis, Relapse, DCR1, SMN, and No event.",
+    "details": {
+        "2": "InducFail",
+        "3": "ResistDis",
+        "4": "Relapse",
+        "5": "DCR1",
+        "6": "SMN",
+        "7": "No event"
+    }
+}

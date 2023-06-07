@@ -1,0 +1,8 @@
+{
+    "column_name": "cns3cresponse",
+    "description": "Description: Response to CNS3c treatment at diagnosis (or combination therapy) for childhood Leukemia, otherwise default=not applicable.",
+    "details": {
+        "1": "no remaining leukemia (MRI)",
+        "2": "remaining leukemia = Event"
+    }
+}

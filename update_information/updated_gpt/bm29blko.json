@@ -1,0 +1,10 @@
+{
+    "column_name": "bm29blko",
+    "description": "bm29blko column: BM29-blast code indicating the amount of blasts in the peripheral blood of a child with Leukemia (M1: <5%, M2: 5-<=25%, M3: >25%).",
+    "details": {
+        "0": "missing",
+        "1": "<5(M1)",
+        "2": "5-<=25(M2)",
+        "3": ">25(M3)"
+    }
+}

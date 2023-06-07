@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdn15r",
+    "description": "Description: Relative early response to minimal residual disease (MRD) Nopho day 15.",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "rndrand1",
+    "description": "Description: Result of randomization 1 for childhood Leukemia cancer treatment, which can be either fixed 6-MP dose or 6-MP increments.",
+    "details": {
+        "1": "Fixed 6-MP dose",
+        "2": "6-MP increments"
+    }
+}

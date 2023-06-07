@@ -1,0 +1,8 @@
+{
+    "column_name": "cns3eresponse",
+    "description": "Description: Response to CNS3e (ophtalmoscopy+MRI/US) at diagnosis or combination, otherwise default is not applicable.",
+    "details": {
+        "1": "no remaining leukemia (ophtalmoscopy+MRI/US)",
+        "2": "remaining leukemia = Event"
+    }
+}

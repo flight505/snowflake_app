@@ -1,0 +1,13 @@
+{
+    "column_name": "rtprotocol",
+    "description": "Description: Treatment protocol used for childhood Leukemia, including NOPHO high-risk, BFM-Rez, RALLE, Other named protocol, Other, R3, and IntReALL.",
+    "details": {
+        "1": "NOPHO high-risk",
+        "2": "BFM-Rez",
+        "3": "RALLE",
+        "4": "Other named protocol",
+        "5": "Other",
+        "6": "R3",
+        "7": "IntReALL"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "column_name": "therapyd79",
+    "description": "Description: Therapy administered after day 79 for childhood Leukemia cancer treatment according to NOPHO-2008 Standard, Intermediate, High risk chemo, and High risk SCT in CR1, or other.",
+    "details": {
+        "1": "NOPHO-2008 Standard risk",
+        "2": "NOPHO-2008 Intermediate risk",
+        "3": "NOPHO-2008 High risk chemo",
+        "4": "NOPHO-2008 High risk SCT in CR1",
+        "5": "Other"
+    }
+}

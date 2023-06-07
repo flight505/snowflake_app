@@ -1,0 +1,8 @@
+{
+    "column_name": "rndlt3prevneurotoxyn",
+    "description": "Description: Presence of persistent grade 3 or higher neurotoxicity due to previous treatment for childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

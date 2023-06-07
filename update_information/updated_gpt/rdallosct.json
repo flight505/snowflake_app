@@ -1,0 +1,8 @@
+{
+    "column_name": "rdallosct",
+    "description": "Description: Relapse after allogenic stem cell transplant in first complete remission of childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

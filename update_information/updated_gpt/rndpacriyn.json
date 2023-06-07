@@ -1,0 +1,8 @@
+{
+    "column_name": "rndpacriyn",
+    "description": "Description: Indicates whether a patient developed pancreatitis as a result of childhood leukemia cancer treatment (1 = Yes, 2 = No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

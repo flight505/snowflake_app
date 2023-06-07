@@ -1,0 +1,12 @@
+{
+    "column_name": "strat3",
+    "description": "Strat3 column describes the stratification of patients with childhood Leukemia after early response (day 15) according to the NOPHO-2008 criteria.",
+    "details": {
+        "0": "Insufficient data",
+        "1": "NOPHO-2008 Non - High Risk",
+        "2": "NOPHO-2008 Non - High Risk",
+        "3": "NOPHO-2008 High Risk standardInd",
+        "4": "NOPHO-2008 High Risk blocksDirect",
+        "9": "Excluded"
+    }
+}

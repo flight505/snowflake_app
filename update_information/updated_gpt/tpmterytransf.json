@@ -1,0 +1,9 @@
+{
+    "column_name": "tpmterytransf",
+    "description": "Description: TPMT erythrocytes transfusion on day 29 (Yes/No/Not available).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "9": "Not available"
+    }
+}

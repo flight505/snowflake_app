@@ -1,0 +1,10 @@
+{
+    "column_name": "deadrel",
+    "description": "Description: Column 'deadrel' indicates the cause of death related to childhood Leukemia treatment, with values of '1' for Disease related death, '2' for Therapy related death, '3' for Disease and Therapy related death, and '4' for Unknown.",
+    "details": {
+        "1": "Disease related death",
+        "2": "Therapy related death",
+        "3": "Disease and therapy related death",
+        "4": "Unknown"
+    }
+}

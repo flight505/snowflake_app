@@ -1,0 +1,9 @@
+{
+    "column_name": "mllor11q23",
+    "description": "The mllor11q23 column indicates whether a patient has a high-risk (HR) or low-risk (not HR) 11q23 FISH or Southern Blot result.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

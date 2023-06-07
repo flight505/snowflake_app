@@ -1,0 +1,9 @@
+{
+    "column_name": "highhyperdip",
+    "description": "Description: Highhyperdip column indicates whether a patient has Hyperdiploid (>/=50 chromosomes) or not (not hyperdiploid, not analysed).",
+    "details": {
+        "1": "Hyperdiploid >/=50 chromosomes",
+        "2": "not hyperdiploid",
+        "9": "not analysed"
+    }
+}

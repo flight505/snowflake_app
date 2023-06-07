@@ -1,0 +1,8 @@
+{
+    "column_name": "deadccr",
+    "description": "Description: Indicates whether a patient with childhood Leukemia has died from cancer-related causes (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

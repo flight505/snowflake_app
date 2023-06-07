@@ -1,0 +1,1 @@
+{"column_name": "monstatus", "description": "Monitoring status", "details": {"1": "Not monitored", "2": "Monitored, under correction", "3": "Monitored, complete", "4": "Excluded"}}

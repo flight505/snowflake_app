@@ -1,0 +1,10 @@
+{
+    "column_name": "BFMpure",
+    "description": "BFMpure is a column related to childhood Leukemia cancer treatment, containing four subtypes (S1, S2, S3, S4).",
+    "details": {
+        "1": "S1",
+        "2": "S2",
+        "3": "S3",
+        "4": "S4"
+    }
+}

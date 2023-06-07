@@ -1,0 +1,1 @@
+{"column_name": "pretreatment", "description": "Pretreatment default=no pretreatment", "details": {"0": "no pretreatment=included", "1": "pretreatment GC/chemo=excluded"}}

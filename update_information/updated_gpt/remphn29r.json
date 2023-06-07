@@ -1,0 +1,9 @@
+{
+    "column_name": "remphn29r",
+    "description": "Description: Response to day 29 of Nopho Morphine treatment for childhood Leukemia, categorized as <5(M1), 5-25(M2), or >25(M3).",
+    "details": {
+        "1": "<5(M1)",
+        "2": "5-25(M2)",
+        "3": ">25(M3)"
+    }
+}

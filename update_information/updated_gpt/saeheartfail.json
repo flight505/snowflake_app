@@ -1,0 +1,9 @@
+{
+    "column_name": "saeheartfail",
+    "description": "Description: Severe heart failure and/or arrhythmia in relation to childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

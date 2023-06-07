@@ -1,0 +1,2084 @@
+{
+    "nopho_all2008_table":{
+        "nopho_nr": {
+            "description": "A unique identifier for each patient in the study.",
+            "details": {}
+        },
+        "country": {
+            "description": "The country where the patient was located.",
+            "details": {
+                "0":  "Sweden",
+                "1":  "Denmark",
+                "2":  "Norway",
+                "3":  "Finland",
+                "4":  "Iceland",
+                "5":  "Estonia",
+                "6":  "Latvia",
+                "7":  "Lithuania",
+                "8":  "Belgium",
+                "9":  "The Netherlands",
+                "25":  "Hongkong",
+                "30":  "Israel",
+                "34":  "Spain",
+                "36":  "Hungary",
+                "44":  "United Kingdom",
+                "45":  "Scotland",
+                "49":  "Germany"
+            }
+        },
+        "fuplasar": {
+            "description": "The follow-up center where the patient was monitored during the study.",
+            "details": {}
+        },
+        "reglasar": {
+            "description": "The registration number of the hospital where the patient was treated.",
+            "details": {}
+        },
+        "birthdate": {
+            "description": "The date of birth of the patient.",
+            "details": {}
+        },
+        "sex": {
+            "description": "The gender of the patient.",
+            "details": {
+                "1": "Male",
+                "2": "Female"
+            }
+        },
+        "diwholo": {
+            "description": "Diagnosgrupp-WHO-long-new",
+            "details": {
+                "11": "Ia-ALL",
+                "13": "Ic-AML",
+                "21": "IIa-Hodgkin",
+                "22": "IIb-NHL",
+                "25": "IIe-Histiocytosis-X",
+                "26": "IIf-Other Reticuloendothelial",
+                "27": "IIg-Histiocytosis-UNS",
+                "31": "IIIa-Ependymom",
+                "32": "IIIb-Astrocytom",
+                "33": "IIIc-Medulloblastoma/PNET",
+                "34": "IIId-Other gliomas",
+                "35": "IIIe-Other spec(cranio,pineal,meningeom)",
+                "36": "IIIf- CNS-Unspecified",
+                "41": "IVa-Neuroblastoma",
+                "42": "IVb-Other symp nervous system tumors",
+                "50": "V-Retinoblastoma",
+                "51": "Va-Retinoblastoma, unilateral",
+                "52": "Vb-Retinoblastoma, bilateral",
+                "61": "VIa-Wilms",
+                "62": "VIb-Renal carcinoma",
+                "63": "VIc-Other and unspec.",
+                "71": "VIIa-Hepatoblastom",
+                "72": "VIIb-Hepatocellular  carcinoma",
+                "73": "VIIc-Other and unspec.",
+                "81": "VIIIa-Osteosarcoma",
+                "82": "VIIIb-Chondrosarcoma",
+                "83": "VIIIc-Ewings",
+                "84": "VIIId-Other and unspec.",
+                "91": "IXa-Rhabdomyosarkoma,embr. sarc. soft tis",
+                "92": "IXb-Fibrosarkoma, neurofibrosarkoma,other",
+                "93": "IXc-Other soft tissue sarcoma",
+                "101": "Xa-Non-gonadal germ-cell and trophoblast",
+                "102": "Xb-Gonadal germ-cell and trophoblastic n",
+                "103": "Xc-Gonadal carcinoma",
+                "104": "Xd-Other and unspec mal gonadal tumors",
+                "111": "XIa-Adenocarcinoma",
+                "112": "XIb-Thyroid carcinoma",
+                "113": "XIc-Nasopharyngeal carcinoma",
+                "114": "XId-Melanomatous neoplasma",
+                "115": "XIe-Other carcinoma",
+                "120": "XII-Others not specified",
+                "135": "WIII Perifer PNET",
+                "140": "Group U",
+                "145": "Group UNS/GG",
+                "150": "XIV-UNS",
+                "155": "XV-Adenom/Fibrom m.m.",
+                "160": "XVI-No Tumors",
+                "170": "Carcinoid"
+            },
+        "sp1filldate": {
+            "description": "The date when the patient's data was first entered into the study database.",
+            "details": {}
+        },
+        "sp1filledby": {
+            "description": "Base data filled by"
+        },
+        "sp1labid": {
+            "description": "Labid"
+        },
+        "parents": {
+            "description": "Written consent to registration and participation"
+        },
+        "clinic": {
+            "description": "Child/Adult treatment clinic"
+        },
+        "length": {
+            "description": "length"
+        },
+        "weight": {
+            "description": "weight"
+        },
+        "diagdate": {
+            "description": "diagnose date"
+        },
+        "agegroup": {
+            "description": "Age Group",
+            "details": {
+                "1":  "Infant",
+                "2":  "Child",
+                "3":  "Adult",
+                "99": "Undefined"
+            }
+        },
+        "age": {
+            "description": "Age"
+        },
+        "imm2008": {
+            "description": "Immunology-Type2008",
+            "details": {
+                "1":  "B-precursor",
+                "2":  "T-cell",
+                "3":  "Bilineage ALL = excl. from SR and Rand.",
+                "4":  "mature B-cell = excluded",
+                "9":  "data missing = temporarily excluded"
+            }
+        },
+        "wbchival": {
+            "description": "white blood cell (WBC) highest value"
+        },
+        "excluded": {
+            "description": "Excluded Yes/No"
+        },
+        "exclusioncomment": {
+            "description": "Comments exclusion (should be filled in if other reason=yes)"
+        },
+        "exclusioncomment_central": {
+            "description": "exclusion comment_central"
+        },
+        "exclusionclinical": {
+            "description": "Other reason (clinical) to exclusion (default=no reas for ex)"
+        },
+        "intolerance": {
+            "description": "Known intolerance to anticancer drugs (default=no)"
+        },
+        "mbdown": {
+            "description": "Down syndromes y/n",
+            "details": {
+                "1":  "Down syndrome = excluded", 
+                "2":  "No Down syndrome"
+            }
+        },
+        "predisposition": {
+            "description": "Predisposition syndromes (AT,Blooms etc) default=no predisp"
+        },
+        "pretreatment": {
+            "description": "Pretreatment (radioknapp?) default=no pretreatment"
+        },
+        "previouscancer": {
+            "description": "Previous cancer (radioknapp?) default= no previous cancer"
+        },
+        "andrasjd": {
+            "description": "andrasjd"
+        },
+        "cnsstatus": {
+            "description": "Detailed CNS-status per 2008 protocol",
+            "details": {
+                "1":  "CNS1",
+                "2":  "CNS2",
+                "3":  "CNS3",
+                "9":  "data missing"
+    
+            }
+        },
+        "cns3type": {
+            "description": "if CNS3 positive"
+        },
+        "cnscomment": {
+            "description": "CNS comment"
+        },
+        "cnstt": {
+            "description": "CNS-reg traumatic tap"
+        },
+        "cns_eryth_number": {
+            "description": "CNS-erythrocytes/ul"
+        },
+        "cns_leuk_number": {
+            "description": "CNS-leukocytes/ul"
+        },
+        "cns_percent_fluid": {
+            "description": "CNS-% blasts"
+        },
+        "strat1": {
+            "description": "stratification at diagnosis (clinical criteria)"
+        },
+        "prednisol": {
+            "description": "Prednisolone pre-phase given"
+        },
+        "prednisoldate": {
+            "description": "Prednisolone date of start"
+        },
+        "therapyind": {
+            "description": "Induction therapy administered"
+        },
+        "therapyindcomm": {
+            "description": "Induction therapy administered comments"
+        },
+        "karyotyp": {
+            "description": "Karyotyp"
+        },
+        "dic920": {
+            "description": "dicentric (9;20) y/n-FISH (yes=not SR final strati) if NA not SR"
+        },
+        "geneticcomm": {
+            "description": "Genetic response comment"
+        },
+        "dnaindex": {
+            "description": "DNA INDEX"
+        },
+        "gbkaryonormal": {
+            "description": "G-band karyotyping missing/normal"
+        },
+        "dnaindexyn": {
+            "description": "DNA-index prformed?"
+        },
+        "dnalt085": {
+            "description": "DNA-index < 0.85 y/n? (yes=HR, not IR/SR final strat) if NA not SR"
+        },
+        "highhyperdip": {
+            "description": "Hyperdiploid",
+            "details": {
+                "1":  "Hyperdiploid >/=50 chromosomes",
+                "2":  "not hyperdiploid",
+                "9":  "not analysed"
+            }
+        },
+        "hypodiploid": {
+            "description": "Hypodiploidy (yes=HR, not IR/SR final stratification) if NA not SR"
+        },
+        "iampchr21": {
+            "description": "intern amplific chrom 2-FISH (yes=not SR final strati) if NA not SR"
+        },
+        "mllor11q23": {
+            "description": "11q23FISHorSouthernBlot(yes=HR, not IR/SR final stratif NA not SR"
+        },
+        "t119": {
+            "description": "t(1;19)-y/n-FISH/PCR (yes=not SR final stratification) if NA not SR"
+        },
+        "t1221": {
+            "description": "t(12;21)-y/n-FISH/PCR"
+        },
+        "t922": {
+            "description": "t(9;22)-y/n-FISH/PCR (yes=excluded) if NA not SR"
+        },
+        "strat2": {
+            "description": "stratification after genetic analysis",
+            "details": {
+                "0":  "Insufficient data",
+                "1":  "NOPHO-2008 Non - High Risk",
+                "2":  "NOPHO-2008 Non - High Risk",
+                "3":  "NOPHO-2008 High Risk",
+                "9":  "Excluded"
+            }
+        },
+        "contraception": {
+            "description": "Females not wanting to use contrac. (default=no reas for ex)"
+        },
+        "f1t1p1filldate": {
+            "description": "Diag 1 Fill date"
+        },
+        "f1t1p1filledby": {
+            "description": "Diag 1 filled by"
+        },
+        "blastatdiag": {
+            "description": "% leukemic cells in PB at diagnosis"
+        },
+        "f1t1p2filldate": {
+            "description": "Diag 2 Fill date"
+        },
+        "f1t1p2filledby": {
+            "description": "Diag 2 filled by"
+        },
+        "hbl": {
+            "description": "haemoglobin L"
+        },
+        "hbmmol": {
+            "description": "haemoglobin mmol/L"
+        },
+        "hbdl": {
+            "description": "haemoglobin g/dL"
+        },
+        "hepar": {
+            "description": "Hepatomegaly-cm nedom"
+        },
+        "gl3cm": {
+            "description": "LGL>=3CM y/n"
+        },
+        "lien": {
+            "description": "Spleen-size"
+        },
+        "lymfoall": {
+            "description": "Lymfo ALL y/n"
+        },
+        "medm": {
+            "description": "Med mass y/n"
+        },
+        "spleno": {
+            "description": "Spleno y/n"
+        },
+        "testis": {
+            "description": "Testis y/n"
+        },
+        "tpk": {
+            "description": "tpk y/n"
+        },
+        "efgenkod": {
+            "description": "Cytogenetic Group central review ALL08"
+        },
+        "f1t1p3filldate": {
+            "description": "Diag 3 Fill date"
+        },
+        "f1t1p3filledby": {
+            "description": "Diag 3 filled by"
+        },
+        "karyrevi": {
+            "description": "Karyotyp (central review)"
+        },
+        "compkaryctrlrev_comment": {
+            "description": "compkaryctrlrev comment"
+        },
+        "bm15blko": {
+            "description": "BM15-blast code"
+        },
+        "cnsresponse": {
+            "description": "CNS-response (of importance if CNS2 or CNS3 at diagnosis)"
+        },
+        "p15resultgroupcl": {
+            "description": "Result group from MRD PCR on day 15"
+        },
+        "P15ResultGroup": {
+            "description": "Result MRD flow on day 15"
+        },
+        "f15_resultgroupcl": {
+            "description": "Result MRD flow on day 15"
+        },
+        "F15_ResultGroup": {
+            "description": "Result MRD flow on day 15"
+        },
+        "strat3": {
+            "description": "stratification after early response (on day 15)"
+        },
+        "therapyd15": {
+            "description": "Therapy administered after on day 15"
+        },
+        "therapyd15comm": {
+            "description": "Therapy administered after on day 15 comments"
+        },
+        "bm29blko": {
+            "description": "BM29-blast code"
+        },
+        "bmexblko": {
+            "description": "BMex-blast code"
+        },
+        "extracy": {
+            "description": "Extra chemotherapy during induction-specify"
+        },
+        "extrcyjn": {
+            "description": "Extra chemo in Ind. y/n (if LR at diagnosis and yes=no rand 1+2)"
+        },
+        "p29resultgroupcl": {
+            "description": "Result group from MRD PCR on day 29"
+        },
+        "P29ResultGroup": {
+            "description": "Result MRD flow on day 29"
+        },
+        "f29_resultgroupcl": {
+            "description": "Result MRD flow on day 29"
+        },
+        "F29_ResultGroup": {
+            "description": "Result MRD flow on day 29"
+        },
+        "remdag": {
+            "description": "Response remission Date"
+        },
+        "remjn": {
+            "description": "Response remission Yes/No"
+        },
+        "strat4": {
+            "description": "stratification after intermediate (important) response (d29)"
+        },
+        "therapyd29": {
+            "description": "Therapy administered after day 29"
+        },
+        "therapyd29comm": {
+            "description": "Therapy administered after day 29 comments"
+        },
+        "tpmterytransf": {
+            "description": "TPMT erythrocytes transfusion day 29"
+        },
+        "tpmtfenotype": {
+            "description": "TPMT Fenotype day 29"
+        },
+        "tpmtgenotype": {
+            "description": "TPMT Genotype day 29"
+        },
+        "bmt1date": {
+            "description": "BMT1-date"
+        },
+        "bmt1shor": {
+            "description": "BMT1 Type CR-1-short"
+        },
+        "cns3cresponse": {
+            "description": "If CNS3c at diagnosis (or comb), otherwise default=not app)"
+        },
+        "cns3eresponse": {
+            "description": "If CNS3e at diagnosis (or comb), otherwise default=not app)"
+        },
+        "p79resultgroupcl": {
+            "description": "Result group from MRD PCR on day 79"
+        },
+        "P79ResultGroup": {
+            "description": "Result MRD flow on day 79"
+        },
+        "f79_resultgroupcl": {
+            "description": "Result MRD flow on day 79"
+        },
+        "F79_ResultGroup": {
+            "description": "Result MRD flow on day 79"
+        },
+        "mrdd79date": {
+            "description": "MRD Day 79 diagnos-date"
+        },
+        "mrdd79yn": {
+            "description": "MRD Day79 diagnos-y/n"
+        },
+        "strat5": {
+            "description": "final stratification (after day 79)"
+        },
+        "therapyd79": {
+            "description": "Therapy administered after day 79"
+        },
+        "therapyd79comm": {
+            "description": "Therapy administered after day 79 comments"
+        },
+        "testisrespons": {
+            "description": "If testis positive at diagnosis, otherwise default=not appl)"
+        },
+        "blastdg1": {
+            "description": "% leuk cells in PB on day1(VCR+Doxo)(afterPred pre-pha if used)"
+        },
+        "bm15date": {
+            "description": "BM15-date"
+        },
+        "f2t1p1filldate": {
+            "description": "Response 1 Fill date"
+        },
+        "f2t1p1filledby": {
+            "description": "Response 1 filled by"
+        },
+        "nonsteroiddate": {
+            "description": "Date of start of non-steriod (day1)"
+        },
+        "wbcdag1": {
+            "description": "WBCDay1-on the day of first VCR+Doxo(afterPredpre-phas if used)"
+        },
+        "bm29date": {
+            "description": "BM29-date (day 29)"
+        },
+        "bmexdate": {
+            "description": "BMex-date"
+        },
+        "downantracyclin": {
+            "description": "If Down, antraccyclins given?"
+        },
+        "f2t1p2filldate": {
+            "description": "Response 2 Fill date"
+        },
+        "f2t1p2filledby": {
+            "description": "Response 2 filled by"
+        },
+        "indtherapymod": {
+            "description": "Modifications in Induction therapy"
+        },
+        "cencomm": {
+            "description": "Manager comments"
+        },
+        "f2t1p3filldate": {
+            "description": "Response 3 Fill date"
+        },
+        "f2t1p3filledby": {
+            "description": "Response 3 filled by"
+        },
+        "mancomm": {
+            "description": "Manager comments"
+        },
+        "mancommby": {
+            "description": "Manager commented by"
+        },
+        "monby": {
+            "description": "Monitored by"
+        },
+        "monstatus": {
+            "description": "Monitoring status"
+        },
+        "mrdaftcdate": {
+            "description": "DATE MRD RESULT AFT C"
+        },
+        "mrdpriadate": {
+            "description": "DATE MRD RESULT PRI A"
+        },
+        "mrdpribdate": {
+            "description": "DATE MRD RESULT PRI B"
+        },
+        "mrdpricdate": {
+            "description": "DATE MRD RESULT PRI C"
+        },
+        "p92resultgroupcl": {
+            "description": "Result MRD PCR on day 92"
+        },
+        "P92ResultGroup": {
+            "description": "Result MRD flow on day 92"
+        },
+        "fprib_resultgroupcl": {
+            "description": "Result MRD FLOW pri B"
+        },
+        "FPriB_ResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "ppricresultgroupcl": {
+            "description": "Result MRD PCR pri C"
+        },
+        "PPriCResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "paftcresultgroupcl": {
+            "description": "Result MRD PCR aft C"
+        },
+        "PAftCResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "fpric_resultgroupcl": {
+            "description": "Result MRD FLOW pri C"
+        },
+        "FPriC_ResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "ppriaresultgroupcl": {
+            "description": "Result MRD PCR pri A"
+        },
+        "PPriAResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "f92_resultgroupcl": {
+            "description": "Result MRD FLOW day 92"
+        },
+        "F92_ResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "fpria_resultgroupcl": {
+            "description": "Result MRD FLOW pri A"
+        },
+        "FPriA_ResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "ppribresultgroupcl": {
+            "description": "Result MRD PCR pri B"
+        },
+        "PPriBResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "faftc_resultgroupcl": {
+            "description": "Result MRD FLOW aft C"
+        },
+        "FAftC_ResultGroup": {
+            "description": "Result MRD flow"
+        },
+        "saeabdominal": {
+            "description": "Abdominal problems leading to laparot."
+        },
+        "saeabdominalr": {
+            "description": "Remarks"
+        },
+        "saeacceptdate": {
+            "description": "Toxicity Accept date"
+        },
+        "saeacceptedby": {
+            "description": "Toxicity accepted by"
+        },
+        "saeanaphylaxis": {
+            "description": "Life threatening anaph (CTC grade 4)"
+        },
+        "saeanaphylaxisr": {
+            "description": "Remarks"
+        },
+        "saeavasosteo": {
+            "description": "Avascular osteonecrosis(CTC 2,3 and4)"
+        },
+        "saecnsbleeding": {
+            "description": "CNS / catastrophic bleeding"
+        },
+        "saecnsbleedingr": {
+            "description": "Remarks"
+        },
+        "saecomma": {
+            "description": "COMA"
+        },
+        "saedialysis": {
+            "description": "Kidney disfunction"
+        },
+        "saedialysisr": {
+            "description": "Remarks"
+        },
+        "saefilldate": {
+            "description": "Toxicity Fill date"
+        },
+        "saefilledby": {
+            "description": "Toxicity filled by"
+        },
+        "saeheartfail": {
+            "description": "Severe heart failure, lt arrhytmia"
+        },
+        "saehyperglycemia": {
+            "description": "Severe hypergyc. requiring insulin"
+        },
+        "saehyperglycemiar": {
+            "description": "Remarks"
+        },
+        "saehypertension": {
+            "description": "Hypertensive crisis"
+        },
+        "saeintcare": {
+            "description": "Intensive care +/- assisted ventilation"
+        },
+        "saeintcarer": {
+            "description": "Remarks"
+        },
+        "saeliverdysf": {
+            "description": "Liver disfunction encephalopati"
+        },
+        "saeliverdysfr": {
+            "description": "Remarks"
+        },
+        "saeother": {
+            "description": "Depocity study including"
+        },
+        "saeotherr": {
+            "description": "Remarks"
+        },
+        "saeotheryn": {
+            "description": "Other severe neurotoxicity"
+        },
+        "saeotherynr": {
+            "description": "Remarks"
+        },
+        "saepancretitis": {
+            "description": "Symptomatic pancretitis (CTC 2,3,4)"
+        },
+        "saepancretitisr": {
+            "description": "Remarks"
+        },
+        "saeparalysis": {
+            "description": "Peripheral paralysis"
+        },
+        "saeparalysisr": {
+            "description": "Remarks"
+        },
+        "saepres": {
+            "description": "PRES"
+        },
+        "saeseizures": {
+            "description": "Seizures(CTC grade 2,3,4)"
+        },
+        "saeseizuresr": {
+            "description": "Remarks"
+        },
+        "saesepticshock": {
+            "description": "Septic Shock"
+        },
+        "saesepticshockr": {
+            "description": "Remarks"
+        },
+        "saethrombosis": {
+            "description": "Severe thrombosis"
+        },
+        "saethrombosisr": {
+            "description": "Remarks"
+        },
+        "saevod": {
+            "description": "(Veno-occlusive disease)"
+        },
+        "saevodr": {
+            "description": "Remarks"
+        },
+        "rndanydepocyte": {
+            "description": "Treated with i.t. DepoCyte at any point y/n"
+        },
+        "rndarduringrand2yn": {
+            "description": "Allergic reaction during randomization 2 y/n"
+        },
+        "rndbmperfd79comm": {
+            "description": "Bone marrow performed on day 79 comments"
+        },
+        "rndbmperfd79yn": {
+            "description": "Bone Marrow performed on day 79 y/n"
+        },
+        "rndbmperfd92comm": {
+            "description": "Bone marrow performed on day 92 comments"
+        },
+        "rndbmperfd92yn": {
+            "description": "Bone Marrow performed on day 92 y/n"
+        },
+        "rndcompl6mpcomm": {
+            "description": "Complete 6MP study comments"
+        },
+        "rndcompl6mpyn": {
+            "description": "Complete 6MP study according to protocol"
+        },
+        "rndcomplPEGaspcomm": {
+            "description": "CompletePEG-Asp study comments"
+        },
+        "rndcomplPEGaspyn": {
+            "description": "Complete PEG-Asp study according to protocol"
+        },
+        "rndconteaspcomm": {
+            "description": "Continued Erwinia Asp comments"
+        },
+        "rndconteaspyn": {
+            "description": "Continued Erwinia Asp y/n"
+        },
+        "rndcontpegaspcomm": {
+            "description": "Continue PEG-Asp comments"
+        },
+        "rndcontpegaspyn": {
+            "description": "Continue PEG-Asp? y/n"
+        },
+        "rnddaysbef_lipidlt5xunl": {
+            "description": "Days before lipid levels < 5x UNL"
+        },
+        "rnddayswithout6mp": {
+            "description": "Days without 6MP (from day 30 to 92)"
+        },
+        "rndhlpyn": {
+            "description": "Hyperlipidemia development y/n"
+        },
+        "rndincr6mpd50comm": {
+            "description": "Increase 6MPdosage day 50 comments"
+        },
+        "rndincr6mpd50yn": {
+            "description": "Increase 6MPdosage day 50 y/n"
+        },
+        "rndincr6mpd71comm": {
+            "description": "Increase 6MPdosage day 71 comments"
+        },
+        "rndincr6mpd71yn": {
+            "description": "Increase 6MPdosage day 71 y/n"
+        },
+        "rndpacricomm": {
+            "description": "Pancreatitis development comments"
+        },
+        "rndpacriyn": {
+            "description": "Pancreatitis development y/n"
+        },
+        "rndpegaspallergiyn": {
+            "description": "Previous allergic reaction to PEG-Asparaginase"
+        },
+        "rndrand1": {
+            "description": "Randomization 1 result"
+        },
+        "rndrand1consent": {
+            "description": "Randomization 1 consent"
+        },
+        "rndrand1enddate": {
+            "description": "Randomization 1 end (treat day 92)"
+        },
+        "rndrand1excl": {
+            "description": "Randomization 1 exclusion"
+        },
+        "rndrand1exclcomm": {
+            "description": "Randomization 1 exclusion comments"
+        },
+        "rndrand1filldate": {
+            "description": "Randomization 1 Fill date"
+        },
+        "rndrand1filledby": {
+            "description": "Randomization 1 filled by"
+        },
+        "rndrand1startdate": {
+            "description": "Randomization1 start (treat day 30)"
+        },
+        "rndrand2": {
+            "description": "Randomization 2 result"
+        },
+        "rndrand2consent": {
+            "description": "Randomization 2 consent"
+        },
+        "rndrand2enddate": {
+            "description": "Randomization 2 end (treat day 225)"
+        },
+        "rndrand2excl": {
+            "description": "Randomization 2 exclusion"
+        },
+        "rndrand2exclcomm": {
+            "description": "Randomization 2 exclusion comments"
+        },
+        "rndrand2filldate": {
+            "description": "Randomization 2 Fill date"
+        },
+        "rndrand2filledby": {
+            "description": "Randomization 2 filled by"
+        },
+        "rndrand2startdate": {
+            "description": "Randomization2 start (treat day 99)"
+        },
+        "rndsaeduringcon": {
+            "description": "SAE during cosolidation"
+        },
+        "rndthboduringpegaspcomm": {
+            "description": "Symptomatic thrombosis episodes comments"
+        },
+        "rndthboduringpegaspyn": {
+            "description": "Symptomatic thrombotic episodes y/n"
+        },
+        "rndawaitingsctyn": {
+            "description": "HR, awaiting SCT"
+        },
+        "rndrand3consent": {
+            "description": "Randomization 3 consent"
+        },
+        "rndlt3prevneurotoxyn": {
+            "description": "Persistent >= gr 3 Neurotox prev treat"
+        },
+        "rndcongcnsnotacceptyn": {
+            "description": "Congenital CNS anomaly not accepted"
+        },
+        "rndrand3excl": {
+            "description": "Randomization 3 exclusion"
+        },
+        "rndrand3exclcomm": {
+            "description": "Randomization 3 exclusion comments"
+        },
+        "rndrand3": {
+            "description": "Randomization 3 result"
+        },
+        "rndrand3startdate": {
+            "description": "Randomization1 start (treat d1 week 32)"
+        },
+        "rndrand3enddate": {
+            "description": "Randomization 1 end (treat d7 week 98)"
+        },
+        "rnditmedyn": {
+            "description": "IT medications according to protocol?"
+        },
+        "rnditmedcomm": {
+            "description": "IT medications according to protocol comments"
+        },
+        "rnd3steroid": {
+            "description": "Rand 3 glokocorticosteroid used"
+        },
+        "rnd3extsteroidyn": {
+            "description": "Rand 3 extra it glukocorticoid during study"
+        },
+        "rnd3newneurosymptcomm": {
+            "description": "r3 new neurological symptom during study comment"
+        },
+        "rnd3extsteroidcomm": {
+            "description": "Rand 3 extra it glukocorticoid during study comment"
+        },
+        "trcons1start": {
+            "description": "Consolidation I Non HR start"
+        },
+        "rnd3newneurosymptyn": {
+            "description": "r3 new neurological symptom during study"
+        },
+        "rnd3neuroexmyn": {
+            "description": "r3 neuro exams MEP 6 months after treat"
+        },
+        "rnd3neuroexmcomm": {
+            "description": "r3 neuro exams MEP 6 months after treat comments"
+        },
+        "trdelint1start": {
+            "description": "Delayed intensification I Non HR start"
+        },
+        "trcons2start": {
+            "description": "Consolidation II Non HR start"
+        },
+        "rnd3neuroexmnormalyn": {
+            "description": "r3 neurological exam normal?"
+        },
+        "trmaint1start": {
+            "description": "Maintenance I Non HR start"
+        },
+        "rnd3mrinormalyn": {
+            "description": "r3 brain spinal-cord MRI normal?"
+        },
+        "trmaint2start": {
+            "description": "Maintenance II Non HR start"
+        },
+        "trdelint2start": {
+            "description": "Delayed intensification II Non HR start"
+        },
+        "trcons3start": {
+            "description": "Consolidation III Non HR start"
+        },
+        "rnd3psychdeficityn": {
+            "description": "r3 deficits in neuro examination?"
+        },
+        "rnd3psychdeficitcomm": {
+            "description": "r3 deficits in neuro examination comments"
+        },
+        "trsctdate": {
+            "description": "SCT date"
+        },
+        "trblockadate": {
+            "description": "Block A date"
+        },
+        "trblockbdate": {
+            "description": "Block B date"
+        },
+        "rnd3motornormalcomm": {
+            "description": "r3 motor evoked potentials normal comm"
+        },
+        "trblockcdate": {
+            "description": "Block C date"
+        },
+        "rnd3filledby": {
+            "description": "Randomization 3 filled by"
+        },
+        "rnd3filldate": {
+            "description": "Randomization 3 Fill date"
+        },
+        "trblock4": {
+            "description": "Block 4 type"
+        },
+        "trblock4date": {
+            "description": "Block 4 date"
+        },
+        "trblock5": {
+            "description": "Block 5 type"
+        },
+        "trblock5date": {
+            "description": "Block 5 date"
+        },
+        "trblock6": {
+            "description": "Block 6 type"
+        },
+        "trblock6date": {
+            "description": "Block 6 date"
+        },
+        "trblock7": {
+            "description": "Block 7 type"
+        },
+        "trblock7date": {
+            "description": "Block 7 date"
+        },
+        "trblock8": {
+            "description": "Block 8 type"
+        },
+        "trblock8date": {
+            "description": "Block 8 date"
+        },
+        "trblock9": {
+            "description": "Block 9 type"
+        },
+        "trblock9date": {
+            "description": "Block 9 date"
+        },
+        "trmaint1hrstart": {
+            "description": "Maintenance I HR start"
+        },
+        "trdelinthrstart": {
+            "description": "Delay Intensification  HR start"
+        },
+        "trconshrstart": {
+            "description": "Consolidation  Non HR start"
+        },
+        "trmaint2hrstart": {
+            "description": "Maintenance II HR start"
+        },
+        "trtreatmentcomm": {
+            "description": "Treatment comment"
+        },
+        "trunk_peg_asp": {
+            "description": "Was the PEG-asp. truncated"
+        },
+        "trunk_peg_asp_date": {
+            "description": "Date of last peg dose"
+        },
+        "trunk_peg_asp_reas": {
+            "description": "Reason for truncation"
+        },
+        "trunk_peg_asp_comm": {
+            "description": "Truncation of PEG-Asp comment"
+        },
+        "no_peg_doses": {
+            "description": "Number of PEG-asp doses"
+        },
+        "erw_date_first": {
+            "description": "Date of first Erwinia dose"
+        },
+        "erw_date_last": {
+            "description": "Date of last Erwinia dose"
+        },
+        "no_erw_doses": {
+            "description": "Number of Erwinia doses"
+        },
+        "trunk_erw_asp": {
+            "description": "Was Erwinia-Asp. truncated"
+        },
+        "trunk_erw_asp_reas": {
+            "description": "Reason for truncation"
+        },
+        "trfilledby": {
+            "description": "Treatment  filled by"
+        },
+        "trfilldate": {
+            "description": "Treatment Fill date"
+        },
+        "primevdag": {
+            "description": "primary event day"
+        },
+        "primevstatus": {
+            "description": "primary event day status",
+            "details": {
+                "0": "CR1",
+                "1": "Induction failure",
+                "2": "Resistant disease",
+                "3": "Relapse",
+                "4": "DCR1",
+                "5": "SMN"
+            }
+        },
+        "deaddate": {
+            "description": "dead date"
+        },
+        "recdate1": {
+            "description": "Resistant disease date"
+        },
+        "rectyp1": {
+            "description": "Resistant disease",
+            "details": {
+                "1": "BM",
+                "2": "CNS",
+                "3": "TESTIS",
+                "4": "BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        "smnallda": {
+            "description": "SMN after ALL-date"
+        },
+        "smntype": {
+            "description": "Type of SMN",
+            "details": {
+                "1": "AML",
+                "2": "MDS",
+                "3": "Other"
+            }
+        },
+        "admincomm": {
+            "description": "open-ended verbatim"
+        },
+        "deadreas": {
+            "description": "open-ended verbatim"
+        },
+        "deadrel": {
+            "description": "Death related",
+            "details": {
+            "1":  "Disease related death",
+            "2":  "Therapy related death",
+            "3":  "Disease and therapy related death",
+            "4":  "Unknown"
+            }
+        },
+        "deadshor": {
+            "description": "Dead-Phase"
+        },
+        "eventhistory": {
+            "description": "Eevent History"
+        },
+        "f3t1p1filldate": {
+            "description": "Follow-up 1 Fill date"
+        },
+        "f3t1p1filledby": {
+            "description": "Follow-up 1 filled by"
+        },
+        "fuactdate": {
+            "description": "Follow-up 1 date"
+        },
+        "fuactstatus": {
+            "description": "Actual FU - Status/Therapy",
+            "details": {
+                "0":  "Early (no CR1 yet)",
+                "1":  "Induction Death",
+                "2":  "Resistant disease CR on non-NOPHO therapy, alive",
+                "3":  "Resistant disease-CR on non-NOPHO therapy then death",
+                "4":  "Alive in CR1 (CCR)",
+                "5":  "Relapsed, alive with disease",
+                "6":  "Relapsed, alive in CR>/=2",
+                "7":  "Dead after relapse(s)",
+                "8":  "SMN alive with disease",
+                "9":  "SMN alive in CR>/=2",
+                "10":  "Dead after SMN",
+                "11":  "Dead in CR1 (DCR1)"
+            }
+
+        },
+        "fuevent": {
+            "description": "Follow-up event reg",
+            "details": {
+                "0":  "Too early",
+                "1":  "CR1",
+                "2":  "InducFail",
+                "3":  "ResistDis",
+                "4":  "Relapse",
+                "5":  "DCR1",
+                "6":  "SMN"
+            }
+        },
+        "fueventday": {
+            "description": "Follow-up event day"
+        },
+        "cr1_phase": {
+            "description": "In which phase is p in CR1"
+        },
+        "hospcomm": {
+            "description": "Inrapporterande:Comments,changes in earlier report"
+        },
+        "lastfuda": {
+            "description": "Last FU - date"
+        },
+        "lastfust": {
+            "description": "Status/Terapi last FU1.2002",
+            "details": {
+                "0":  "Early (no CR1 yet)",
+                "1":  "Induction Death",
+                "2":  "Resistant disease CR on non-NOPHO therapy, alive",
+                "3":  "Resistant disease-CR on non-NOPHO therapy then death",
+                "4":  "Alive in CR1 (CCR)",
+                "5":  "Relapsed, alive with disease",
+                "6":  "Relapsed, alive in CR>/=2",
+                "7":  "Dead after relapse(s)",
+                "8":  "SMN alive with disease",
+                "9":  "SMN alive in CR>/=2",
+                "10":  "Dead after SMN",
+                "11":  "Dead in CR1 (DCR1)"
+            }
+        },
+        "lostatfu": {
+            "description": "Lost at FU-y/n"
+        },
+        "lostatup": {
+            "description": "lost at up"
+        },
+        "lostdate": {
+            "description": "lost date"
+        },
+        "theoffda": {
+            "description": "Date-Therapy off CR-1"
+        },
+        "recdate2": {
+            "description": "Rec type1 date"
+        },
+        "rectyp2": {
+            "description": "2nd relapse-localisation",
+            "details": {
+                "1": "BM",
+                "2": "CNS",
+                "3": "TESTIS",
+                "4": "BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        "recdate3": {
+            "description": "Rec type1 date"
+        },
+        "rectyp3": {
+            "description": "Rec type1 site",
+            "details": {
+                "1": "BM",
+                "2": "CNS",
+                "3": "TESTIS",
+                "4": "BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        "consentwcomment": {
+            "description": "Comment withdrawn consent (masterknapp)"
+        },
+        "consentwdate": {
+            "description": "Date of withdrawn consent (masterknapp)"
+        },
+        "consentwithdrawn": {
+            "description": "Consent to participation withdrawn (masterknapp)"
+        },
+        "f4t1p1filldate": {
+            "description": "Follow-up 2 Fill date"
+        },
+        "f4t1p1filledby": {
+            "description": "Follow-up 2 filled by"
+        },
+        "toxintcare": {
+            "description": "Intensive care +/- assisted ventilation"
+        },
+        "toxheartfail": {
+            "description": "Severe heart failure, lt arrhytmia"
+        },
+        "toxanaphylaxis": {
+            "description": "Life threatening anaph (CTC grade 4)"
+        },
+        "toxavasosteo": {
+            "description": "Avascular osteonecrosis(CTC 2,3 and4)"
+        },
+        "toxpancretitis": {
+            "description": "Symptomatic pancretitis (CTC 2,3,4)"
+        },
+        "toxhyperlipidemia": {
+            "description": "Severe hyperlyp. (CTC grade 2,3 and 4)"
+        },
+        "toxabdominal": {
+            "description": "Abdominal problems leading to laparot."
+        },
+        "toxliverdysf": {
+            "description": "Liver disfunction encephalopati"
+        },
+        "toxvod": {
+            "description": "(Veno-occlusive disease)"
+        },
+        "toxthrombosis": {
+            "description": "Severe thrombosis"
+        },
+        "toxdialysis": {
+            "description": "Kidney disfunction"
+        },
+        "toxhypertension": {
+            "description": "Hypertensive crisis"
+        },
+        "toxcnsbleeding": {
+            "description": "CNS / catastrophic bleeding"
+        },
+        "toxpres": {
+            "description": "PRES"
+        },
+        "toxcomma": {
+            "description": "COMA"
+        },
+        "toxseizures": {
+            "description": "Seizures(CTC grade 2,3,4)"
+        },
+        "toxparalysis": {
+            "description": "Peripheral paralysis"
+        },
+        "toxother": {
+            "description": "Depocity study including"
+        },
+        "toxsusar": {
+            "description": "Suspected unspected serious adverse.."
+        },
+        "toxnone": {
+            "description": "No SAE"
+        },
+        "toxevent": {
+            "description": "Toxocity event reg",
+            "details": {
+                "2":  "InducFail",
+                "3":  "ResistDis",
+                "4":  "Relapse",
+                "5":  "DCR1",
+                "6":  "SMN",
+                "7":  "No event"
+            }
+        },
+        "toxeventdate": {
+            "description": "Event date"
+        },
+        "toxfungalinf": {
+            "description": "Fungal Infection"
+        },
+        "toxpneumoinf": {
+            "description": "Pneumocystic infection"
+        },
+        "rand1date": {
+            "description": "Randomization 1 Date"
+        },
+        "rand2date": {
+            "description": "Randomization 2 Date"
+        },
+        "rand3date": {
+            "description": "Randomization 3 Date"
+        },
+        "dsmcstopbase": {
+            "description": "Patients included in the base for stop DCR1"
+        },
+        "dcr1_stopincludelr": {
+            "description": "Patients that are included in the LOW-Risk-stop calculation(new rules)"
+        },
+        "dcr1_stopincludehr": {
+            "description": "Patients that are included in the HIGH-Risk-stop calculation(new rules)"
+        },
+        "de_lrdate": {
+            "description": "Delayed Entry LOW-risk group date (stop new rules)"
+        },
+        "dcr1_lr_censdate": {
+            "description": "Date of censoring LOW-risk group date (stop new rules)"
+        },
+        "de_hrdate": {
+            "description": "Delayed Entry HIGH-risk group date (stop new rules)"
+        },
+        "dcr1_hr_censdate": {
+            "description": "Date of censoring HIGH-risk group date (stop new rules)"
+        },
+        "rdbmblast1": {
+            "description": "Rel. Blast in BM at time of relapse1 range"
+        },
+        "rdbmblast1_nr": {
+            "description": "Rel. Blast in BM at time of relapse1 %"
+        },
+        "rdcomm": {
+            "description": "Rel. comment diagnosis"
+        },
+        "rdcrsgroup": {
+            "description": "Rel. Central review S-group"
+        },
+        "rdsgroup": {
+            "description": "Rel. diagnosis S-group"
+        },
+        "rtcomm": {
+            "description": "Rel. comment to treatment protocol"
+        },
+        "comment_relapse": {
+            "description": "Comments for relapse"
+        },
+        "rtinttreat": {
+            "description": "Rel. Intention to treatment"
+        },
+        "rtprotocol": {
+            "description": "Rel. treatment protocol used"
+        },
+        "rtstartt": {
+            "description": "Rel. Treatment strat-date"
+        },
+        "remphbf1d": {
+            "description": "Rel. early resp. Morph. BFM F1 Date"
+        },
+        "remphbf1r": {
+            "description": "Rel. early resp. Morph. BFM F1 Response"
+        },
+        "remphbf2d": {
+            "description": "Rel. early resp. Morph. BFM F2 Date"
+        },
+        "remphbf2r": {
+            "description": "Rel. early resp. Morph. BFM F2 Response"
+        },
+        "remphbotd": {
+            "description": "Rel. early resp. Morph. BFM Other Date"
+        },
+        "remphbotr": {
+            "description": "Rel. early resp. Morph. BFM Other Response"
+        },
+        "remphn15d": {
+            "description": "Rel. early resp. Morph. Nopho day15 Date"
+        },
+        "remphn15r": {
+            "description": "Rel. early resp. Morph. Nopho day 15 Response"
+        },
+        "remphn29d": {
+            "description": "Rel. early resp. Morph. Nopho day 29 Date"
+        },
+        "remphn29r": {
+            "description": "Rel. early resp. Morph. Nopho day 29 Response"
+        },
+        "remphnexd": {
+            "description": "Rel. early resp. Morph. Nopho extra Date"
+        },
+        "remphnexr": {
+            "description": "Rel. early resp. Morph. Nopho extra Response"
+        },
+        "remphothd": {
+            "description": "Rel. early resp. Morph. Other Prot. Date"
+        },
+        "remphothr": {
+            "description": "Rel. early resp. Morph. Other Prot Response"
+        },
+        "remrdbf1d": {
+            "description": "Rel. early resp. MRD BFM F1 Date"
+        },
+        "remrdbf1r": {
+            "description": "Rel. early resp. MRD BFM F1 Response"
+        },
+        "remrdbf2d": {
+            "description": "Rel. early resp. MRD BFM F2 Date"
+        },
+        "remrdbf2r": {
+            "description": "Rel. early resp. MRD BFM F2 Response"
+        },
+        "remrdbotd": {
+            "description": "Rel. early resp. MRD BFM Other Date"
+        },
+        "remrdbotr": {
+            "description": "Rel. early resp. MRD BFM Other Response"
+        },
+        "remrdn15d": {
+            "description": "Rel. early resp. MRD Nopho day 15 Date"
+        },
+        "remrdn15r": {
+            "description": "Rel. early resp. MRD Nopho day 15 Response"
+        },
+        "remrdn29d": {
+            "description": "Rel. early resp. MRD Nopho day 29 Date"
+        },
+        "remrdn29r": {
+            "description": "Rel. early resp. MRD Nopho day 29 Response"
+        },
+        "remrdothd": {
+            "description": "Rel. early resp. MRD Other Prot Date"
+        },
+        "remrdothr": {
+            "description": "Rel. early resp. MRD Other Prot Response"
+        },
+        "recomm": {
+            "description": "Rel. early resp. comments"
+        },
+        "reemcom": {
+            "description": "Rel. early resp. comments if EM relapse"
+        },
+        "reemcr2d": {
+            "description": "Rel. early resp. Date of CR2 if EM relapse"
+        },
+        "remrdcom": {
+            "description": "Rel. early resp. MRD comments"
+        },
+        "remfish": {
+            "description": "Rel. early resp. MRD method FISH"
+        },
+        "remflow": {
+            "description": "Rel. early resp. MRD method FLOW"
+        },
+        "rempcr": {
+            "description": "Rel. early resp. MRD method PCR"
+        },
+        "bmt2date": {
+            "description": "BMT2-3-date"
+        },
+        "rpresctmphd": {
+            "description": "Rel. Stat. pre-allo SCT morphological Date"
+        },
+        "rpresctmphs": {
+            "description": "Rel. Stat. pre-allo SCT morphological status"
+        },
+        "rpresctmrdd": {
+            "description": "Rel. Stat. pre-allo SCT MRD Date"
+        },
+        "rpresctmrds": {
+            "description": "Rel. Stat. pre-allo SCT MRD status"
+        },
+        "rpsctmflow": {
+            "description": "Rel. pre-allo-SCT MRD method FLOW"
+        },
+        "rpsctmpcr": {
+            "description": "Rel. pre-allo-SCT MRD method PCR"
+        },
+        "secondevent": {
+            "description": "Rel. Second event/long term follow-up"
+        },
+        "rdeadcomm": {
+            "description": "Rel. cause of death after Rel. comments"
+        },
+        "rdeathreas": {
+            "description": "Rel. Cause of death after relapse"
+        },
+        "routcomm": {
+            "description": "Rel. Comments to outcome eval-Follow-up"
+        },
+        "rem2date": {
+            "description": "CR-2 - date"
+        },
+        "rem2yn_no_type": {
+            "description": "rem2yn - description"
+        },
+        "seceventd": {
+            "description": "Second Event date"
+        },
+        "rdallosct": {
+            "description": "Rel. efter allogenic SCT in CR1?"
+        },
+        "trnotreatreason": {
+            "description": "Patient not treated according to intenteion of protocol REASON"
+        },
+        "trnotreathelpdesk": {
+            "description": "Patient not treated according to intenteion of protocol Help-desk consulted?"
+        },
+        "trnotreatdate": {
+            "description": "Patient not treated according to intention of protocol DATE"
+        },
+        "rdbmblast2": {
+            "description": "Rel. Blast in BM at time of relapse2 range"
+        },
+        "rdbmblast2_nr": {
+            "description": "Rel. Blast in BM at time of relapse2 %"
+        },
+        "rdbmblast3": {
+            "description": "Rel. Blast in BM at time of relapse2 range"
+        },
+        "rdbmblast3_nr": {
+            "description": "Rel. Blast in BM at time of relapse2 %"
+        },
+        "fret1p1filledby": {
+            "description": "Relapse Information reported by"
+        },
+        "fret1p1filldate": {
+            "description": "Relapse Information reported date"
+        }
+    },
+    "hdm_mtx_table": {
+        "nopho_nr": {
+            "description": "Patient id number",
+            "details": {
+                "number": "Patient id number"
+            }
+        },
+        "patnum": {
+            "description": "patnum"
+        },
+        "guid": {
+            "description": "guid"
+        },
+        "hospital": {
+            "description": "Hospital",
+            "details": {
+                "number": "Hospital"
+            }
+        },
+        "sex": {
+            "description": "Gender",
+            "details": {
+                "male,female": "Gender"
+            }
+        },
+        "infno": {
+            "description": "No. of MTX infusion",
+            "details": {
+                "number 1-8": "No. of MTX infusion"
+            }
+        },
+        "mtx_infdate": {
+            "description": "Date for start of MTX infusion",
+            "details": {
+                "date": "Date for start of MTX infusion"
+            }
+        },
+        "mtx_inf_start": {
+            "description": "Time for start of MTX infusion",
+            "details": {
+                "time": "Time for start of MTX infusion"
+            }
+        },
+        "mtxdo": {
+            "description": "Dose of MTX",
+            "details": {
+                "number": "Dose of MTX"
+            }
+        },
+        "mtx_10do": {
+            "description": "mtx_10do"
+        },
+        "mtxdo_1": {
+            "description": "mtxdo_1"
+        },
+        "afvig": {
+            "description": "Deviations from MTX dosage or infusion time.",
+            "details": {
+                "": "Deviations from MTX dosage or infusion time."
+            }
+        },
+        "prehyd_data": {
+            "description": "Date for start of prehydration",
+            "details": {
+                "date": "Date for start of prehydration"
+            }
+        },
+        "vol_phyd": {
+            "description": "Volume of prehydration",
+            "details": {
+                "ml/t": "Volume of prehydration"
+            }
+        },
+        "weight": {
+            "description": "Weight",
+            "details": {
+                "kg": "Weight"
+            }
+        },
+        "height": {
+            "description": "Height",
+            "details": {
+                "cm": "Height"
+            }
+        },
+        "bsa": {
+            "description": "Body Surface Area",
+            "details": {
+                "m2": "Body Surface Area"
+            }
+        },
+        "hydr_vol": {
+            "description": "Hydration volume during the MTX infusion",
+            "details": {
+                "ml/t": "Hydration volume during the MTX infusion"
+            }
+        },
+        "hydr_inc": {
+            "description": "Has hydration been increased?",
+            "details": {
+                "Yes,No": "Has hydration been increased?"
+            }
+        },
+        "hydr_inc_date": {
+            "description": "Date where hydration was increased",
+            "details": {
+                "date": "Date where hydration was increased"
+            }
+        },
+        "hydr_inc_time": {
+            "description": "Time where hydration was increased",
+            "details": {
+                "time": "Time where hydration was increased"
+            }
+        },
+        "hydr_inc_vol": {
+            "description": "Volume that hydration was increased to",
+            "details": {
+                "ml/m\u00b2/d\u00f8gn": "Volume that hydration was increased to"
+            }
+        },
+        "alat_pre": {
+            "description": "alat_pre"
+        },
+        "pc_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "Creatinine concentration before MTX infusion": "last values before treatment"
+            }
+        },
+        "p_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "Phosphate concentration before MTX infusion": "last values before treatment"
+            }
+        },
+        "hb_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "Hb concentration before MTX infusion": "last values before treatment"
+            }
+        },
+        "thr_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "Thrombocyte count before MTX infusion": "last values before treatment"
+            }
+        },
+        "leu_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "WBC count before MTX infusion": "last values before treatment"
+            }
+        },
+        "neu_pre": {
+            "description": "last values before treatment",
+            "details": {
+                "Neutrofil count before MTX infusion": "last values before treatment"
+            }
+        },
+        "infect_pre": {
+            "description": "infect_pre"
+        },
+        "infect_post": {
+            "description": "infect_post"
+        },
+        "inf_post_date": {
+            "description": "inf_post_date"
+        },
+        "mp6_change": {
+            "description": "mp6_change"
+        },
+        "mp6_why1": {
+            "description": "mp6_why1"
+        },
+        "mp6_why2": {
+            "description": "mp6_why2"
+        },
+        "mp6_why3": {
+            "description": "mp6_why3"
+        },
+        "mp6_why4": {
+            "description": "mp6_why4"
+        },
+        "mp6_why5": {
+            "description": "mp6_why5"
+        },
+        "mp6_why6": {
+            "description": "mp6_why6"
+        },
+        "mp6_pre14": {
+            "description": "mp6_pre14"
+        },
+        "mp6_pre13": {
+            "description": "mp6_pre13"
+        },
+        "mp6_pre12": {
+            "description": "mp6_pre12"
+        },
+        "mp6_pre11": {
+            "description": "mp6_pre11"
+        },
+        "mp6_pre10": {
+            "description": "mp6_pre10"
+        },
+        "mp6_pre9": {
+            "description": "mp6_pre9"
+        },
+        "mp6_pre8": {
+            "description": "mp6_pre8"
+        },
+        "mp6_pre7": {
+            "description": "mp6_pre7"
+        },
+        "mp6_pre6": {
+            "description": "mp6_pre6"
+        },
+        "mp6_pre5": {
+            "description": "mp6_pre5"
+        },
+        "mp6_pre4": {
+            "description": "mp6_pre4"
+        },
+        "mp6_pre3": {
+            "description": "mp6_pre3"
+        },
+        "mp6_pre2": {
+            "description": "mp6_pre2"
+        },
+        "mp6_pre1": {
+            "description": "mp6_pre1"
+        },
+        "mp6_dose0": {
+            "description": "mp6_dose0"
+        },
+        "mp6_post1": {
+            "description": "mp6_post1"
+        },
+        "mp6_post2": {
+            "description": "mp6_post2"
+        },
+        "mp6_post3": {
+            "description": "mp6_post3"
+        },
+        "mp6_post4": {
+            "description": "mp6_post4"
+        },
+        "mp6_post5": {
+            "description": "mp6_post5"
+        },
+        "mp6_post6": {
+            "description": "mp6_post6"
+        },
+        "mp6_post7": {
+            "description": "mp6_post7"
+        },
+        "mp6_post8": {
+            "description": "mp6_post8"
+        },
+        "mp6_post9": {
+            "description": "mp6_post9"
+        },
+        "mp6_post10": {
+            "description": "mp6_post10"
+        },
+        "mp6_post11": {
+            "description": "mp6_post11"
+        },
+        "mp6_post12": {
+            "description": "mp6_post12"
+        },
+        "mp6_post13": {
+            "description": "mp6_post13"
+        },
+        "mp6_post14": {
+            "description": "mp6_post14"
+        },
+        "mp6_post15": {
+            "description": "mp6_post15"
+        },
+        "mp6_post16": {
+            "description": "mp6_post16"
+        },
+        "mp6_post17": {
+            "description": "mp6_post17"
+        },
+        "mp6_post18": {
+            "description": "mp6_post18"
+        },
+        "mp6_post19": {
+            "description": "mp6_post19"
+        },
+        "mp6_post20": {
+            "description": "mp6_post20"
+        },
+        "mp6_post21": {
+            "description": "mp6_post21"
+        },
+        "mp6_post_stop": {
+            "description": "mp6_post_stop"
+        },
+        "mp6_post_why1": {
+            "description": "mp6_post_why1"
+        },
+        "mp6_post_why2": {
+            "description": "mp6_post_why2"
+        },
+        "mp6_post_why3": {
+            "description": "mp6_post_why3"
+        },
+        "mp6_post_why4": {
+            "description": "mp6_post_why4"
+        },
+        "mp6_post_why5": {
+            "description": "mp6_post_why5"
+        },
+        "sulfo": {
+            "description": "Was the Trimethoprim/sulfamethoxazole paused the same week as HDM infusion was given?",
+            "details": {
+                "yes,no": "Was the Trimethoprim/sulfamethoxazole paused the same week as HDM infusion was given?"
+            }
+        },
+        "intra_date": {
+            "description": "intra_date"
+        },
+        "intra_time": {
+            "description": "intra_time"
+        },
+        "intra_type": {
+            "description": "Type of intraspinal treatment with MTX",
+            "details": {
+                "MTX,Triple": "Type of intraspinal treatment with MTX"
+            }
+        },
+        "intra_mtxdo": {
+            "description": "MTX dose used for intraspinal (mg)",
+            "details": {
+                "mg": "MTX dose used for intraspinal (mg)"
+            }
+        },
+        "folin": {
+            "description": "Type of folinic acid used as rescue treatment.",
+            "details": {
+                "Isovorin,Leucovorin,Other": "Type of folinic acid used as rescue treatment."
+            }
+        },
+        "folin42": {
+            "description": "Folinic acid dose at 42h",
+            "details": {
+                "mg": "Folinic acid dose at 42h"
+            }
+        },
+        "folin48": {
+            "description": "Folinic acid dose at 48h",
+            "details": {
+                "mg": "Folinic acid dose at 48h"
+            }
+        },
+        "folin54": {
+            "description": "Folinic acid dose at 54h",
+            "details": {
+                "mg": "Folinic acid dose at 54h"
+            }
+        },
+        "folin60": {
+            "description": "Folinic acid dose at 60h",
+            "details": {
+                "mg": "Folinic acid dose at 60h"
+            }
+        },
+        "folin66": {
+            "description": "Folinic acid dose at 66h",
+            "details": {
+                "mg": "Folinic acid dose at 66h"
+            }
+        },
+        "folin72": {
+            "description": "folin72"
+        },
+        "folin78": {
+            "description": "folin78"
+        },
+        "folin84": {
+            "description": "folin84"
+        },
+        "folin90": {
+            "description": "Folinic acid dose at 90h",
+            "details": {
+                "mg": "Folinic acid dose at 90h"
+            }
+        },
+        "folin96": {
+            "description": "folin96"
+        },
+        "folin102": {
+            "description": "folin102"
+        },
+        "folin108": {
+            "description": "folin108"
+        },
+        "folin114": {
+            "description": "folin114"
+        },
+        "folin120": {
+            "description": "folin120"
+        },
+        "folin126": {
+            "description": "folin126"
+        },
+        "folin132": {
+            "description": "folin132"
+        },
+        "folin138": {
+            "description": "folin138"
+        },
+        "alat_post": {
+            "description": "Peak ALAT concentration after MTX infusion",
+            "details": {
+                "u/L": "Peak ALAT concentration after MTX infusion"
+            }
+        },
+        "p_post": {
+            "description": "p_post"
+        },
+        "hb_post": {
+            "description": "hb_post"
+        },
+        "thr_post": {
+            "description": "thr_post"
+        },
+        "leu_post": {
+            "description": "leu_post"
+        },
+        "neu_post": {
+            "description": "neu_post"
+        },
+        "transer": {
+            "description": "transer"
+        },
+        "transth": {
+            "description": "transth"
+        },
+        "transcns": {
+            "description": "transcns"
+        },
+        "transtyp": {
+            "description": "transtyp"
+        },
+        "transtda": {
+            "description": "transtda"
+        },
+        "remark_h": {
+            "description": "remark_h"
+        },
+        "m_entered": {
+            "description": "m_entered"
+        },
+        "m_change": {
+            "description": "m_change"
+        }
+    },
+    "hdm_plasma_table": {
+        "nopho_nr": {
+            "description": "Patient id number",
+            "details": {
+                "number": "Patient id number"
+            }
+        },
+        "patnum": {
+            "description": "patnum"
+        },
+        "guid": {
+            "description": "guid"
+        },
+        "patnummtx": {
+            "description": "patnummtx"
+        },
+        "cpr": {
+            "description": "Patients CRP number",
+            "details": {
+                "number": "Patients CRP number"
+            }
+        },
+        "infno": {
+            "description": "No. of MTX infusion",
+            "details": {
+                "number 1-8": "No. of MTX infusion"
+            }
+        },
+        "hospital": {
+            "description": "Hospital",
+            "details": {
+                "number": "Hospital"
+            }
+        },
+        "lname": {
+            "description": "Last name",
+            "details": {
+                "string": "Last name"
+            }
+        },
+        "fname": {
+            "description": "First name",
+            "details": {
+                "string": "First name"
+            }
+        },
+        "pl_date": {
+            "description": "Date for this blood sample",
+            "details": {
+                "date": "Date for this blood sample"
+            }
+        },
+        "pl_time": {
+            "description": "pl_time"
+        },
+        "pl_pc": {
+            "description": "pl_pc"
+        },
+        "pl_mtx": {
+            "description": "concentration of mtx in blood sample",
+            "details": {
+                "number": "concentration of mtx in blood sample"
+            }
+        },
+        "p_entered": {
+            "description": "p_entered"
+        },
+        "p_change": {
+            "description": "p_change"
+        }
+    }
+}
+}
+

@@ -1,0 +1,9 @@
+{
+    "column_name": "rpresctmrds",
+    "description": "Description: Rel. Stat. pre-allo SCT MRD status, indicating the level of residual disease present before allogeneic stem cell transplantation (1: >=10^-3, 2: (10^-3)-(10^-4), 3: <10^-4).",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

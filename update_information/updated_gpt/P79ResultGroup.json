@@ -1,0 +1,13 @@
+{
+    "column_name": "P79ResultGroup",
+    "description": "P79ResultGroup: Measurement of minimal residual disease (MRD) flow on day 79 of childhood Leukemia treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+    "details": {
+        "1": ">=25%",
+        "2": "<25%",
+        "3": ">=0.1% - <5%",
+        "4": "<0.1%",
+        "5": "<0.1%",
+        "8": "Sample not taken",
+        "9": "No marker found and/or monitoring not feasible"
+    }
+}

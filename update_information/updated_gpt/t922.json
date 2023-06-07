@@ -1,0 +1,9 @@
+{
+    "column_name": "t922",
+    "description": "Description: t(9;22) FISH/PCR results (yes=excluded, no=present, NA=not analysed).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

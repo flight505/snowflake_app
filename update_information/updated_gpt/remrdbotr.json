@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdbotr",
+    "description": "Description: Rel. early resp. MRD BFM Other Response: Quantitative measure of response to childhood Leukemia treatment, with values of >=10^-3, (10^-3)-(10^-4), and <10^-4.",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

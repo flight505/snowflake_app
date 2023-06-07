@@ -1,0 +1,8 @@
+{
+    "column_name": "rndcontpegaspyn",
+    "description": "Description: Indicates whether PEG-Asp should be continued in the treatment of childhood Leukemia (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "column_name": "dsmcstopbase",
+    "description": "Description: Patients included in the base for stop DCR1, including those in the included stop base, excluded stop base, and early categories.",
+    "details": {
+        "1": "Included stop base",
+        "2": "Excluded stop base",
+        "8": "Early"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "excluded",
+    "description": "Description: Indicates whether a patient was excluded from the study of childhood Leukemia cancer treatment (Yes/No).",
+    "details": {
+        "0": "No",
+        "1": "Yes"
+    }
+}

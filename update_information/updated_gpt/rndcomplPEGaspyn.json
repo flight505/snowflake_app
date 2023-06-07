@@ -1,0 +1,8 @@
+{
+    "column_name": "rndcomplPEGaspyn",
+    "description": "Description: Indicates whether a Complete PEG-Asp study was completed according to protocol for a patient with childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

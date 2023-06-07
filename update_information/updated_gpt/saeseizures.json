@@ -1,0 +1,9 @@
+{
+    "column_name": "saeseizures",
+    "description": "Description: Seizures (CTC grade 2, 3, or 4) reported in childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

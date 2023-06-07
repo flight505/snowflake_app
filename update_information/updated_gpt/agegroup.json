@@ -1,0 +1,10 @@
+{
+    "column_name": "agegroup",
+    "description": "Description: Age Group, which includes Infant (1), Child (2), Adult (3), and Undefined (99).",
+    "details": {
+        "1": "Infant",
+        "2": "Child",
+        "3": "Adult",
+        "99": "Undefined"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "column_name": "cnstt",
+    "description": "Description: CNS-reg traumatic tap indicating presence or absence of Leukemia (1: no TLP (<=10 erytrocytes), 2: TLP (>10 erythrocytes) no Leukemia, 3: TLP (>10 erythrocytes) with Leukemia, 9: data missing).",
+    "details": {
+        "1": "no TLP (<=10 erytrocytes)",
+        "2": "TLP (>10 erythrocytes) no Leukemia",
+        "3": "TLP (>10 erythrocytes) with Leukemia",
+        "9": "data missing"
+    }
+}

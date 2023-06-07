@@ -1,0 +1,10 @@
+{
+    "column_name": "rdsgroup",
+    "description": "Description: The rdsgroup column indicates the stage of childhood Leukemia cancer treatment, with S1 being the earliest stage and S4 being the most advanced.",
+    "details": {
+        "1": "S1",
+        "2": "S2",
+        "3": "S3",
+        "4": "S4"
+    }
+}

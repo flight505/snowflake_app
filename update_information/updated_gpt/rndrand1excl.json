@@ -1,0 +1,13 @@
+{
+    "column_name": "rndrand1excl",
+    "description": "Description: This column indicates the reasons for exclusion from Randomization 1 in childhood Leukemia cancer treatment, such as Clinical decision, Parental refusal, Administrative reasons, Lost to follow-up, Not known, or Other.",
+    "details": {
+        "1": "No, no reasons for exclusion",
+        "2": "Clinical decision",
+        "3": "Parental refusal",
+        "4": "Administrative reasons (incl. errors)",
+        "5": "Lost to follow-up",
+        "6": "Not known",
+        "99": "Other"
+    }
+}

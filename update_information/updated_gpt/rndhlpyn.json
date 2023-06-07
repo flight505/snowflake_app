@@ -1,0 +1,8 @@
+{
+    "column_name": "rndhlpyn",
+    "description": "Description: Column indicating whether a patient developed hyperlipidemia during childhood leukemia treatment (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

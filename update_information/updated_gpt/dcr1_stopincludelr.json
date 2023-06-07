@@ -1,0 +1,13 @@
+{
+    "column_name": "dcr1_stopincludelr",
+    "description": "Description: dcr1_stopincludelr: Patients included in the LOW-Risk-stop calculation (new rules) for childhood Leukemia treatment.",
+    "details": {
+        "1": "Included",
+        "2": "Early",
+        "3": "Baltic",
+        "4": "Adult",
+        "5": "LR-patient HR-therapy",
+        "8": "No CR1-status / Lost early",
+        "9": "Excluded"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "rndrand2",
+    "description": "Description: Result of randomization 2, which determines the type of childhood Leukemia cancer treatment (Standard PEG-Asp group with 2 weeks interval or PEG-Asp at 6 weeks interval).",
+    "details": {
+        "1": "Standard PEG-Asp group with 2 weeks interval",
+        "2": "PEG-Asp at 6 weeks interval (experimental arm)"
+    }
+}

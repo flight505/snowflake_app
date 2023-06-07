@@ -1,0 +1,9 @@
+{
+    "column_name": "remphbf2r",
+    "description": "Description: Relative early response to Morphological BFM F2 treatment for childhood Leukemia.",
+    "details": {
+        "1": "<5(M1)",
+        "2": "5-25(M2)",
+        "3": ">25(M3)"
+    }
+}

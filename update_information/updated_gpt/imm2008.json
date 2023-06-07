@@ -1,0 +1,11 @@
+{
+    "column_name": "imm2008",
+    "description": "Description: Column 'imm2008' contains information on the immunology type 2008 protocol for childhood Leukemia cancer treatment, including B-precursor, T-cell, Bilineage ALL, mature B-cell, and data missing.",
+    "details": {
+        "1": "B-precursor",
+        "2": "T-cell",
+        "3": "Bilineage ALL = excl. from SR and Rand.",
+        "4": "mature B-cell = excluded",
+        "9": "data missing = temporarily excluded"
+    }
+}

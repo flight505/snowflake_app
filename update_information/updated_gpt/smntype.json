@@ -1,0 +1,9 @@
+{
+    "column_name": "smntype",
+    "description": "Description: Type of SMN, which refers to the type of childhood Leukemia cancer treatment (AML, MDS, or Other).",
+    "details": {
+        "1": "AML",
+        "2": "MDS",
+        "3": "Other"
+    }
+}

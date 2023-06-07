@@ -1,0 +1,9 @@
+{
+    "column_name": "saeintcare",
+    "description": "Description: Intensive care with or without assisted ventilation for childhood Leukemia treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

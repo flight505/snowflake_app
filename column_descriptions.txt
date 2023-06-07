@@ -1,0 +1,506 @@
+{
+    "nopho_nr": {
+        "description": "Patient id number",
+        "details": {
+            "number": "Patient id number"
+        }
+    },
+    "patnum": {
+        "description": "patnum"
+    },
+    "guid": {
+        "description": "guid"
+    },
+    "patnummtx": {
+        "description": "patnummtx"
+    },
+    "cpr": {
+        "description": "Patients CRP number",
+        "details": {
+            "number": "Patients CRP number"
+        }
+    },
+    "infno": {
+        "description": "No. of MTX infusion",
+        "details": {
+            "number 1-8": "No. of MTX infusion"
+        }
+    },
+    "hospital": {
+        "description": "Hospital",
+        "details": {
+            "number": "Hospital"
+        }
+    },
+    "lname": {
+        "description": "Last name",
+        "details": {
+            "string": "Last name"
+        }
+    },
+    "fname": {
+        "description": "First name",
+        "details": {
+            "string": "First name"
+        }
+    },
+    "pl_date": {
+        "description": "Date for this blood sample",
+        "details": {
+            "date": "Date for this blood sample"
+        }
+    },
+    "pl_time": {
+        "description": "pl_time"
+    },
+    "pl_pc": {
+        "description": "pl_pc"
+    },
+    "pl_mtx": {
+        "description": "concentration of mtx in blood sample",
+        "details": {
+            "number": "concentration of mtx in blood sample"
+        }
+    },
+    "p_entered": {
+        "description": "p_entered"
+    },
+    "p_change": {
+        "description": "p_change"
+    },
+    "sex": {
+        "description": "Gender",
+        "details": {
+            "male,female": "Gender"
+        }
+    },
+    "mtx_infdate": {
+        "description": "Date for start of MTX infusion",
+        "details": {
+            "date": "Date for start of MTX infusion"
+        }
+    },
+    "mtx_inf_start": {
+        "description": "Time for start of MTX infusion",
+        "details": {
+            "time": "Time for start of MTX infusion"
+        }
+    },
+    "mtxdo": {
+        "description": "Dose of MTX",
+        "details": {
+            "number": "Dose of MTX"
+        }
+    },
+    "mtx_10do": {
+        "description": "mtx_10do"
+    },
+    "mtxdo_1": {
+        "description": "mtxdo_1"
+    },
+    "afvig": {
+        "description": "Deviations from MTX dosage or infusion time.",
+        "details": {
+            "": "Deviations from MTX dosage or infusion time."
+        }
+    },
+    "prehyd_data": {
+        "description": "Date for start of prehydration",
+        "details": {
+            "date": "Date for start of prehydration"
+        }
+    },
+    "vol_phyd": {
+        "description": "Volume of prehydration",
+        "details": {
+            "ml/t": "Volume of prehydration"
+        }
+    },
+    "weight": {
+        "description": "Weight",
+        "details": {
+            "kg": "Weight"
+        }
+    },
+    "height": {
+        "description": "Height",
+        "details": {
+            "cm": "Height"
+        }
+    },
+    "bsa": {
+        "description": "Body Surface Area",
+        "details": {
+            "m2": "Body Surface Area"
+        }
+    },
+    "hydr_vol": {
+        "description": "Hydration volume during the MTX infusion",
+        "details": {
+            "ml/t": "Hydration volume during the MTX infusion"
+        }
+    },
+    "hydr_inc": {
+        "description": "Has hydration been increased?",
+        "details": {
+            "Yes,No": "Has hydration been increased?"
+        }
+    },
+    "hydr_inc_date": {
+        "description": "Date where hydration was increased",
+        "details": {
+            "date": "Date where hydration was increased"
+        }
+    },
+    "hydr_inc_time": {
+        "description": "Time where hydration was increased",
+        "details": {
+            "time": "Time where hydration was increased"
+        }
+    },
+    "hydr_inc_vol": {
+        "description": "Volume that hydration was increased to",
+        "details": {
+            "ml/m\u00b2/d\u00f8gn": "Volume that hydration was increased to"
+        }
+    },
+    "alat_pre": {
+        "description": "alat_pre"
+    },
+    "pc_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "Creatinine concentration before MTX infusion": "last values before treatment"
+        }
+    },
+    "p_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "Phosphate concentration before MTX infusion": "last values before treatment"
+        }
+    },
+    "hb_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "Hb concentration before MTX infusion": "last values before treatment"
+        }
+    },
+    "thr_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "Thrombocyte count before MTX infusion": "last values before treatment"
+        }
+    },
+    "leu_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "WBC count before MTX infusion": "last values before treatment"
+        }
+    },
+    "neu_pre": {
+        "description": "last values before treatment",
+        "details": {
+            "Neutrofil count before MTX infusion": "last values before treatment"
+        }
+    },
+    "infect_pre": {
+        "description": "infect_pre"
+    },
+    "infect_post": {
+        "description": "infect_post"
+    },
+    "inf_post_date": {
+        "description": "inf_post_date"
+    },
+    "mp6_change": {
+        "description": "mp6_change"
+    },
+    "mp6_why1": {
+        "description": "mp6_why1"
+    },
+    "mp6_why2": {
+        "description": "mp6_why2"
+    },
+    "mp6_why3": {
+        "description": "mp6_why3"
+    },
+    "mp6_why4": {
+        "description": "mp6_why4"
+    },
+    "mp6_why5": {
+        "description": "mp6_why5"
+    },
+    "mp6_why6": {
+        "description": "mp6_why6"
+    },
+    "mp6_pre14": {
+        "description": "mp6_pre14"
+    },
+    "mp6_pre13": {
+        "description": "mp6_pre13"
+    },
+    "mp6_pre12": {
+        "description": "mp6_pre12"
+    },
+    "mp6_pre11": {
+        "description": "mp6_pre11"
+    },
+    "mp6_pre10": {
+        "description": "mp6_pre10"
+    },
+    "mp6_pre9": {
+        "description": "mp6_pre9"
+    },
+    "mp6_pre8": {
+        "description": "mp6_pre8"
+    },
+    "mp6_pre7": {
+        "description": "mp6_pre7"
+    },
+    "mp6_pre6": {
+        "description": "mp6_pre6"
+    },
+    "mp6_pre5": {
+        "description": "mp6_pre5"
+    },
+    "mp6_pre4": {
+        "description": "mp6_pre4"
+    },
+    "mp6_pre3": {
+        "description": "mp6_pre3"
+    },
+    "mp6_pre2": {
+        "description": "mp6_pre2"
+    },
+    "mp6_pre1": {
+        "description": "mp6_pre1"
+    },
+    "mp6_dose0": {
+        "description": "mp6_dose0"
+    },
+    "mp6_post1": {
+        "description": "mp6_post1"
+    },
+    "mp6_post2": {
+        "description": "mp6_post2"
+    },
+    "mp6_post3": {
+        "description": "mp6_post3"
+    },
+    "mp6_post4": {
+        "description": "mp6_post4"
+    },
+    "mp6_post5": {
+        "description": "mp6_post5"
+    },
+    "mp6_post6": {
+        "description": "mp6_post6"
+    },
+    "mp6_post7": {
+        "description": "mp6_post7"
+    },
+    "mp6_post8": {
+        "description": "mp6_post8"
+    },
+    "mp6_post9": {
+        "description": "mp6_post9"
+    },
+    "mp6_post10": {
+        "description": "mp6_post10"
+    },
+    "mp6_post11": {
+        "description": "mp6_post11"
+    },
+    "mp6_post12": {
+        "description": "mp6_post12"
+    },
+    "mp6_post13": {
+        "description": "mp6_post13"
+    },
+    "mp6_post14": {
+        "description": "mp6_post14"
+    },
+    "mp6_post15": {
+        "description": "mp6_post15"
+    },
+    "mp6_post16": {
+        "description": "mp6_post16"
+    },
+    "mp6_post17": {
+        "description": "mp6_post17"
+    },
+    "mp6_post18": {
+        "description": "mp6_post18"
+    },
+    "mp6_post19": {
+        "description": "mp6_post19"
+    },
+    "mp6_post20": {
+        "description": "mp6_post20"
+    },
+    "mp6_post21": {
+        "description": "mp6_post21"
+    },
+    "mp6_post_stop": {
+        "description": "mp6_post_stop"
+    },
+    "mp6_post_why1": {
+        "description": "mp6_post_why1"
+    },
+    "mp6_post_why2": {
+        "description": "mp6_post_why2"
+    },
+    "mp6_post_why3": {
+        "description": "mp6_post_why3"
+    },
+    "mp6_post_why4": {
+        "description": "mp6_post_why4"
+    },
+    "mp6_post_why5": {
+        "description": "mp6_post_why5"
+    },
+    "sulfo": {
+        "description": "Was the Trimethoprim/sulfamethoxazole paused the same week as HDM infusion was given?",
+        "details": {
+            "yes,no": "Was the Trimethoprim/sulfamethoxazole paused the same week as HDM infusion was given?"
+        }
+    },
+    "intra_date": {
+        "description": "intra_date"
+    },
+    "intra_time": {
+        "description": "intra_time"
+    },
+    "intra_type": {
+        "description": "Type of intraspinal treatment with MTX",
+        "details": {
+            "MTX,Triple": "Type of intraspinal treatment with MTX"
+        }
+    },
+    "intra_mtxdo": {
+        "description": "MTX dose used for intraspinal (mg)",
+        "details": {
+            "mg": "MTX dose used for intraspinal (mg)"
+        }
+    },
+    "folin": {
+        "description": "Type of folinic acid used as rescue treatment.",
+        "details": {
+            "Isovorin,Leucovorin,Other": "Type of folinic acid used as rescue treatment."
+        }
+    },
+    "folin42": {
+        "description": "Folinic acid dose at 42h",
+        "details": {
+            "mg": "Folinic acid dose at 42h"
+        }
+    },
+    "folin48": {
+        "description": "Folinic acid dose at 48h",
+        "details": {
+            "mg": "Folinic acid dose at 48h"
+        }
+    },
+    "folin54": {
+        "description": "Folinic acid dose at 54h",
+        "details": {
+            "mg": "Folinic acid dose at 54h"
+        }
+    },
+    "folin60": {
+        "description": "Folinic acid dose at 60h",
+        "details": {
+            "mg": "Folinic acid dose at 60h"
+        }
+    },
+    "folin66": {
+        "description": "Folinic acid dose at 66h",
+        "details": {
+            "mg": "Folinic acid dose at 66h"
+        }
+    },
+    "folin72": {
+        "description": "folin72"
+    },
+    "folin78": {
+        "description": "folin78"
+    },
+    "folin84": {
+        "description": "folin84"
+    },
+    "folin90": {
+        "description": "Folinic acid dose at 90h",
+        "details": {
+            "mg": "Folinic acid dose at 90h"
+        }
+    },
+    "folin96": {
+        "description": "folin96"
+    },
+    "folin102": {
+        "description": "folin102"
+    },
+    "folin108": {
+        "description": "folin108"
+    },
+    "folin114": {
+        "description": "folin114"
+    },
+    "folin120": {
+        "description": "folin120"
+    },
+    "folin126": {
+        "description": "folin126"
+    },
+    "folin132": {
+        "description": "folin132"
+    },
+    "folin138": {
+        "description": "folin138"
+    },
+    "alat_post": {
+        "description": "Peak ALAT concentration after MTX infusion",
+        "details": {
+            "u/L": "Peak ALAT concentration after MTX infusion"
+        }
+    },
+    "p_post": {
+        "description": "p_post"
+    },
+    "hb_post": {
+        "description": "hb_post"
+    },
+    "thr_post": {
+        "description": "thr_post"
+    },
+    "leu_post": {
+        "description": "leu_post"
+    },
+    "neu_post": {
+        "description": "neu_post"
+    },
+    "transer": {
+        "description": "transer"
+    },
+    "transth": {
+        "description": "transth"
+    },
+    "transcns": {
+        "description": "transcns"
+    },
+    "transtyp": {
+        "description": "transtyp"
+    },
+    "transtda": {
+        "description": "transtda"
+    },
+    "remark_h": {
+        "description": "remark_h"
+    },
+    "m_entered": {
+        "description": "m_entered"
+    },
+    "m_change": {
+        "description": "m_change"
+    }
+}

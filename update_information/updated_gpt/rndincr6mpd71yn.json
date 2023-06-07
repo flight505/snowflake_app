@@ -1,0 +1,8 @@
+{
+    "column_name": "rndincr6mpd71yn",
+    "description": "Description: Indicates whether 6MP dosage should be increased on day 71 of childhood Leukemia treatment (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

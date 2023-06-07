@@ -1,0 +1,8 @@
+{
+    "column_name": "clinic",
+    "description": "Description: Clinic column indicating whether the patient is receiving treatment at a Child or Adult treatment clinic.",
+    "details": {
+        "1": "Child treatment clinic",
+        "2": "Adult treatment clinic"
+    }
+}

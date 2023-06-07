@@ -1,0 +1,1 @@
+{"column_name": "predisposition", "description": "*Predisposition syndromes (AT,Blooms etc) default= 0 no predisp", "details": {"0": "no predisposition syndrome=included", "1": "presisposition syndrome=excluded"}}

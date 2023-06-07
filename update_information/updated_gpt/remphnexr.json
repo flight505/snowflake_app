@@ -1,0 +1,9 @@
+{
+    "column_name": "remphnexr",
+    "description": "Description: The remphnexr column indicates the response of the patient to treatment for childhood Leukemia, with values of <5(M1), 5-25(M2), and >25(M3).",
+    "details": {
+        "1": "<5(M1)",
+        "2": "5-25(M2)",
+        "3": ">25(M3)"
+    }
+}

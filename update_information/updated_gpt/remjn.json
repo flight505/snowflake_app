@@ -1,0 +1,9 @@
+{
+    "column_name": "remjn",
+    "description": "Description: Column 'remjn' indicates whether a patient with childhood Leukemia has achieved remission (Yes/No).",
+    "details": {
+        "0": "Too early",
+        "1": "Yes",
+        "2": "No"
+    }
+}

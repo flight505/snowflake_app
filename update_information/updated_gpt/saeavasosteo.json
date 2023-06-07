@@ -1,0 +1,9 @@
+{
+    "column_name": "saeavasosteo",
+    "description": "Description: Avascular osteonecrosis (CTC 2,3 and 4) in relation to childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

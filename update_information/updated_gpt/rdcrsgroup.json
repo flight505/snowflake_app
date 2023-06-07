@@ -1,0 +1,10 @@
+{
+    "column_name": "rdcrsgroup",
+    "description": "Description: The rdcrsgroup column contains four categories (S1, S2, S3, S4) that are used to classify the treatment of childhood Leukemia.",
+    "details": {
+        "1": "S1",
+        "2": "S2",
+        "3": "S3",
+        "4": "S4"
+    }
+}

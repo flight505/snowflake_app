@@ -1,0 +1,8 @@
+{
+    "column_name": "rnd3motornormalyn",
+    "description": "Description: Indicates whether r3 motor evoked potentials are normal (Yes/No) in patients with childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdra2r",
+    "description": "Description: Relative early response to minimal residual disease (MRD) Ralle A2 Response (values: >10^-3, (10^-3)-(10^-4), <10^-4).",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

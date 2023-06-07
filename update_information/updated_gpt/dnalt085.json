@@ -1,0 +1,10 @@
+{
+    "column_name": "dnalt085",
+    "description": "The dnalt085 column indicates whether the DNA index of a patient with childhood Leukemia is less than 0.85 (Yes <0.85), between 0.85 and 1.16 (No >/=0.85-<1.16), greater than 1.16 (No hyperdiploid >/=1.16), or not analysed (9: Not analysed).",
+    "details": {
+        "1": "Yes <0.85",
+        "2": "No >/=0.85-<1.16",
+        "3": "No hyperdiploid >/=1.16",
+        "9": "Not analysed"
+    }
+}

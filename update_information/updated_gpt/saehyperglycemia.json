@@ -1,0 +1,9 @@
+{
+    "column_name": "saehyperglycemia",
+    "description": "Description: Severe hyperglycemia requiring insulin treatment in childhood Leukemia patients.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

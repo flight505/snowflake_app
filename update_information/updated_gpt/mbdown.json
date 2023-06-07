@@ -1,0 +1,8 @@
+{
+    "column_name": "mbdown",
+    "description": "Description: Column indicating whether a patient has Down Syndrome (1=yes, 2=no).",
+    "details": {
+        "1": "DOWN=excluded",
+        "2": "No DOWN"
+    }
+}

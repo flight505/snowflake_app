@@ -1,0 +1,8 @@
+{
+    "column_name": "previouscancer",
+    "description": "Description: This column indicates whether the patient has had a previous cancer diagnosis (0 = no previous cancer, 1 = previous cancer excluded).",
+    "details": {
+        "0": "no previous cancer",
+        "1": "previous cancer=excluded"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdbf2r",
+    "description": "Description: Relative early response to minimal residual disease (MRD) BFM F2 response.",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

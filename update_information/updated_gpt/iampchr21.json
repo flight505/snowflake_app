@@ -1,0 +1,9 @@
+{
+    "column_name": "iampchr21",
+    "description": "This column indicates whether a patient with childhood Leukemia has undergone a Chromosome 2-FISH test (yes=not SR final strati) or not (No/Not analysed).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

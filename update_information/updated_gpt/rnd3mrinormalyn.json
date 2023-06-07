@@ -1,0 +1,8 @@
+{
+    "column_name": "rnd3mrinormalyn",
+    "description": "Description: Indicates whether the patient's third round of brain and spinal cord MRI scan was normal (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

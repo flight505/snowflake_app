@@ -1,0 +1,9 @@
+{
+    "column_name": "t119",
+    "description": "The t119 column indicates whether a patient has a t(1;19) chromosomal translocation, as determined by FISH/PCR testing. A 'Yes' indicates that the patient does not require final stratification, while a 'No' or 'Not analysed' indicates that the patient does require final stratification.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

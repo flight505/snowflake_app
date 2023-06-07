@@ -1,0 +1,10 @@
+{
+    "column_name": "bmexblko",
+    "description": "Description: BMex-blast code indicating the amount of leukemia cells present in a patient's sample (0: missing, 1: <5(M1), 2: 5-<=25(M2), 3: >25(M3)).",
+    "details": {
+        "0": "missing",
+        "1": "<5(M1)",
+        "2": "5-<=25(M2)",
+        "3": ">25(M3)"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "rnditmedyn",
+    "description": "Description: Indicates whether IT medications were administered according to protocol for childhood Leukemia treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

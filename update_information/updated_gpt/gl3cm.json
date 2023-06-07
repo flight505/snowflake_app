@@ -1,0 +1,9 @@
+{
+    "column_name": "gl3cm",
+    "description": "Description: Indicates whether the patient has a Leukemia Lymphoblastic Lymphoma (LGL) tumor size of 3 cm or greater (Yes/No/Missing).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "9": "Missing"
+    }
+}

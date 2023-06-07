@@ -1,0 +1,9 @@
+{
+    "column_name": "t1221",
+    "description": "Description: t1221 column indicates the presence of the t(12;21) translocation, which is associated with childhood Leukemia, as determined by FISH/PCR analysis.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

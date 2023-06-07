@@ -1,0 +1,8 @@
+{
+    "column_name": "rndthboduringpegaspyn",
+    "description": "Description: Presence of symptomatic thrombotic episodes during PEG-ASP treatment for childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

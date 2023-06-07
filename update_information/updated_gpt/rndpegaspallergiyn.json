@@ -1,0 +1,8 @@
+{
+    "column_name": "rndpegaspallergiyn",
+    "description": "Description: Indicates if patient has had a previous allergic reaction to PEG-Asparaginase (1=Yes, allergic; 2=No, no reasons for exclusion).",
+    "details": {
+        "1": "Yes, allergic",
+        "2": "No, no reasons for exclusion"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "column_name": "p15resultgroupcl",
+    "description": "p15resultgroupcl: Result group from MRD PCR, indicating the percentage of leukemia cells in the sample (1: >=25%, 2: <25%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+    "details": {
+        "1": ">=25%",
+        "2": "<25%",
+        "3": ">=0.1% - <5%",
+        "4": "<0.1%",
+        "5": "<0.1%",
+        "8": "Sample not taken",
+        "9": "No marker found and/or monitoring not feasible"
+    }
+}

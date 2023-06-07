@@ -1,0 +1,9 @@
+{
+    "column_name": "saeabdominal",
+    "description": "Description: Saeabdominal column is related to abdominal problems leading to laparot, which is a form of cancer treatment for childhood leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

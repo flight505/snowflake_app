@@ -1,0 +1,9 @@
+{
+    "column_name": "saeliverdysf",
+    "description": "Description: Presence of liver dysfunction encephalopathy in patients with childhood leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

@@ -1,33 +1,42 @@
 #!/usr/bin/env python3
-
+# imports
 import base64
+import json
 import math
 from datetime import date
+import re
+from turtle import title
 from typing import List
-
+import openai
 import altair as alt
 import numpy as np
 import pandas as pd
 import snowflake.connector as sf
 import streamlit as st
+
+from st_pages import Page, add_page_title, show_pages
+
 import toml
+from sqlalchemy import create_engine
+from sqlalchemy.sql import text
+from sqlalchemy.engine.reflection import Inspector
+from sqlalchemy import inspect
+
+
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-
-
 from src.constants import *
-
 from src.utils import (
-    convert_df
+    convert_df,
+    login_credentials,
 )
-
 from src.datasets import (
+    fetch_hdm_mtx_data,
+    fetch_hdm_plasma_data,
     load_infusion_times,
     manipulate_hdm_mtx,
     manipulate_hdm_plasma,
     melt_manipulate_hdm_plasma,
-    merge_blood_samples_to_treatment,
-    remove_patients_with_duplicate_treatments,
 )
 from src.diagnostics import (
     DiagnoseTypes,
@@ -37,9 +46,6 @@ from src.diagnostics import (
 )
 from src.processing import (
     create_time_intervals,
-    custom_sort,
-    fetch_hdm_mtx_data,
-    fetch_hdm_plasma_data,
     load_blood_samples_by_treatment,
     preview_sample,
 )
@@ -52,260 +58,220 @@ from src.visualization import (
 )
 
 
-def initialize_app_info():
-    """Write Streamlit main panel and sidebar titles + tab info"""
-    st.set_page_config(
-        page_title="HDM database", page_icon="bar_chart", layout="wide"
-    )
-    st.subheader("Nordic HDM and Nopho database")
 
-@retry(wait=wait_exponential(multiplier=1, min=2, max=60), stop=stop_after_attempt(5))
-def connect_to_db(accnt, usr, pwd, rl, wh, db, sch):
-    """Connect to Snowflake database and return cursor"""
-    ctx = sf.connect(
-        account=accnt,
-        user=usr,
-        password=pwd,
-        role=rl,
-        warehouse=wh,
-        database=db,
-        schema=sch,
-    )
-    cs = ctx.cursor()
-    st.session_state['show_conn'] = cs
-    st.session_state['is_ready'] = True
-    return cs
+# 2. Constants
+openai.api_key = st.secrets['OPENAI_API_KEY']["key"]
 
 
-def main():
-    # Register your pages
-    pages = {
-        "Database frontend": page_first,
-        "Database backend": page_second,
-    }
+# Specify what pages should be shown in the sidebar, and what their titles and icons
+# should be
+show_pages(
+    [
+        Page("snowflake_app.py", "Nordic HDM database query", "💾"),
+        Page("src/diagnosis_page2.py", "Diagnosis", "🩺"),
+    ]
+)
+# Adds the title and icon to the current page
+add_page_title(page_title="Nordic HDM database",
+                page_icon="💊",
+                  layout="wide"
+                  )
+
+
+db_type = 'custom Snowflake'
+db_host = st.secrets["snowflake"]["account"]
+# db_port = st.secrets["snowflake"]["port"]
+db_user = st.secrets["snowflake"]["user"]
+db_password = st.secrets["snowflake"]["password"]
+db_name = st.secrets["snowflake"]["database"]
+db_schema = st.secrets["snowflake"]["schema"]
+db_warehouse = st.secrets["snowflake"]["warehouse"]
+db_role = st.secrets["snowflake"]["role"]
     
-
-    st.sidebar.title("Navigation")
-
-
-    # Widget to select your page, radio buttons
-    page = st.sidebar.radio("Select your page", tuple(pages.keys()))
-    st.sidebar.write("---")
-    pages[page]()
-
-
-def page_first():
-
-    with st.sidebar:
-        with st.expander("Database login"):
-            login_credentials()
+def main(engine):
     if 'is_ready' not in st.session_state:
         st.session_state['is_ready'] = False
-    
-    # when ready, show data, filter etc
-    if st.session_state['is_ready'] is True:
-        with st.sidebar:
+
+    if 'engine' not in st.session_state:
+        st.session_state['engine'] = engine
+
+    if 'inspector' not in st.session_state:
+        st.session_state['inspector'] = None
+
+    with st.sidebar:
+        st.sidebar.title("Navigation")
+        with st.expander("Database login"):
+            if st.session_state['engine'] is None:
+                st.session_state['engine'], inspector = login_credentials()
+                if st.session_state['engine'] is not None:
+                    st.session_state['is_ready'] = True
+                    st.session_state['inspector'] = inspector
+                st.divider()
+        if st.session_state['engine'] is not None and st.session_state['is_ready'] is True:
             st.write("🟢 Connected to database")
-            st.write("---")
-
-        # Fetch data from Snowflake
-        hdm_plasma_data = fetch_hdm_plasma_data(st.session_state['show_conn'])
-        hdm_mtx_data = fetch_hdm_mtx_data(st.session_state['show_conn'])
-    
-        # st.dataframe(hdm_plasma_data)
-        # st.dataframe(hdm_mtx_data)
-        hdm_plasma = manipulate_hdm_plasma(hdm_plasma_data)
-        hdm_mtx = manipulate_hdm_mtx(hdm_mtx_data)
-        infusion_times = load_infusion_times(hdm_mtx_data)
-        melt_hdm_plasma = melt_manipulate_hdm_plasma(hdm_plasma)
-        # st.write("HDM Plasma")
-        # st.dataframe(hdm_plasma)
-        with st.expander("HDM Plasma"):
-            st.dataframe(hdm_plasma)
-        with st.expander("HDM Mtx"):
-            st.dataframe(hdm_mtx)
-        with st.expander("Infusion times"):
-            st.dataframe(infusion_times)
-        with st.expander("Melted HDM Plasma"):
-            st.dataframe(melt_hdm_plasma)
-
-
-        def create_time_intervals_df(hdm_mtx, hdm_plasma, infusion_times):
-            time_intervals = create_time_intervals(hdm_plasma, infusion_times)
-            merged_df = (
-                pd.merge(hdm_mtx, time_intervals, on="NOPHO_NR", how="left")
-                .drop(columns=['INFNO_x'])
-                .rename(columns={'INFNO_y': 'INFNO'})
-            )
-            return merged_df
-
-        pivot_hdm_plasma = create_time_intervals_df(hdm_mtx, hdm_plasma, infusion_times)
-        
-        with st.expander("Time intervals - pivot_hdm_plasma"):
-            st.dataframe(pivot_hdm_plasma)
-            # Create the download link for the merged_df DataFrame
-            pivot_hdm_plasma_download_link = convert_df(pivot_hdm_plasma)
-            st.download_button(
-                label="Download pivot_hdm_plasma as CSV",
-                data=pivot_hdm_plasma_download_link,
-                file_name='pivot_hdm_plasma.csv',
-                mime='text/csv',
-            )
-       
-        samples_with_treatment_no = load_blood_samples_by_treatment(melt_hdm_plasma, infusion_times)
-
-
-        preview_sample(samples_with_treatment_no, label="Blood samples with treatment no", n_samples=100, replace=True)
-
-        def visualize_summary(diagnostics: List[DiagnoseTypes]):
-            st.altair_chart(visualize_summary_detection(diagnostics), use_container_width=True)
-
-        def visualize_diagnostic_samples(diagnostic_data: DiagnoseTypes):
-            st.header(diagnostic_data.name)
-            with st.expander("Visualize all samples"):
-                st.altair_chart(visualize_detected(diagnostic_data), use_container_width=True)
-
-        def visualize_diagnostic_positive_samples(
-            diagnostic_data: DiagnoseTypes, detected_patient_ids: List[str]
-        ):
-            with st.expander("Visualize all positive samples"):
-                st.altair_chart(
-                    visualize_detected_by_patient(diagnostic_data, detected_patient_ids),
-                    use_container_width=True,
-                )
-
-        def visualize_diagnostic_patient(
-            diagnostic_data: DiagnoseTypes, detected_patient_ids: List[str]
-        ):
-            with st.expander("Visualize samples for a specific patient"):
-                selected_patient_id = st.selectbox(
-                    "Choose a detected patient ID (you can paste the ID you need) : ",
-                    detected_patient_ids,
-                    key=f"{diagnostic_data.name}_patient_id_slider",
-                )
-                st.altair_chart(
-                    visualize_patient(diagnostic_data, selected_patient_id),
-                    use_container_width=True,
-                )
-
-        def generate_diagnostic_per_patient(
-            diagnostics: List[DiagnoseTypes],
-        ) -> pd.DataFrame:
-            all_dfs = (
-                pd.concat([d.data[[PATIENT_ID, DETECTION]] for d in diagnostics])
-                .groupby(PATIENT_ID)[DETECTION]
-                .agg("max")
-                .reset_index()
-                .rename(columns={DETECTION: "PHONOTYPE"})
-            )
-            all_dfs["PHONOTYPE"] = all_dfs["PHONOTYPE"].astype(int)
-            return all_dfs
-                
-            # Previews
-        preview_sample(
-            samples_with_treatment_no[samples_with_treatment_no[INFUSION_NO].notnull()],
-            "Preview random blood samples + treatment",
-        )
-
-        # If necessary, remove data from selected treatment number
-        selected_treatments_to_filter = st.multiselect(
-            "Select treatment no (INFNO) to filter by:", range(1, 9)
-        )
-        if len(selected_treatments_to_filter) == 0:
-            df = samples_with_treatment_no.copy()
         else:
-            selected_treatments_to_filter = set(selected_treatments_to_filter)
-            df = samples_with_treatment_no[    samples_with_treatment_no[INFUSION_NO].isin(selected_treatments_to_filter)
-            ].copy()
+            st.write("🔴 Not connected to database")
+            st.stop()
 
-        # Choose phenotype diagnostic to run
-        st.sidebar.markdown("<br/>", unsafe_allow_html=True)
-        st.sidebar.header("Configure diagnostics parameters")
-        selected_diagnostics = st.sidebar.multiselect(
-            "Choose the diagnostics you want to study",
-            options=range(0, len(DiagnosticClasses)),
-            format_func=lambda i: DiagnosticClasses[i].name,
+    if st.session_state.get('is_ready', False):
+        inspector = st.session_state['inspector']
+        
+        
+    st.session_state
+
+def execute_query(code, engine):
+    try:
+        df = pd.read_sql_query(sql=text(code), con=engine.connect())
+        st.write("## The results")
+        st.write(df)
+    except Exception as e:
+        st.error(f"An error occurred while executing the SQL query: {e}")
+        return False
+    return True
+
+# load txt file with column descriptions for nopho_all2008_table only
+with open("column_descriptions_hdm_mtx_table.txt", "r") as f:
+    column_descriptions = json.load(f)
+
+def process_text_in_chunks(text, openai_func, max_chunk_size=4096):
+    chunks = [text[i:i + max_chunk_size] for i in range(0, len(text), max_chunk_size)]
+    results = []
+
+    for chunk in chunks:
+        result = openai_func(chunk)
+        results.append(result)
+
+    return results
+
+def message_probability(message):
+    logits = np.array(message["logits"])
+    probabilities = np.exp(logits) / np.sum(np.exp(logits))
+    return probabilities.prod()
+    
+def generate_summarized_schema(table_names, column_names, column_descriptions):
+    doc = f"Total Tables: {len(table_names)}\n"
+    for table_name in table_names:
+        doc += f"Table: {table_name}\nColumns:\n"
+        for column_name in column_names[table_name]:
+            description = column_descriptions.get(table_name, {}).get(column_name, {}).get("description", "")
+            doc += f"{column_name} ({description})"
+            details = column_descriptions.get(table_name, {}).get(column_name, {}).get("details", None)
+            if details:
+                doc += " ["
+                for key, value in details.items():
+                    doc += f"{key}: {value}, "
+                doc = doc.strip(", ") + "]"
+            doc += ", "
+        doc = doc.strip(", ") + "\n"
+    
+    # Split the doc into smaller pieces if it's too long
+    max_token_length = 3500  # Adjust this value based on your use case
+    split_docs = [doc[i:i + max_token_length] for i in range(0, len(doc), max_token_length)]
+
+    return split_docs
+
+
+def generate_and_execute_query(user_request, engine):  # use the engine from the session state
+    engine = st.session_state.get('engine')
+    if engine is not None:
+        inspector = inspect(engine)
+        table_names = inspector.get_table_names(schema=st.session_state['schema'])
+    else:
+        st.error('Could not connect to the database.')
+        st.stop()
+
+    # create an empty dictionary to store the column names for each table
+    column_names = {}
+
+    # iterate through each table and get its column names
+    for table_name in table_names:
+        columns = inspector.get_columns(table_name)
+        column_names[table_name] = [column['name'] for column in columns]
+
+    # form an introspection doc
+    doc = f"""
+        AUTO-GENERATED DATABASE SCHEMA DOCUMENTATION\n
+        Total Tables: {len(table_names)}
+        """
+    for table_name in table_names:
+        doc += f"""
+        ---
+        Table Name: {table_name}\n
+        Columns:
+        """
+        for column_name in column_names[table_name]:
+            if table_name == 'nopho_all2008_table':
+                description = column_descriptions.get(table_name, {}).get(column_name, {}).get("description", "")
+                doc += f"{column_name} ({description})"
+                details = column_descriptions.get(column_name, {}).get("details", None)
+                if details:
+                    doc += " ["
+                    for key, value in details.items():
+                        doc += f"{key}: {value}, "
+                    doc = doc.strip(", ") + "]"
+                doc += ", "
+            else:
+                doc += ""
+
+        if table_name == 'nopho_all2008_table':
+            doc += "\n"
+
+    # Create a summarized schema
+    summarized_doc = generate_summarized_schema(table_names, column_names, column_descriptions)
+
+    intro = 'You are a helpful assistant. Your task is to complete a SQL query and provide the results.'
+    prompt_base = 'Write a SQL query for the following request: '
+    prompt_base += f'{user_request}.\n'
+    prompt_base += 'Follow these guidelines:\n'
+    prompt_base += '- Provide only SQL code, without comments or explanations.\n'
+    prompt_base += '- Always use table names in column references to avoid ambiguity.\n'
+    prompt_base += '- Use the Snowflake SQL dialect.\n'
+    prompt_base += '- Only use columns and tables mentioned in the doc below.\n'
+
+    # Send the request to the GPT-3.5-turbo model in a loop for each summarized_doc
+    responses = []
+    for doc in summarized_doc:
+        prompt = prompt_base + f'Documentation:\n{doc}\n'
+        prompt += 'Note: If the token size exceeds 4096, you made a mistake. Please reiterate the prompt.'
+
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": intro},
+                {"role": "user", "content": prompt}
+            ]
         )
+        choice = response['choices'][0]
+        responses.append((choice["message"]["content"], choice["finish_reason"]))
 
-        diagnostics = init_diagnostics(df, selected_diagnostics)
-        run_diagnostics(diagnostics)
+    # Choose the response with the highest probability
+    code = max(responses, key=lambda x: x[1])[0]
+    pretty_code = '```sql\n' + code + '\n```'
+    code = code.replace('\n', ' ')
 
-        if len(selected_diagnostics) != 0:
-            visualize_summary(diagnostics)
-            with st.expander("Check DME graphs"):
-                select_nopho_nr = st.selectbox(
-                    "Select patient ID",
-                    df.loc[df[P_CODE] == "NPU02739", PATIENT_ID].unique(),
-                )
-                st.plotly_chart(
-                    beta_visualize_dme(df, select_nopho_nr), use_container_width=True
-                )
-            phenotype_df = generate_diagnostic_per_patient(diagnostics)
-            preview_sample(phenotype_df, "Preview exported phenotype", 10, True)
-            st.markdown(
-                f"""
-            * Number of patients in diagnostics : {len(phenotype_df)}
-            * Number of patients with positive phenotype : {len(phenotype_df[phenotype_df['PHONOTYPE'] == 1])}
-            * Number of patients with negative phenotype : {len(phenotype_df[phenotype_df['PHONOTYPE'] == 0])}
-            """
-            )
-            # st.markdown(generate_download_link(phenotype_df), unsafe_allow_html=True)
+    with st.expander("See executed code"):
+        st.write(pretty_code)
+    with st.expander("See introspected BD structure"):
+        st.write(doc)
 
-            # Create the download link for the merged_df DataFrame
-            phenotype_df_download_link = convert_df(phenotype_df)
-            st.download_button(
-                label="Download data as CSV",
-                data=phenotype_df_download_link,
-                file_name='phenotype_df.csv',
-                mime='text/csv',
-            )
+    # Check for placeholders in the generated SQL query
+    placeholders = re.findall(r'\[.*?\]', code)
+    if placeholders:
+        st.warning("The generated SQL query contains placeholders. Please enter the required values.")
+        for placeholder in placeholders:
+            value = st.text_input(f"Enter the value for {placeholder}:")
+            code = code.replace(placeholder, value)
 
-            st.markdown("---")
+    return execute_query(code, engine)
 
-        for diagnostic_data in diagnostics:
-            visualize_diagnostic_samples(diagnostic_data)
-
-            detected_positive_patient_ids = diagnostic_data.get_detected_ids()
-            if len(detected_positive_patient_ids) == 0:
-                continue
-
-            visualize_diagnostic_positive_samples(
-                diagnostic_data, detected_positive_patient_ids
-            )
-            visualize_diagnostic_patient(diagnostic_data, detected_positive_patient_ids)
-            st.markdown("---")
-            
-def login_credentials():
-    account = st.text_input("Account", st.secrets["snowflake"]["account"])
-    user = st.text_input("User", st.secrets["snowflake"]["user"])
-    password = st.text_input("Password", st.secrets["snowflake"]["password"], type="password")
-    role = st.text_input("Role", st.secrets["snowflake"]["role"])
-    warehouse = st.text_input("Warehouse", st.secrets["snowflake"]["warehouse"])
-    db = st.text_input("Database", st.secrets["snowflake"]["database"])
-    schema = st.text_input("Schema", st.secrets["snowflake"]["schema"])
-
-    credentials = {
-        "account": account,
-        "user": user,
-        "password": password,
-        "role": role,
-        "warehouse": warehouse,
-        "db": db,
-        "schema": schema,
-    }
-
-    connect = st.button(
-        label="Connect to database",
-        on_click=connect_to_db,
-        args=(account, user, password, role, warehouse, db, schema)
-    )
-
-
-def page_second():
-    st.title("Backend - Snowflake")
-    # ...
-
+with st.form(key='my_form_to_submit'):
+    user_request = st.text_area("Natural language SQL query")
+    if submit_button := st.form_submit_button(label='Submit'):
+        engine = st.session_state.get('engine')
+        success = generate_and_execute_query(user_request, engine)
+        if not success:
+            st.write("Please submit a new query.")
 
 if __name__ == "__main__":
-    initialize_app_info()
-    main()
+    engine = None
+    main(engine)

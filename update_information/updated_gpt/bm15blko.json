@@ -1,0 +1,10 @@
+{
+    "column_name": "bm15blko",
+    "description": "Description: BM15-blast code indicating the amount of blasts in the peripheral blood of a child with Leukemia (0: missing, 1: <5(M1), 2: 5-<=25(M2), 3: >25(M3)).",
+    "details": {
+        "0": "missing",
+        "1": "<5(M1)",
+        "2": "5-<=25(M2)",
+        "3": ">25(M3)"
+    }
+}

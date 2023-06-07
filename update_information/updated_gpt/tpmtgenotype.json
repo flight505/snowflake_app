@@ -1,0 +1,10 @@
+{
+    "column_name": "tpmtgenotype",
+    "description": "Description: TPMT genotype on day 29 of childhood Leukemia cancer treatment, with values of 1 = Wild type, 2 = Heterozygous low active, 3 = Deficient, and 9 = Data missing.",
+    "details": {
+        "1": "Wild type",
+        "2": "Heterozygous low active",
+        "3": "Deficient",
+        "9": "Data missing"
+    }
+}

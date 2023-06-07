@@ -1,0 +1,9 @@
+{
+    "column_name": "saeanaphylaxis",
+    "description": "Description: SAE Anaphylaxis: Life-threatening allergic reaction (CTC Grade 4) to childhood leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "dnaindexyn",
+    "description": "Description: DNA-indexing performed to determine if a patient has childhood Leukemia?",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "column_name": "ethnicfa",
+    "description": "Description: Ethnicity of the father of a child with leukemia.",
+    "details": {
+        "1": "Nordic/Scandinavian (N/S)",
+        "2": "Other European/Caucasian(E/C)",
+        "3": "Asien",
+        "4": "Arab",
+        "5": "African",
+        "6": "American-white",
+        "7": "Amarican-black",
+        "8": "Others"
+    }
+}

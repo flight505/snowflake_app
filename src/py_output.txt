@@ -1,0 +1,142 @@
+Tables and their columns:
+NOPHO_NR: {"type":"FIXED","precision":38,"scale":0,"nullable":true}, {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+PATNUM: {"type":"FIXED","precision":38,"scale":0,"nullable":true}, {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+GUID: {"type":"TEXT","length":16777216,"byteLength":16777216,"nullable":true,"fixed":false}, {"type":"TEXT","length":16777216,"byteLength":16777216,"nullable":true,"fixed":false}
+HOSPITAL: {"type":"FIXED","precision":38,"scale":0,"nullable":true}, {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+SEX: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+INFNO: {"type":"FIXED","precision":38,"scale":0,"nullable":true}, {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MTX_INFDATE: {"type":"DATE","nullable":true}
+MTX_INF_START: {"type":"TIMESTAMP_NTZ","precision":0,"scale":9,"nullable":true}
+MTXDO: {"type":"REAL","nullable":true}
+MTX_10DO: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MTXDO_1: {"type":"REAL","nullable":true}
+AFVIG: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+PREHYD_DATA: {"type":"DATE","nullable":true}
+VOL_PHYD: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+WEIGHT: {"type":"REAL","nullable":true}
+HEIGHT: {"type":"REAL","nullable":true}
+BSA: {"type":"REAL","nullable":true}
+HYDR_VOL: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+HYDR_INC: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+HYDR_INC_DATE: {"type":"DATE","nullable":true}
+HYDR_INC_TIME: {"type":"TIMESTAMP_NTZ","precision":0,"scale":9,"nullable":true}
+HYDR_INC_VOL: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+ALAT_PRE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+PC_PRE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+P_PRE: {"type":"REAL","nullable":true}
+HB_PRE: {"type":"REAL","nullable":true}
+THR_PRE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+LEU_PRE: {"type":"REAL","nullable":true}
+NEU_PRE: {"type":"REAL","nullable":true}
+INFECT_PRE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+INFECT_POST: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+INF_POST_DATE: {"type":"DATE","nullable":true}
+MP6_CHANGE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY1: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY2: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY3: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY4: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY5: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_WHY6: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_PRE14: {"type":"REAL","nullable":true}
+MP6_PRE13: {"type":"REAL","nullable":true}
+MP6_PRE12: {"type":"REAL","nullable":true}
+MP6_PRE11: {"type":"REAL","nullable":true}
+MP6_PRE10: {"type":"REAL","nullable":true}
+MP6_PRE9: {"type":"REAL","nullable":true}
+MP6_PRE8: {"type":"REAL","nullable":true}
+MP6_PRE7: {"type":"REAL","nullable":true}
+MP6_PRE6: {"type":"REAL","nullable":true}
+MP6_PRE5: {"type":"REAL","nullable":true}
+MP6_PRE4: {"type":"REAL","nullable":true}
+MP6_PRE3: {"type":"REAL","nullable":true}
+MP6_PRE2: {"type":"REAL","nullable":true}
+MP6_PRE1: {"type":"REAL","nullable":true}
+MP6_DOSE0: {"type":"REAL","nullable":true}
+MP6_POST1: {"type":"REAL","nullable":true}
+MP6_POST2: {"type":"REAL","nullable":true}
+MP6_POST3: {"type":"REAL","nullable":true}
+MP6_POST4: {"type":"REAL","nullable":true}
+MP6_POST5: {"type":"REAL","nullable":true}
+MP6_POST6: {"type":"REAL","nullable":true}
+MP6_POST7: {"type":"REAL","nullable":true}
+MP6_POST8: {"type":"REAL","nullable":true}
+MP6_POST9: {"type":"REAL","nullable":true}
+MP6_POST10: {"type":"REAL","nullable":true}
+MP6_POST11: {"type":"REAL","nullable":true}
+MP6_POST12: {"type":"REAL","nullable":true}
+MP6_POST13: {"type":"REAL","nullable":true}
+MP6_POST14: {"type":"REAL","nullable":true}
+MP6_POST15: {"type":"REAL","nullable":true}
+MP6_POST16: {"type":"REAL","nullable":true}
+MP6_POST17: {"type":"REAL","nullable":true}
+MP6_POST18: {"type":"REAL","nullable":true}
+MP6_POST19: {"type":"REAL","nullable":true}
+MP6_POST20: {"type":"REAL","nullable":true}
+MP6_POST21: {"type":"REAL","nullable":true}
+MP6_POST_STOP: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_POST_WHY1: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_POST_WHY2: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_POST_WHY3: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_POST_WHY4: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+MP6_POST_WHY5: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+SULFO: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+INTRA_DATE: {"type":"DATE","nullable":true}
+INTRA_TIME: {"type":"TIMESTAMP_NTZ","precision":0,"scale":9,"nullable":true}
+INTRA_TYPE: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+INTRA_MTXDO: {"type":"REAL","nullable":true}
+FOLIN: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+FOLIN42: {"type":"REAL","nullable":true}
+FOLIN48: {"type":"REAL","nullable":true}
+FOLIN54: {"type":"REAL","nullable":true}
+FOLIN60: {"type":"REAL","nullable":true}
+FOLIN66: {"type":"REAL","nullable":true}
+FOLIN72: {"type":"REAL","nullable":true}
+FOLIN78: {"type":"REAL","nullable":true}
+FOLIN84: {"type":"REAL","nullable":true}
+FOLIN90: {"type":"REAL","nullable":true}
+FOLIN96: {"type":"REAL","nullable":true}
+FOLIN102: {"type":"REAL","nullable":true}
+FOLIN108: {"type":"REAL","nullable":true}
+FOLIN114: {"type":"REAL","nullable":true}
+FOLIN120: {"type":"REAL","nullable":true}
+FOLIN126: {"type":"REAL","nullable":true}
+FOLIN132: {"type":"REAL","nullable":true}
+FOLIN138: {"type":"REAL","nullable":true}
+ALAT_POST: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+P_POST: {"type":"REAL","nullable":true}
+HB_POST: {"type":"REAL","nullable":true}
+THR_POST: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+LEU_POST: {"type":"REAL","nullable":true}
+NEU_POST: {"type":"REAL","nullable":true}
+TRANSER: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+TRANSTH: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+TRANSCNS: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+TRANSTYP: {"type":"TEXT","length":16777216,"byteLength":16777216,"nullable":true,"fixed":false}
+TRANSTDA: {"type":"TIMESTAMP_NTZ","precision":0,"scale":9,"nullable":true}
+REMARK_H: {"type":"TEXT","length":16777216,"byteLength":16777216,"nullable":true,"fixed":false}
+M_ENTERED: {"type":"DATE","nullable":true}
+M_CHANGE: {"type":"DATE","nullable":true}
+PATNUMMTX: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+CPR: {"type":"FIXED","precision":38,"scale":0,"nullable":true}
+LNAME: {"type":"TEXT","length":16777216,"byteLength":16777216,"nullable":true,"fixed":false}
+FNAME: {"type":"REAL","nullable":true}
+PL_DATE: {"type":"DATE","nullable":true}
+PL_TIME: {"type":"TIMESTAMP_NTZ","precision":0,"scale":9,"nullable":true}
+PL_PC: {"type":"REAL","nullable":true}
+PL_MTX: {"type":"REAL","nullable":true}
+P_ENTERED: {"type":"DATE","nullable":true}
+P_CHANGE: {"type":"DATE","nullable":true}
+Traceback (most recent call last):
+  File "/Users/jesper/Projects/MTX/snowflake_app/src/get_schema.py", line 55, in <module>
+    cursor.execute(query_constraints)
+  File "/Users/jesper/miniforge3/envs/snowflake_db/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 839, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/Users/jesper/miniforge3/envs/snowflake_db/lib/python3.8/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/Users/jesper/miniforge3/envs/snowflake_db/lib/python3.8/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/jesper/miniforge3/envs/snowflake_db/lib/python3.8/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'NORDIC_HDM_AND_NOPHO_DATABASE.INFORMATION_SCHEMA.KEY_COLUMN_USAGE' does not exist or not authorized.

@@ -1,0 +1,8 @@
+{
+    "column_name": "extrcyjn",
+    "description": "Description: Indication of extra chemotherapy for patients with Leukemia at diagnosis (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

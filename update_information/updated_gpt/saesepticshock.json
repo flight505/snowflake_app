@@ -1,0 +1,9 @@
+{
+    "column_name": "saesepticshock",
+    "description": "Description: Presence of Septic Shock in patients with childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

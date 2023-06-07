@@ -1,0 +1,14 @@
+{
+    "column_name": "cytstgrp",
+    "description": "Description: Cytogenetic Stratifying Group indicating the presence of specific chromosomal changes related to childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "No Stratfying Change Detected",
+        "2": "11q23/MLL-rearrangements",
+        "3": "t(9;22)q(34;q11)/BCR-ABL = excluded",
+        "4": "t(1;19)(q23;p13)/E2A-PBX1",
+        "5": "Hypodiploidy (<45 chromosomes)",
+        "6": "dic(9;20)",
+        "7": "iAMPchr21",
+        "9": "not complete analysis"
+    }
+}

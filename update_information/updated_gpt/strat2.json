@@ -1,0 +1,11 @@
+{
+    "column_name": "strat2",
+    "description": "Strat2 column describes the stratification of patients after genetic analysis into NOPHO-2008 High Risk, NOPHO-2008 Non - High Risk, Insufficient data, and Excluded categories.",
+    "details": {
+        "0": "Insufficient data",
+        "1": "NOPHO-2008 Non - High Risk",
+        "2": "NOPHO-2008 Non - High Risk",
+        "3": "NOPHO-2008 High Risk",
+        "9": "Excluded"
+    }
+}

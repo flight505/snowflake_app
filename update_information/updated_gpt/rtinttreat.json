@@ -1,0 +1,10 @@
+{
+    "column_name": "rtinttreat",
+    "description": "Description: The rtinttreat column indicates the relative intention to treatment for childhood Leukemia, with options of Intention to cure by allogeneic stem cell transplantation (if donor available), Intention to cure by chemotherapy in CR2, Palliation, or Other intention.",
+    "details": {
+        "1": "Int. to cure by allo. SCT (if donor available)",
+        "2": "Int. to cure by chemotherapy in CR2",
+        "3": "Palliation",
+        "4": "Other intention"
+    }
+}

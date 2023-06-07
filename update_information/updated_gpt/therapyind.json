@@ -1,0 +1,9 @@
+{
+    "column_name": "therapyind",
+    "description": "Description: Induction therapy administered for childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "NOPHO-2008 ind. ther. with Prednisolone only",
+        "2": "NOPHO-2008 ind. ther. with Dexa. +/- pred-prephase",
+        "3": "Other"
+    }
+}

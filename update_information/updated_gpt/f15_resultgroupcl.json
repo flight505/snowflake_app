@@ -1,0 +1,13 @@
+{
+    "column_name": "f15_resultgroupcl",
+    "description": "f15_resultgroupcl: Result of MRD flow test for childhood Leukemia, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+    "details": {
+        "1": ">=25%",
+        "2": "<25%",
+        "3": ">=0.1% - <5%",
+        "4": "<0.1%",
+        "5": "<0.1%",
+        "8": "Sample not taken",
+        "9": "No marker found and/or monitoring not feasible"
+    }
+}

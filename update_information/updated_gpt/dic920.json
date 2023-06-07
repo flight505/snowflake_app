@@ -1,0 +1,9 @@
+{
+    "column_name": "dic920",
+    "description": "The dic920 column indicates the presence of a dicentric chromosome 9 and 20, which is associated with childhood Leukemia. The column contains three values: 'Yes', 'No', and 'Not analysed'.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Not analysed"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "parents",
+    "description": "Description: Written consent given by parents for registration and participation in childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "written consent given",
+        "2": "no written consent=excluded"
+    }
+}

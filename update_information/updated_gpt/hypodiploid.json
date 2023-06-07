@@ -1,0 +1,10 @@
+{
+    "column_name": "hypodiploid",
+    "description": "Description: Hypodiploidy is a measure of the number of chromosomes in a cell, with 'Yes <44' indicating high-risk (HR), 'Yes, 44' indicating intermediate-risk (IR), 'No>/=45' indicating standard-risk (SR), and 'Not analysed' indicating not SR.",
+    "details": {
+        "1": "Yes <44",
+        "2": "yes,44",
+        "3": "No>/=45",
+        "9": "Not analysed"
+    }
+}

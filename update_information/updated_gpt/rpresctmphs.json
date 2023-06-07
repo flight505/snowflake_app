@@ -1,0 +1,9 @@
+{
+    "column_name": "rpresctmphs",
+    "description": "Description: Rel. Stat. pre-allo SCT morphological status, with 1 indicating <5(M1), 2 indicating 5-25(M2), and 3 indicating >25(M3).",
+    "details": {
+        "1": "<5(M1)",
+        "2": "5-25(M2)",
+        "3": ">25(M3)"
+    }
+}

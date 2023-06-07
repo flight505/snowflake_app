@@ -1,0 +1,9 @@
+{
+    "column_name": "remphothr",
+    "description": "Description: Relative early response morphological other protein response (remphothr) to childhood leukemia cancer treatment, categorized as <5(M1), 5-25(M2), and >25(M3).",
+    "details": {
+        "1": "<5(M1)",
+        "2": "5-25(M2)",
+        "3": ">25(M3)"
+    }
+}

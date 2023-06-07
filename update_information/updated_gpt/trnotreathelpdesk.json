@@ -1,0 +1,9 @@
+{
+    "column_name": "trnotreathelpdesk",
+    "description": "Description: Indicates whether a help-desk was consulted when a patient was not treated according to the intended protocol for childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Unknown"
+    }
+}

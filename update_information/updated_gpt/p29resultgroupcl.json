@@ -1,0 +1,13 @@
+{
+    "column_name": "p29resultgroupcl",
+    "description": "p29resultgroupcl: Result group from MRD PCR day 29, indicating the percentage of leukemia cells present in the sample (1: >=25%, 2: >=5%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+    "details": {
+        "1": ">=25%",
+        "2": ">=5%",
+        "3": ">=0.1% - <5%",
+        "4": "<0.1%",
+        "5": "<0.1%",
+        "8": "Sample not taken",
+        "9": "No marker found and/or monitoring not feasible"
+    }
+}

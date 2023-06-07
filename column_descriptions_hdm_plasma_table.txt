@@ -1,0 +1,73 @@
+{
+    "hdm_plasma_table": {
+        "nopho_nr": {
+            "description": "Patient id number",
+            "details": {
+                "number": "Patient id number"
+            }
+        },
+        "patnum": {
+            "description": "patnum"
+        },
+        "guid": {
+            "description": "guid"
+        },
+        "patnummtx": {
+            "description": "patnummtx"
+        },
+        "cpr": {
+            "description": "Patients CRP number",
+            "details": {
+                "number": "Patients CRP number"
+            }
+        },
+        "infno": {
+            "description": "No. of MTX infusion",
+            "details": {
+                "number 1-8": "No. of MTX infusion"
+            }
+        },
+        "hospital": {
+            "description": "Hospital",
+            "details": {
+                "number": "Hospital"
+            }
+        },
+        "lname": {
+            "description": "Last name",
+            "details": {
+                "string": "Last name"
+            }
+        },
+        "fname": {
+            "description": "First name",
+            "details": {
+                "string": "First name"
+            }
+        },
+        "pl_date": {
+            "description": "Date for this blood sample",
+            "details": {
+                "date": "Date for this blood sample"
+            }
+        },
+        "pl_time": {
+            "description": "pl_time"
+        },
+        "pl_pc": {
+            "description": "pl_pc"
+        },
+        "pl_mtx": {
+            "description": "concentration of mtx in blood sample",
+            "details": {
+                "number": "concentration of mtx in blood sample"
+            }
+        },
+        "p_entered": {
+            "description": "p_entered"
+        },
+        "p_change": {
+            "description": "p_change"
+        }
+    }
+}

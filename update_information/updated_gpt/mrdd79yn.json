@@ -1,0 +1,9 @@
+{
+    "column_name": "mrdd79yn",
+    "description": "Description: MRD day 79 diagnosis (Yes/No/Unknown).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "9": "Unknown"
+    }
+}

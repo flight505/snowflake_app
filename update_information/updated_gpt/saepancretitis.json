@@ -1,0 +1,9 @@
+{
+    "column_name": "saepancretitis",
+    "description": "Description: Presence of symptomatic pancretitis (CTC 2,3,4) in childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

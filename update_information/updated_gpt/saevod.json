@@ -1,0 +1,9 @@
+{
+    "column_name": "saevod",
+    "description": "Description: Saevod column indicates whether a patient has Veno-occlusive disease, a complication of childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

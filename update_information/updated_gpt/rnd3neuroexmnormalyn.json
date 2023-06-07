@@ -1,0 +1,8 @@
+{
+    "column_name": "rnd3neuroexmnormalyn",
+    "description": "Description: Indicates whether the third neurological exam was normal (Yes/No).",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "column_name": "monstatus",
+    "description": "Description: Monstatus column indicates the monitoring status of childhood Leukemia cancer treatment, with values of 1 (Not monitored), 2 (Monitored, under correction), 3 (Monitored, complete), and 4 (Excluded).",
+    "details": {
+        "1": "Not monitored",
+        "2": "Monitored, under correction",
+        "3": "Monitored, complete",
+        "4": "Excluded"
+    }
+}

@@ -9,19 +9,49 @@ from joblib import dump
 
 from src.constants import *
 
+def fetch_hdm_plasma_data(_engine):
+    query = """
+    SELECT *
+    FROM hdm_plasma_table
+    """
+    try:
+        data = pd.read_sql(query, _engine)
+        data.columns = data.columns.str.upper() 
+    except Exception as e:
+        st.error(f'Error fetching HDM_PLASMA data: {e}')
+        return None
+
+    return data
+
+
+def fetch_hdm_mtx_data(_engine):
+    query = """
+    SELECT *
+    FROM hdm_mtx_table
+    """
+    try:
+        data = pd.read_sql(query, _engine)
+        data.columns = data.columns.str.upper() 
+    except Exception as e:
+        st.error(f'Error fetching HDM_MTX data: {e}')
+        return None
+
+    return data
 
 def manipulate_hdm_plasma(df):
     """Manipulate hdm_plasma_table DataFrame"""
     # drop rows with no PL_DATE or PL_TIME
+    df['PL_DATE'] = pd.to_datetime(df['PL_DATE'])
+    df['PL_TIME'] = pd.to_datetime(df['PL_TIME'])
     df = df.dropna(subset=['PL_DATE', 'PL_TIME'])
     # combine PL_DATE and PL_TIME columns into a single datetime column
-    df['PL_DATE'] = (
-        df['PL_DATE'].apply(lambda x: x.strftime('%m/%d/%Y'))
-        + " "
-        + df['PL_TIME'].apply(lambda x: x.strftime('%H:%M:%S'))
-    )
+    # df['PL_DATE'] = (
+    #     df['PL_DATE'].apply(lambda x: x.strftime('%m/%d/%Y'))
+    #     + " "
+    #     + df['PL_TIME'].apply(lambda x: x.strftime('%H:%M:%S'))
+    # )
 
-    df.insert(9, 'PL_DATETIME', pd.to_datetime(df['PL_DATE'], format="%m/%d/%Y %H:%M:%S"))
+    # df.insert(9, 'PL_DATETIME', pd.to_datetime(df['PL_DATE'], format="%m/%d/%Y %H:%M:%S"))
     df = df.drop(['PL_TIME'], axis=1)
     df = df.drop(['PL_DATE'], axis=1)
     df[INFUSION_NO] = df[INFUSION_NO].astype(str)
@@ -40,16 +70,19 @@ def melt_manipulate_hdm_plasma(df):
 def manipulate_hdm_mtx(df):
     """Load file with infusion times"""
     # drop rows with no PL_DATE or PL_TIME
+    
+    df[INF_STARTDATE] = pd.to_datetime(df[INF_STARTDATE])
+    df[INF_STARTHOUR] = pd.to_datetime(df[INF_STARTHOUR])
     df = df.dropna(subset=[INF_STARTDATE, INF_STARTHOUR])
 
     # combine PL_DATE and PL_TIME columns into a single datetime column
-    df[INF_STARTDATE] = (
-        df[INF_STARTDATE].apply(lambda x: x.strftime('%m/%d/%Y'))
-        + " "
-        + df[INF_STARTHOUR].apply(lambda x: x.strftime('%H:%M:%S'))
-    )    
+    # df[INF_STARTDATE] = (
+    #     df[INF_STARTDATE].apply(lambda x: x.strftime('%m/%d/%Y'))
+    #     + " "
+    #     + df[INF_STARTHOUR].apply(lambda x: x.strftime('%H:%M:%S'))
+    # )    
 
-    df.insert(9, 'INF_START_DATETIME', pd.to_datetime(df[INF_STARTDATE], format="%m/%d/%Y %H:%M:%S"))
+    # df.insert(9, 'INF_START_DATETIME', pd.to_datetime(df[INF_STARTDATE], format="%m/%d/%Y %H:%M:%S"))
     df = df.drop([INF_STARTHOUR], axis=1)
     df = df.drop([INF_STARTDATE], axis=1)
     df[INFUSION_NO] = df[INFUSION_NO].astype(str)
@@ -89,14 +122,12 @@ def remove_patients_with_duplicate_treatments(
         s.split("_")[0]
         for s in count_treatment_per_id[count_treatment_per_id > 1].index.values
     }
-    if len(ids_with_duplicate_treatments) != 0:
-       st.warning(
-           f"Patients have duplicate number treatments in infusion times "
-           f"and were removed: {ids_with_duplicate_treatments}"
-       )
+    if ids_with_duplicate_treatments:
+        st.warning(
+            f"Patients have duplicate number treatments in infusion times "
+            f"and were removed: {ids_with_duplicate_treatments}"
+        )
     return df[~df[PATIENT_ID].isin(ids_with_duplicate_treatments)]
-
-# df_mtx = load_hdm_mtx('data/not_used/HDM_Torben/HDM_MTX.xlsx')
 
 
 def merge_blood_samples_to_treatment(samples_df, infusion_times_df):

@@ -1,0 +1,8 @@
+{
+    "column_name": "withdrsc",
+    "description": "Description: Indicates whether a participant was withdrawn from the study due to a protocol violation (2) or not (1).",
+    "details": {
+        "1": "not withdrawn (default)",
+        "2": "withdrawn by study chair (excluded protocol violation)"
+    }
+}

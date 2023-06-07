@@ -1,0 +1,2793 @@
+{
+    "nopho_table": [
+        {
+            "column_name": "cr1_phase",
+            "description": "Description: The cr1_phase column indicates the phase of treatment for childhood Leukemia cancer, with values ranging from 'd29' to 'User'.",
+            "details": {
+                "1": "d29",
+                "2": "post A",
+                "3": "post B",
+                "4": "post C",
+                "5": "No CR1",
+                "10": "CNS missing",
+                "11": "BM missing",
+                "12": "CR1 not found",
+                "13": "Not B-pr or Tcell",
+                "99": "User"
+            }
+        },
+        {
+            "column_name": "rdbmblast3",
+            "description": "rdbmblast3: Relative Blast in Bone Marrow at time of relapse2 (M1: <5, M2: 5-25, M3: >25).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "p92resultgroupcl",
+            "description": "Description: p92resultgroupcl: PCR day 92 result for minimal residual disease (MRD) in childhood Leukemia.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "PPriAResultGroup",
+            "description": "Description: PPriAResultGroup column indicates the percentage of leukemia cells in a patient's sample, ranging from greater than or equal to 25%, less than 25%, greater than or equal to 0.1% to less than 5%, less than 0.1%, no marker found and/or monitoring not feasible.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rndcompl6mpyn",
+            "description": "Description: Indicates whether a patient has completed a 6MP study according to protocol for childhood Leukemia treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "F29_ResultGroup",
+            "description": "F29_ResultGroup: Measurement of minimal residual disease (MRD) flow on day 29 of leukemia treatment.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "strat5",
+            "description": "Strat5 column indicates the final stratification of childhood Leukemia cancer treatment after day 79, with values ranging from 0 (Insufficient data) to 9 (Excluded).",
+            "details": {
+                "0": "Insufficient data",
+                "1": "NOPHO-2008 Standard Risk",
+                "2": "NOPHO-2008 Intermediate Risk",
+                "5": "NOPHO-2008 High Rrisk chemo",
+                "6": "NOPHO-2008 High Risk SCTCR1",
+                "7": "Event",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "rndbmperfd92yn",
+            "description": "Description: Indicates whether Bone Marrow was performed on day 92 (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "remphra1r",
+            "description": "Description: Relative early response morphological Ralle A1 response in childhood leukemia treatment (M1: <5, M2: 5-25, M3: >25).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "sex",
+            "description": "Description: Gender of patient (Male/Female) in relation to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Male",
+                "2": "Female"
+            }
+        },
+        {
+            "column_name": "remphn15r",
+            "description": "The remphn15r column indicates the response of a patient to leukemia treatment on day 15, with 1 being <5 (M1), 2 being 5-25 (M2), and 3 being >25 (M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "bmt1shor",
+            "description": "Description: BMT1 Type CR-1-short, a type of leukemia cancer treatment involving chemo, CR-1 MFD1 (matched family donor), CR-1 ABMT1 (autolog), CR-1 MUD1 (matched unrelated donor), CR-1 PBSC1 (peripheral stem cell), or BMT1-Donor unknown.",
+            "details": {
+                "0": "chemo",
+                "2": "CR-1 MFD1 (matched family donor)",
+                "3": "CR-1 ABMT1 (autolog)",
+                "4": "CR-1 MUD1 (matched unrelated donor)",
+                "5": "CR-1 PBSC1  (peripheral stem cell)",
+                "9": "BMT1-Donor unknown"
+            }
+        },
+        {
+            "column_name": "saeotheryn",
+            "description": "Description: Severe neurotoxicity related to childhood Leukemia cancer treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rndcongcnsnotacceptyn",
+            "description": "Description: Indicates whether a congenital CNS anomaly is accepted for childhood Leukemia cancer treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rdcrsgroup",
+            "description": "Description: The rdcrsgroup column contains four categories (S1, S2, S3, S4) that are used to classify the treatment of childhood Leukemia.",
+            "details": {
+                "1": "S1",
+                "2": "S2",
+                "3": "S3",
+                "4": "S4"
+            }
+        },
+        {
+            "column_name": "f29_resultgroupcl",
+            "description": "f29_resultgroupcl: MRD flow result on day 29, indicating the percentage of leukemia cells present (1: \u226525%, 2: \u22655%, 3: \u22650.1%-<5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found/monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "lastfust",
+            "description": "Description: Status/Terapi last FU1.2002 indicating the outcome of childhood Leukemia cancer treatment (Early, Induction Death, Resistant disease CR on non-NOPHO therapy, Relapsed, SMN, etc).",
+            "details": {
+                "0": "Early (no CR1 yet)",
+                "1": "Induction Death",
+                "2": "Resistant disease CR on non-NOPHO therapy, alive",
+                "3": "Resistand disease-CR on non-NOPHO therapy then death",
+                "4": "Alive in CR1 (CCR)",
+                "5": "Relapsed, alive with disease",
+                "6": "Relapsed, alive in CR>/=2",
+                "7": "Dead after relapse(s)",
+                "8": "SMN alive with disease",
+                "9": "SMN alive in CR>/=2",
+                "10": "Dead after SMN",
+                "11": "Dead in CR1 (DCR1)"
+            }
+        },
+        {
+            "column_name": "rnd3extsteroidyn",
+            "description": "Description: Indicates whether a patient received an additional glucocorticoid during the third round of treatment for childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "F79_ResultGroup",
+            "description": "F79_ResultGroup: Result of MRD flow on day 79, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "p15resultgroupcl",
+            "description": "p15resultgroupcl: Result group from MRD PCR, indicating the percentage of leukemia cells in the sample (1: >=25%, 2: <25%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rndrand3consent",
+            "description": "Description: Indicates whether written consent was obtained for Randomization 3 of childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Writen consent obtained",
+                "2": "No writen consent = excluded"
+            }
+        },
+        {
+            "column_name": "cns3type",
+            "description": "Description: Column indicating presence of CNS3 (Central Nervous System) involvement in childhood Leukemia treatment, with values of 1 (only cells in CSF), 2 (cranial nerve palsy), 3 (mass on MRI (CNS3c)), 4 (retinal involvement (CNS3e)), and 5 (combinations of 1-4).",
+            "details": {
+                "1": "only cells in CSF",
+                "2": "cranial nerve palsy",
+                "3": "mass on MRI (CNS3c)",
+                "4": "retinal involvement (CNS3e)",
+                "5": "combinations of 1-4"
+            }
+        },
+        {
+            "column_name": "trunk_erw_asp",
+            "description": "Description: Indicates whether Erwinia-Asp. was truncated in the treatment of childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "f92_resultgroupcl",
+            "description": "f92_resultgroupcl: Result of MRD FLOW test on day 92, with values ranging from >=25%, >=5%, >=0.1% - <5%, <0.1%, <0.1%, Sample not taken, and No marker found and/or monitoring not feasible.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "tpmterytransf",
+            "description": "Description: TPMT erythrocytes transfusion on day 29 (Yes/No/Not available).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Not available"
+            }
+        },
+        {
+            "column_name": "rectyp1",
+            "description": "Description: rectyp1 column indicates the type of resistant disease in childhood Leukemia cancer treatment, with 1=BM, 2=CNS, 3=TESTIS, 4=BM+CNS, 5=BM+T, 6=CNS+T, 7=BM+CNS+T, 8=Other site(s), 15=BM+other site, 18=BM+PL+AS, 21=CNS+MED.MASS.",
+            "details": {
+                "1": "1=BM",
+                "2": "2=CNS",
+                "3": "3=TESTIS",
+                "4": "4=BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        {
+            "column_name": "remrdnexr",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Nopho extra response.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "rndpegaspallergiyn",
+            "description": "Description: Indicates if patient has had a previous allergic reaction to PEG-Asparaginase (1=Yes, allergic; 2=No, no reasons for exclusion).",
+            "details": {
+                "1": "Yes, allergic",
+                "2": "No, no reasons for exclusion"
+            }
+        },
+        {
+            "column_name": "saehypertension",
+            "description": "Description: Hypertensive crisis related to childhood Leukemia cancer treatment (Yes/No/Remark).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "reglasar",
+            "description": "Description: Reglasar column contains hospital numbers and corresponding hospital names for childhood Leukemia cancer treatment.",
+            "details": {
+                "1010012": "S:t Eriks Sjukhus",
+                "1010013": "Sabbatsbergs Sjukhus",
+                "1011001": "Karolinska Sjukhuset-Centra",
+                "1011002": "Huddinge",
+                "1012001": "Uppsala-UAS-Centra",
+                "1013010": "Eskilstuna",
+                "1013011": "Nyk\u00f6ping",
+                "1021001": "Link\u00f6ping-Centra",
+                "1021013": "Norrk\u00f6ping-Vrinnevi",
+                "1022010": "J\u00f6nk\u00f6ping-Ryhov",
+                "1023010": "V\u00e4xj\u00f6",
+                "1024010": "V\u00e4stervik",
+                "1025010": "Kalmar",
+                "1026010": "Visby",
+                "1027010": "Karlskrona",
+                "1028010": "Kristianstad",
+                "1030001": "Malm\u00f6-MAS-Centra",
+                "1041001": "Lund-Centra",
+                "1041012": "Helsingborg",
+                "1042010": "Halmstad",
+                "1051001": "G\u00f6teborg-(Sahlgrenska&DrottningSilvias)-Centra",
+                "1051010": "Uddevalla",
+                "1051013": "Trollh\u00e4ttan-N\u00c4L",
+                "1051014": "Bor\u00e5s",
+                "1053014": "Sk\u00f6vde",
+                "1054010": "Karlstad",
+                "1055010": "\u00d6rebro",
+                "1056010": "V\u00e4ster\u00e5s",
+                "1057010": "Falun",
+                "1057011": "Mora lasarett",
+                "1061010": "G\u00e4vle",
+                "1061012": "Hudiksvall",
+                "1062010": "Sundsvall",
+                "1062011": "\u00d6rnsk\u00f6ldsvik",
+                "1062012": "H\u00e4rn\u00f6sand",
+                "1062013": "Sollefte\u00e5",
+                "1063010": "\u00d6stersund",
+                "1064001": "Ume\u00e5-Centra",
+                "1064010": "Skellefte\u00e5",
+                "1065012": "G\u00e4llivare",
+                "1065015": "Kiruna",
+                "1065016": "Sunderby Boden-Lule\u00e5",
+                "1180101": "Copenhagen-Rikshospitalet-Centra",
+                "1180110": "Herlev-Vuxenmedicin-Centra",
+                "1180111": "Glostrup",
+                "1180112": "Hvidovre",
+                "1180201": "Odense-Centra",
+                "1180301": "\u00c5lborg-Aalborg-Centra",
+                "1180401": "\u00c5rhus-Aarhus-Skejby-Centra",
+                "1280101": "Oslo-RH-Centra",
+                "1280201": "Olso-Ullev\u00e5l-Centra",
+                "1280211": "Vest-Agder",
+                "1280212": "T\u00f6nsberg",
+                "1280213": "Porsgrunn",
+                "1280214": "Drammen",
+                "1280215": "Hamar",
+                "1280216": "Lillehammar",
+                "1280217": "Elverum",
+                "1280301": "Bergen-Centra",
+                "1280311": "Stavanger",
+                "1280401": "Trondheim-Centra",
+                "1280411": "\u00c5lesund",
+                "1280501": "Troms\u00f6-Centra",
+                "1280511": "Bod\u00f6",
+                "1380101": "Helsinki-Helsingfors-Centra",
+                "1380111": "Lappeenranta",
+                "1380112": "Jorvi",
+                "1380113": "Hyvink\u00e4\u00e4",
+                "1380114": "Tammisaari",
+                "1380115": "Kuusankoski",
+                "1380116": "Porvoo",
+                "1380201": "Turku-\u00c5bo-Centra",
+                "1380211": "Pori",
+                "1380301": "Oulu-Ule\u00e5borg-Centra",
+                "1380311": "Rovaniemi",
+                "1380312": "Kemi",
+                "1380313": "Kokkola",
+                "1380401": "Tampere-Tammerfors-Centra",
+                "1380411": "Lahti",
+                "1380412": "Sein\u00e4joki",
+                "1380413": "H\u00e4meenlinna",
+                "1380414": "Vaasa",
+                "1380501": "Kuopio-Centra",
+                "1380511": "Jyv\u00e4skyl\u00e4",
+                "1380512": "Mikkeli",
+                "1380513": "Joensuu",
+                "1380514": "Savonlinna",
+                "1480101": "Reyjkjavik-Centra",
+                "1580101": "Tallinn-Estland-Centra",
+                "1580102": "Tartu-Estland-Centra",
+                "1680101": "Riga-Lettland-Centra",
+                "1780101": "Vilnius-Litauen",
+                "1780102": "Kaunas-Litauen",
+                "1880101": "B01 Gent",
+                "1880102": "B02 Li\u00e8ge",
+                "1880103": "B03 Leuven",
+                "1880104": "B04 Bruxelles-UZ",
+                "1880105": "B05 Bruxelles-HUDERF",
+                "1880106": "B06 Montegn\u00e9e",
+                "1880107": "B07 Bruxelles-UCL",
+                "1980101": "Amsterdam-VU",
+                "1980102": "Amsterdam-AMC",
+                "1980103": "Rotterdam-Erasmus",
+                "1980104": "Utrecht",
+                "1980105": "Leiden",
+                "1980106": "Nijmegen",
+                "1980107": "Groningen",
+                "1980108": "Princess Maxima Centre",
+                "2580101": "Hong Kong-Centra",
+                "2580102": "Queen Mary Hospital",
+                "2580103": "Prince of Wales Hospital",
+                "3080101": "Ruth Rappaport Childrens Hospital",
+                "3080102": "Schnider Childrens Medical Center",
+                "3080103": "The Chaim Sheba Medical Center",
+                "3080104": "IL01 Ruth-Rambam",
+                "3080105": "IL02 Schnider",
+                "3080106": "IL03 Chaim Sheba",
+                "3080107": "IL04 Hadassah Hebrew University Hospital",
+                "3080108": "IL05 Sourasky (Ichilov Tel Aviv medical center)",
+                "3080109": "IL06 Soroka",
+                "3080110": "IL07 Bnai-Zion",
+                "3480010": "Hospital Universitario Miguel Servet",
+                "3480021": "Hospital Universitario La Paz",
+                "3480022": "Hospital Universitario Gregorio Mara\u00f1\u00f3n",
+                "3480023": "Hospital Ni\u00f1o Jesus Madrid",
+                "3480030": "hospital universitario cruces",
+                "3480040": "Hospital Universitario Virgen del Roc\u00edo",
+                "3480050": "Hospital de la Santa Creu i Sant Pau",
+                "3480051": "Hospital Vall d\u00b4Hebron",
+                "3480052": "Hospital Sant Joan de D\u00e9u",
+                "3480060": "Hospital Regional Universitario de M\u00e1laga (Salamanca)",
+                "3480070": "Hospital Universitari i Polit\u00e8cnic la Fe",
+                "3480071": "Hospital General Universitario de Alicante",
+                "3480072": "Hospital Cl\u00ednico Universitario de Valencia",
+                "3480080": "Hospital Cl\u00ednico Universitario de Santiago",
+                "3481000": "Sociedad Espa\u00f1ola de Hematolog\u00eda y Oncolog\u00eda Pedi\u00e1tricas",
+                "3481001": "Hospital Universitario Son Espases",
+                "3481002": "Hospital Materno Infantil, Complejo Hospitalario University",
+                "3481100": "Hospital Clinic Universitario Virgen de la Arrixaca",
+                "3680101": "Semmelweis University",
+                "3680102": "National Insititute of Clinical Neurosciences",
+                "4480010": "Alder Hey Childrens NHS Foundation Trust Liverpool",
+                "4480101": "London",
+                "4480102": "Manchester",
+                "4480103": "Liverpool",
+                "4480104": "Nottingham",
+                "4480105": "Bristol",
+                "4580131": "Edinburgh",
+                "4580141": "Glasgow",
+                "4910101": "T\u00fcbingen hospital",
+                "9999999": "Not Defined"
+            }
+        },
+        {
+            "column_name": "previouscancer",
+            "description": "Description: This column indicates whether the patient has had a previous cancer diagnosis (0 = no previous cancer, 1 = previous cancer excluded).",
+            "details": {
+                "0": "no previous cancer",
+                "1": "previous cancer=excluded"
+            }
+        },
+        {
+            "column_name": "bm29blko",
+            "description": "bm29blko column: BM29-blast code indicating the amount of blasts in the peripheral blood of a child with Leukemia (M1: <5%, M2: 5-<=25%, M3: >25%).",
+            "details": {
+                "0": "missing",
+                "1": "<5(M1)",
+                "2": "5-<=25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "dic920",
+            "description": "The dic920 column indicates the presence of a dicentric chromosome 9 and 20, which is associated with childhood Leukemia. The column contains three values: 'Yes', 'No', and 'Not analysed'.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "paftcresultgroupcl",
+            "description": "Description: paftcresultgroupcl: Result of MRD PCR aft C, indicating the percentage of leukemia cells present in the sample (1: \u226525%, 2: \u22655%, 3: \u22650.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "saecomma",
+            "description": "Description: saecomma column indicates whether a patient with childhood Leukemia has responded positively (Yes) or negatively (No) to treatment, with an optional remark.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "secondevent",
+            "description": "Description: Outcome of long-term follow-up of childhood Leukemia treatment, including CR2, Death in aplasia during re-induction, RD, Relapse, Death in CR2, and SMN.",
+            "details": {
+                "0": "CR2",
+                "1": "Death in aplasia during re-induction",
+                "2": "RD",
+                "3": "Relapse",
+                "4": "Death in CR2",
+                "5": "SMN"
+            }
+        },
+        {
+            "column_name": "mllor11q23",
+            "description": "The mllor11q23 column indicates whether a patient has a high-risk (HR) or low-risk (not HR) 11q23 FISH or Southern Blot result.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "deadrel",
+            "description": "Description: Column 'deadrel' indicates the cause of death related to childhood Leukemia treatment, with values of '1' for Disease related death, '2' for Therapy related death, '3' for Disease and Therapy related death, and '4' for Unknown.",
+            "details": {
+                "1": "Disease related death",
+                "2": "Therapy related death",
+                "3": "Disease and therapy related death",
+                "4": "Unknown"
+            }
+        },
+        {
+            "column_name": "strat4",
+            "description": "Strat4 column is a stratification of patients based on their response to treatment on day 29, with 0 indicating insufficient data, 1 indicating NOPHO-2008 Standard Risk, 2 indicating NOPHO-2008 Intermediate Risk, 5 indicating NOPHO-2008 High Risk chemo, 6 indicating NOPHO-2008 High Risk SCTCR1, and 9 indicating exclusion.",
+            "details": {
+                "0": "Insufficient data",
+                "1": "NOPHO-2008 Standard Risk",
+                "2": "NOPHO-2008 Intermediate Risk",
+                "5": "NOPHO-2008 High Risk chemo",
+                "6": "NOPHO-2008 High Risk SCTCR1",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "cnsstatus",
+            "description": "Description: The cnsstatus column contains information about the presence of leukemia cells in the cerebral spinal fluid (CSF) of patients with childhood Leukemia cancer, according to the 2008 protocol.",
+            "details": {
+                "1": "CNS1",
+                "2": "CNS2",
+                "3": "CNS3",
+                "9": "data missing"
+            }
+        },
+        {
+            "column_name": "f79_resultgroupcl",
+            "description": "The f79_resultgroupcl column indicates the result of the MRD flow test on day 79 of childhood Leukemia cancer treatment, with values ranging from '>=25%' to '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rndanydepocyte",
+            "description": "Description: Indicates if the patient was treated with i.t. DepoCyte at any point (Yes/No).",
+            "details": {
+                "1": "Yes, DepoCyte at any point",
+                "2": "No, no reasons for exclusion"
+            }
+        },
+        {
+            "column_name": "rpresctmrds",
+            "description": "Description: Rel. Stat. pre-allo SCT MRD status, indicating the level of residual disease present before allogeneic stem cell transplantation (1: >=10^-3, 2: (10^-3)-(10^-4), 3: <10^-4).",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "t1221",
+            "description": "Description: t1221 column indicates the presence of the t(12;21) translocation, which is associated with childhood Leukemia, as determined by FISH/PCR analysis.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "remphbf1r",
+            "description": "Description: Relative early response to Morphological BFM F1 treatment for childhood Leukemia (M1: <5, M2: 5-25, M3: >25).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "lostatfu",
+            "description": "Description: Indicates whether a patient with childhood Leukemia was lost to follow-up at the FU-y/n stage.",
+            "details": {
+                "1": "Yes-definitely",
+                "2": "Yes-temporarily?"
+            }
+        },
+        {
+            "column_name": "consentwithdrawn",
+            "description": "Description: Indicates whether consent to participate in the childhood Leukemia cancer treatment study was withdrawn (1) or not (0).",
+            "details": {
+                "0": "not withdrawn",
+                "1": "withdrawn consent to participate"
+            }
+        },
+        {
+            "column_name": "rnd3newneurosymptyn",
+            "description": "Description: Indicates if a new neurological symptom occurred during the study of childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rdbmblast2",
+            "description": "Description: Relative blast in bone marrow at time of relapse2, categorized into M1 (<5%), M2 (5-25%), and M3 (>25%).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "trunk_erw_asp_reas",
+            "description": "Description: Trunk_erw_asp_reas: Reason for truncation of childhood Leukemia cancer treatment (Allergy, Pancreatitis, Thrombosis, Liver toxicity, Other).",
+            "details": {
+                "1": "Allergy",
+                "2": "Pancreatitis",
+                "3": "Thrombosis",
+                "4": "Liver toxicity",
+                "5": "Other"
+            }
+        },
+        {
+            "column_name": "rndthboduringpegaspyn",
+            "description": "Description: Presence of symptomatic thrombotic episodes during PEG-ASP treatment for childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "bmexblko",
+            "description": "Description: BMex-blast code indicating the amount of leukemia cells present in a patient's sample (0: missing, 1: <5(M1), 2: 5-<=25(M2), 3: >25(M3)).",
+            "details": {
+                "0": "missing",
+                "1": "<5(M1)",
+                "2": "5-<=25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "toxperiod",
+            "description": "Description: Toxperiod column contains the period of time to report any serious adverse events (SAEs) related to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "2008-07-01 to 2008-09-30",
+                "2": "2008-10-01 to 2008-12-31",
+                "3": "2009-01-01 to 2009-03-31",
+                "4": "2009-04-01 to 2009-06-30",
+                "5": "2009-07-01 to 2009-09-30",
+                "6": "2009-10-01 to 2009-12-31",
+                "7": "2010-01-01 to 2010-03-31",
+                "8": "2010-04-01 to 2010-06-30",
+                "9": "2010-07-01 to 2010-09-30",
+                "10": "2010-10-01 to 2010-12-31",
+                "11": "2011-01-01 to 2011-03-31",
+                "12": "2011-04-01 to 2011-06-30",
+                "13": "2011-07-01 to 2011-09-30",
+                "14": "2011-10-01 to 2011-12-31",
+                "15": "2012-01-01 to 2012-03-31",
+                "16": "2012-04-01 to 2012-06-30",
+                "17": "2012-07-01 to 2012-09-30",
+                "18": "2012-10-01 to 2012-12-31",
+                "19": "2013-01-01 to 2013-03-31",
+                "20": "2013-04-01 to 2013-06-30",
+                "21": "2013-07-01 to 2013-09-30",
+                "22": "2013-10-01 to 2013-12-31",
+                "23": "2014-01-01 to 2014-03-31",
+                "24": "2014-04-01 to 2014-06-30",
+                "25": "2014-07-01 to 2014-09-30",
+                "26": "2014-10-01 to 2014-12-31",
+                "27": "2015-01-01 to 2015-03-31",
+                "28": "2015-04-01 to 2015-06-30",
+                "29": "2015-07-01 to 2015-09-30",
+                "30": "2015-10-01 to 2015-12-31",
+                "31": "2016-01-01 to 2016-03-31",
+                "32": "2016-04-01 to 2016-06-30",
+                "33": "2016-07-01 to 2016-09-30",
+                "34": "2016-10-01 to 2016-12-31",
+                "35": "2017-01-01 to 2017-03-31",
+                "36": "2017-04-01 to 2017-06-30",
+                "37": "2017-07-01 to 2017-09-30",
+                "38": "2017-10-01 to 2017-12-31",
+                "39": "2018-01-01 to 2018-03-31",
+                "40": "2018-04-01 to 2018-06-30",
+                "41": "2018-07-01 to 2018-09-30",
+                "42": "2018-10-01 to 2018-12-31",
+                "43": "2019-01-01 to 2019-03-31",
+                "44": "2019-04-01 to 2019-06-30",
+                "45": "2019-07-01 to 2019-09-30",
+                "46": "2019-10-01 to 2019-12-31",
+                "47": "2020-01-01 to 2020-03-31",
+                "48": "2020-04-01 to 2020-06-30",
+                "49": "2020-07-01 to 2020-09-30",
+                "50": "2020-10-01 to 2020-12-31",
+                "51": "2021-01-01 to 2021-03-31",
+                "52": "2021-04-01 to 2021-06-30",
+                "53": "2021-07-01 to 2021-09-30",
+                "54": "2021-10-01 to 2021-12-31",
+                "55": "2022-01-01 to 2022-03-31",
+                "56": "2022-04-01 to 2022-06-30",
+                "57": "2022-07-01 to 2022-09-30",
+                "58": "2022-10-01 to 2022-12-31",
+                "59": "2023-01-01 to 2023-03-31",
+                "60": "2023-04-01 to 2023-06-30",
+                "61": "2023-07-01 to 2023-09-30",
+                "62": "2023-10-01 to 2023-12-31"
+            }
+        },
+        {
+            "column_name": "withdrsc",
+            "description": "Description: Indicates whether a participant was withdrawn from the study due to a protocol violation (2) or not (1).",
+            "details": {
+                "1": "not withdrawn (default)",
+                "2": "withdrawn by study chair (excluded protocol violation)"
+            }
+        },
+        {
+            "column_name": "therapyind",
+            "description": "Description: Induction therapy administered for childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "NOPHO-2008 ind. ther. with Prednisolone only",
+                "2": "NOPHO-2008 ind. ther. with Dexa. +/- pred-prephase",
+                "3": "Other"
+            }
+        },
+        {
+            "column_name": "imm2008",
+            "description": "Description: Column 'imm2008' contains information on the immunology type 2008 protocol for childhood Leukemia cancer treatment, including B-precursor, T-cell, Bilineage ALL, mature B-cell, and data missing.",
+            "details": {
+                "1": "B-precursor",
+                "2": "T-cell",
+                "3": "Bilineage ALL = excl. from SR and Rand.",
+                "4": "mature B-cell = excluded",
+                "9": "data missing = temporarily excluded"
+            }
+        },
+        {
+            "column_name": "remphra2r",
+            "description": "Description: Relative early response morphological Ralle A2 response to childhood Leukemia treatment (M1: <5, M2: 5-25, M3: >25).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "saepancretitis",
+            "description": "Description: Presence of symptomatic pancretitis (CTC 2,3,4) in childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "contraception",
+            "description": "Description: Females not wanting to use contraception excluded from childhood Leukemia cancer treatment.",
+            "details": {
+                "0": "no reasons for exclusion",
+                "1": "females not wanting to use contraception=excluded"
+            }
+        },
+        {
+            "column_name": "saeabdominal",
+            "description": "Description: Saeabdominal column is related to abdominal problems leading to laparot, which is a form of cancer treatment for childhood leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "rndbmperfd79yn",
+            "description": "Description: Indicates if Bone Marrow was performed on Day 79 (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "saeheartfail",
+            "description": "Description: Severe heart failure and/or arrhythmia in relation to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "rndarduringrand2yn",
+            "description": "Description: Indicates whether a patient had an allergic reaction during randomization 2 (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "cns3cresponse",
+            "description": "Description: Response to CNS3c treatment at diagnosis (or combination therapy) for childhood Leukemia, otherwise default=not applicable.",
+            "details": {
+                "1": "no remaining leukemia (MRI)",
+                "2": "remaining leukemia = Event"
+            }
+        },
+        {
+            "column_name": "trblock7",
+            "description": "Description: trblock7 column contains information about the type of treatment Block 7 received by patients with childhood Leukemia.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "rndincr6mpd71yn",
+            "description": "Description: Indicates whether 6MP dosage should be increased on day 71 of childhood Leukemia treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "toxother",
+            "description": "Description: Toxother column is a Depocity study including Somnolence, Arachnoiditis, Leucoencephalopathy, Unbearable paresthesia, Grade 3-4 neurotox. not rel. to others, Psychosis, and Cognitive deficits related to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Somnolence",
+                "2": "Arachnoiditis",
+                "3": "Leucoencephalopathy",
+                "4": "Unbearable paresthesia",
+                "5": "Grade 3-4 neurotox. not rel. to others",
+                "6": "Psychosis",
+                "7": "Cognitive deficits"
+            }
+        },
+        {
+            "column_name": "dcr1_stopincludelr",
+            "description": "Description: dcr1_stopincludelr: Patients included in the LOW-Risk-stop calculation (new rules) for childhood Leukemia treatment.",
+            "details": {
+                "1": "Included",
+                "2": "Early",
+                "3": "Baltic",
+                "4": "Adult",
+                "5": "LR-patient HR-therapy",
+                "8": "No CR1-status / Lost early",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "iampchr21",
+            "description": "This column indicates whether a patient with childhood Leukemia has undergone a Chromosome 2-FISH test (yes=not SR final strati) or not (No/Not analysed).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "rndrand2",
+            "description": "Description: Result of randomization 2, which determines the type of childhood Leukemia cancer treatment (Standard PEG-Asp group with 2 weeks interval or PEG-Asp at 6 weeks interval).",
+            "details": {
+                "1": "Standard PEG-Asp group with 2 weeks interval",
+                "2": "PEG-Asp at 6 weeks interval (experimental arm)"
+            }
+        },
+        {
+            "column_name": "testisrespons",
+            "description": "Description: Testisrespons indicates if testis is positive at diagnosis of childhood Leukemia cancer.",
+            "details": {
+                "1": "no remaining leukemia (Ultrasound+possibly biopsy)",
+                "2": "remaining leukemia = Event"
+            }
+        },
+        {
+            "column_name": "fpria_resultgroupcl",
+            "description": "fpria_resultgroupcl: Result of MRD FLOW pri A, indicating the percentage of leukemia cells in the sample (1: >=25%, 2: >=5%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "strat3",
+            "description": "Strat3 column describes the stratification of patients with childhood Leukemia after early response (day 15) according to the NOPHO-2008 criteria.",
+            "details": {
+                "0": "Insufficient data",
+                "1": "NOPHO-2008 Non - High Risk",
+                "2": "NOPHO-2008 Non - High Risk",
+                "3": "NOPHO-2008 High Risk standardInd",
+                "4": "NOPHO-2008 High Risk blocksDirect",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "saeintcare",
+            "description": "Description: Intensive care with or without assisted ventilation for childhood Leukemia treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "rnd3steroid",
+            "description": "Description: Rand 3 glokocorticosteroid used for childhood Leukemia cancer treatment, including Prednisolon sodium succinate (Precortalon, Di-Adreson-F), Methylprednisolon sodium succinate (e.g. Solu-Medrol), and Other.",
+            "details": {
+                "1": "Prednisolon sodium succinate (Precortalon, Di-Adreson-F)",
+                "2": "Methylprednisolon sodium succinate (e.g. Solu-Medrol)",
+                "3": "Other"
+            }
+        },
+        {
+            "column_name": "FPriA_ResultGroup",
+            "description": "FPriA_ResultGroup: Result of minimal residual disease (MRD) flow cytometry, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "remphn29r",
+            "description": "Description: Response to day 29 of Nopho Morphine treatment for childhood Leukemia, categorized as <5(M1), 5-25(M2), or >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "rnd3motornormalyn",
+            "description": "Description: Indicates whether r3 motor evoked potentials are normal (Yes/No) in patients with childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "agegroup",
+            "description": "Description: Age Group, which includes Infant (1), Child (2), Adult (3), and Undefined (99).",
+            "details": {
+                "1": "Infant",
+                "2": "Child",
+                "3": "Adult",
+                "99": "Undefined"
+            }
+        },
+        {
+            "column_name": "cns3eresponse",
+            "description": "Description: Response to CNS3e (ophtalmoscopy+MRI/US) at diagnosis or combination, otherwise default is not applicable.",
+            "details": {
+                "1": "no remaining leukemia (ophtalmoscopy+MRI/US)",
+                "2": "remaining leukemia = Event"
+            }
+        },
+        {
+            "column_name": "fprib_resultgroupcl",
+            "description": "fprib_resultgroupcl: Result of MRD FLOW pri B, with values indicating the percentage of leukemia cells present (1: \u226525%, 2: \u22655%, 3: \u22650.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "toxevent",
+            "description": "Description: Toxocity event reg, which includes InducFail, ResistDis, Relapse, DCR1, SMN, and No event.",
+            "details": {
+                "2": "InducFail",
+                "3": "ResistDis",
+                "4": "Relapse",
+                "5": "DCR1",
+                "6": "SMN",
+                "7": "No event"
+            }
+        },
+        {
+            "column_name": "remrdothr",
+            "description": "Description: Relative early response to other protocol response in childhood Leukemia treatment, measured as >10^-3, (10^-3)-(10^-4), or <10^-4.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "medm",
+            "description": "Description: Indicates whether a patient has a medical mass present (Yes/No/Missing).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Missing"
+            }
+        },
+        {
+            "column_name": "strat2",
+            "description": "Strat2 column describes the stratification of patients after genetic analysis into NOPHO-2008 High Risk, NOPHO-2008 Non - High Risk, Insufficient data, and Excluded categories.",
+            "details": {
+                "0": "Insufficient data",
+                "1": "NOPHO-2008 Non - High Risk",
+                "2": "NOPHO-2008 Non - High Risk",
+                "3": "NOPHO-2008 High Risk",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "deadshor",
+            "description": "Description: Deadshor column indicates death during induction, CCR, relapse(s), or SMN in childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Death during induction",
+                "2": "Death in CCR",
+                "3": "Death after relapse(s)",
+                "4": "Death after SMN"
+            }
+        },
+        {
+            "column_name": "rdsgroup",
+            "description": "Description: The rdsgroup column indicates the stage of childhood Leukemia cancer treatment, with S1 being the earliest stage and S4 being the most advanced.",
+            "details": {
+                "1": "S1",
+                "2": "S2",
+                "3": "S3",
+                "4": "S4"
+            }
+        },
+        {
+            "column_name": "saedialysis",
+            "description": "Description: Column 'saedialysis' indicates whether a patient with childhood Leukemia has kidney disfunction.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "P92ResultGroup",
+            "description": "P92ResultGroup: Result of MRD (minimal residual disease) flow cytometry test on day 92 of treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "remrdbotr",
+            "description": "Description: Rel. early resp. MRD BFM Other Response: Quantitative measure of response to childhood Leukemia treatment, with values of >=10^-3, (10^-3)-(10^-4), and <10^-4.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "remphrotr",
+            "description": "Description: Relative early response morphological Ralle other response, with 1 indicating <5(M1), 2 indicating 5-25(M2), and 3 indicating >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "dcr1_stopincludehr",
+            "description": "Description: dcr1_stopincludehr: Patients included in the HIGH-Risk-stop calculation (new rules) with 1=Included, 2=Early, 3=Baltic, 4=Adult, 5=HR-patient LR-therapy, 8=No CR1-status/Lost early, 9=Excluded.",
+            "details": {
+                "1": "Included",
+                "2": "Early",
+                "3": "Baltic",
+                "4": "Adult",
+                "5": "HR-patient LR-therapy",
+                "8": "No CR1-status / Lost early",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "rndrand3excl",
+            "description": "The rndrand3excl column indicates the reasons for exclusion from Randomization 3, including no reasons, clinical decision, parental refusal, administrative reasons (including errors), lost to follow-up, not known, and other.",
+            "details": {
+                "1": "No, no reasons for exclusion",
+                "2": "Clinical decision",
+                "3": "Parental refusal",
+                "4": "Administrative reasons (incl. errors)",
+                "5": "Lost to follow-up",
+                "6": "Not known",
+                "99": "Other"
+            }
+        },
+        {
+            "column_name": "rndrand2excl",
+            "description": "Description: The rndrand2excl column indicates the reasons for exclusion from Randomization 2, including clinical decision, parental refusal, administrative reasons, lost to follow-up, not known, or other.",
+            "details": {
+                "1": "No reasons for exclusion",
+                "2": "Clinical decision",
+                "3": "Parental refusal",
+                "4": "Administrative reasons (incl. errors)",
+                "5": "Lost to follow-up",
+                "6": "Not known",
+                "99": "Other"
+            }
+        },
+        {
+            "column_name": "rndrand3",
+            "description": "Description: Result of Randomization 3, which determines the type of treatment for childhood Leukemia.",
+            "details": {
+                "1": "Standard it Triple arm",
+                "2": "DepoCyte arm"
+            }
+        },
+        {
+            "column_name": "efgenkod",
+            "description": "The efgenkod column contains information about the cytogenetic group of a patient's leukemia, including t(9;22), KMT2A rearrangement, near haploidy (23-29), low hypodiploidy (30-39)/near triploidy, iAMP21, dic(9;20), t(1;19), t(12;21), high hyperdiploidy (51-67), other cl",
+            "details": {
+                "1": "t(9;22)",
+                "2": "KMT2A rearrangement",
+                "3": "Near haploidy (23-29)",
+                "4": "Low Hypodiploidy (30-39)/Near triploidy",
+                "6": "iAMP21",
+                "7": "dic(9;20)",
+                "8": "t(1;19)",
+                "9": "t(12;21)",
+                "10": "High hyperdiploidy (51-67)",
+                "11": "Other clonal aberration",
+                "12": "Normal",
+                "13": "No result / unknown"
+            }
+        },
+        {
+            "column_name": "rnd3neuroexmyn",
+            "description": "Description: Neuro exams 6 months after Leukemia treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "gbkaryonormal",
+            "description": "Description: G-band karyotyping result indicating whether the sample is normal or abnormal.",
+            "details": {
+                "1": "Normal",
+                "2": "Abnormal"
+            }
+        },
+        {
+            "column_name": "rndcomplPEGaspyn",
+            "description": "Description: Indicates whether a Complete PEG-Asp study was completed according to protocol for a patient with childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "trunk_peg_asp_reas",
+            "description": "Description: Trunk_peg_asp_reas column contains reasons for truncation of childhood Leukemia cancer treatment, such as Allergy, Pancreatitis, Thrombosis, Liver toxicity, or Other.",
+            "details": {
+                "1": "Allergy",
+                "2": "Pancreatitis",
+                "3": "Thrombosis",
+                "4": "Liver toxicity",
+                "5": "Other"
+            }
+        },
+        {
+            "column_name": "trblock6",
+            "description": "Description: trblock6 column indicates the type of treatment Block 6 for childhood Leukemia cancer.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "dsmcstopbase",
+            "description": "Description: Patients included in the base for stop DCR1, including those in the included stop base, excluded stop base, and early categories.",
+            "details": {
+                "1": "Included stop base",
+                "2": "Excluded stop base",
+                "8": "Early"
+            }
+        },
+        {
+            "column_name": "parents",
+            "description": "Description: Written consent given by parents for registration and participation in childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "written consent given",
+                "2": "no written consent=excluded"
+            }
+        },
+        {
+            "column_name": "extrcyjn",
+            "description": "Description: Indication of extra chemotherapy for patients with Leukemia at diagnosis (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "remphbf2r",
+            "description": "Description: Relative early response to Morphological BFM F2 treatment for childhood Leukemia.",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "rndhlpyn",
+            "description": "Description: Column indicating whether a patient developed hyperlipidemia during childhood leukemia treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "remrdbf2r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) BFM F2 response.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "mrdd79yn",
+            "description": "Description: MRD day 79 diagnosis (Yes/No/Unknown).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Unknown"
+            }
+        },
+        {
+            "column_name": "saesepticshock",
+            "description": "Description: Presence of Septic Shock in patients with childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "fuplasar",
+            "description": "Description for fuplasar column: Follow-Up Centre for childhood Leukemia cancer treatment, containing various hospitals in Sweden, Denmark, Norway, Finland, Estonia, Latvia, Lithuania, Belgium, Netherlands, Hong Kong, Israel, Spain, United Kingdom, Germany and Hungary.",
+            "details": {
+                "1010012": "S:t Eriks Sjukhus",
+                "1010013": "Sabbatsbergs Sjukhus",
+                "1011001": "Karolinska Sjukhuset-Centra",
+                "1011002": "Huddinge",
+                "1012001": "Uppsala-UAS-Centra",
+                "1013010": "Eskilstuna",
+                "1013011": "Nyk\u00f6ping",
+                "1021001": "Link\u00f6ping-Centra",
+                "1021013": "Norrk\u00f6ping-Vrinnevi",
+                "1022010": "J\u00f6nk\u00f6ping-Ryhov",
+                "1023010": "V\u00e4xj\u00f6",
+                "1024010": "V\u00e4stervik",
+                "1025010": "Kalmar",
+                "1026010": "Visby",
+                "1027010": "Karlskrona",
+                "1028010": "Kristianstad",
+                "1030001": "Malm\u00f6-MAS-Centra",
+                "1041001": "Lund-Centra",
+                "1041012": "Helsingborg",
+                "1042010": "Halmstad",
+                "1051001": "G\u00f6teborg-(Sahlgrenska&DrottningSilvias)-Centra",
+                "1051010": "Uddevalla",
+                "1051013": "Trollh\u00e4ttan-N\u00c4L",
+                "1051014": "Bor\u00e5s",
+                "1053014": "Sk\u00f6vde",
+                "1054010": "Karlstad",
+                "1055010": "\u00d6rebro",
+                "1056010": "V\u00e4ster\u00e5s",
+                "1057010": "Falun",
+                "1057011": "Mora lasarett",
+                "1061010": "G\u00e4vle",
+                "1061012": "Hudiksvall",
+                "1062010": "Sundsvall",
+                "1062011": "\u00d6rnsk\u00f6ldsvik",
+                "1062012": "H\u00e4rn\u00f6sand",
+                "1062013": "Sollefte\u00e5",
+                "1063010": "\u00d6stersund",
+                "1064001": "Ume\u00e5-Centra",
+                "1064010": "Skellefte\u00e5",
+                "1065012": "G\u00e4llivare",
+                "1065015": "Kiruna",
+                "1065016": "Sunderby Boden-Lule\u00e5",
+                "1180101": "Copenhagen-Rikshospitalet-Centra",
+                "1180110": "Herlev-Vuxenmedicin-Centra",
+                "1180111": "Glostrup",
+                "1180112": "Hvidovre",
+                "1180201": "Odense-Centra",
+                "1180301": "\u00c5lborg-Aalborg-Centra",
+                "1180401": "\u00c5rhus-Aarhus-Skejby-Centra",
+                "1280101": "Oslo-RH-Centra",
+                "1280201": "Olso-Ullev\u00e5l-Centra",
+                "1280211": "Vest-Agder",
+                "1280212": "T\u00f6nsberg",
+                "1280213": "Porsgrunn",
+                "1280214": "Drammen",
+                "1280215": "Hamar",
+                "1280216": "Lillehammar",
+                "1280217": "Elverum",
+                "1280301": "Bergen-Centra",
+                "1280311": "Stavanger",
+                "1280401": "Trondheim-Centra",
+                "1280411": "\u00c5lesund",
+                "1280501": "Troms\u00f6-Centra",
+                "1280511": "Bod\u00f6",
+                "1380101": "Helsinki-Helsingfors-Centra",
+                "1380111": "Lappeenranta",
+                "1380112": "Jorvi",
+                "1380113": "Hyvink\u00e4\u00e4",
+                "1380114": "Tammisaari",
+                "1380115": "Kuusankoski",
+                "1380116": "Porvoo",
+                "1380201": "Turku-\u00c5bo-Centra",
+                "1380211": "Pori",
+                "1380301": "Oulu-Ule\u00e5borg-Centra",
+                "1380311": "Rovaniemi",
+                "1380312": "Kemi",
+                "1380313": "Kokkola",
+                "1380401": "Tampere-Tammerfors-Centra",
+                "1380411": "Lahti",
+                "1380412": "Sein\u00e4joki",
+                "1380413": "H\u00e4meenlinna",
+                "1380414": "Vaasa",
+                "1380501": "Kuopio-Centra",
+                "1380511": "Jyv\u00e4skyl\u00e4",
+                "1380512": "Mikkeli",
+                "1380513": "Joensuu",
+                "1380514": "Savonlinna",
+                "1480101": "Reyjkjavik-Centra",
+                "1580101": "Tallinn-Estland-Centra",
+                "1580102": "Tartu-Estland-Centra",
+                "1680101": "Riga-Lettland-Centra",
+                "1780101": "Vilnius-Litauen",
+                "1780102": "Kaunas-Litauen",
+                "1880101": "B01 Gent",
+                "1880102": "B02 Li\u00e8ge",
+                "1880103": "B03 Leuven",
+                "1880104": "B04 Bruxelles-UZ",
+                "1880105": "B05 Bruxelles-HUDERF",
+                "1880106": "B06 Montegn\u00e9e",
+                "1880107": "B07 Bruxelles-UCL",
+                "1980101": "Amsterdam-VU",
+                "1980102": "Amsterdam-AMC",
+                "1980103": "Rotterdam-Erasmus",
+                "1980104": "Utrecht",
+                "1980105": "Leiden",
+                "1980106": "Nijmegen",
+                "1980107": "Groningen",
+                "1980108": "Princess Maxima Centre",
+                "2580101": "Hong Kong-Centra",
+                "2580102": "Queen Mary Hospital",
+                "2580103": "Prince of Wales Hospital",
+                "3080101": "Ruth Rappaport Childrens Hospital",
+                "3080102": "Schnider Childrens Medical Center",
+                "3080103": "The Chaim Sheba Medical Center",
+                "3080104": "IL01 Ruth-Rambam",
+                "3080105": "IL02 Schnider",
+                "3080106": "IL03 Chaim Sheba",
+                "3080107": "IL04 Hadassah Hebrew University Hospital",
+                "3080108": "IL05 Sourasky (Ichilov Tel Aviv medical center)",
+                "3080109": "IL06 Soroka",
+                "3080110": "IL07 Bnai-Zion",
+                "3480010": "Hospital Universitario Miguel Servet",
+                "3480021": "Hospital Universitario La Paz",
+                "3480022": "Hospital Universitario Gregorio Mara\u00f1\u00f3n",
+                "3480023": "Hospital Ni\u00f1o Jesus Madrid",
+                "3480030": "hospital universitario cruces",
+                "3480040": "Hospital Universitario Virgen del Roc\u00edo",
+                "3480050": "Hospital de la Santa Creu i Sant Pau",
+                "3480051": "Hospital Vall d\u00b4Hebron",
+                "3480052": "Hospital Sant Joan de D\u00e9u",
+                "3480060": "Hospital Regional Universitario de M\u00e1laga (Salamanca)",
+                "3480070": "Hospital Universitari i Polit\u00e8cnic la Fe",
+                "3480071": "Hospital General Universitario de Alicante",
+                "3480072": "Hospital Cl\u00ednico Universitario de Valencia",
+                "3480080": "Hospital Cl\u00ednico Universitario de Santiago",
+                "3481000": "Sociedad Espa\u00f1ola de Hematolog\u00eda y Oncolog\u00eda Pedi\u00e1tricas",
+                "3481001": "Hospital Universitario Son Espases",
+                "3481002": "Hospital Materno Infantil, Complejo Hospitalario University",
+                "3481100": "Hospital Clinic Universitario Virgen de la Arrixaca",
+                "3680101": "Semmelweis University",
+                "3680102": "National Insititute of Clinical Neurosciences",
+                "4480010": "Alder Hey Childrens NHS Foundation Trust Liverpool",
+                "4480101": "London",
+                "4480102": "Manchester",
+                "4480103": "Liverpool",
+                "4480104": "Nottingham",
+                "4480105": "Bristol",
+                "4580131": "Edinburgh",
+                "4580141": "Glasgow",
+                "4910101": "T\u00fcbingen hospital",
+                "9999999": "Not Defined"
+            }
+        },
+        {
+            "column_name": "trblock5",
+            "description": "Description: trblock5 column indicates the type of treatment Block 5 for childhood Leukemia cancer.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "ppribresultgroupcl",
+            "description": "Description: ppribresultgroupcl: Result of MRD PCR (Minimal Residual Disease Polymerase Chain Reaction) prior to treatment for childhood Leukemia.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "saethrombosis",
+            "description": "Description: Severe thrombosis related to childhood Leukemia cancer treatment (Yes/No/Remark).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "FPriB_ResultGroup",
+            "description": "FPriB_ResultGroup: Result of MRD (minimal residual disease) flow cytometry test, which measures the percentage of leukemia cells in a sample, with values of >=25%, <25%, >=0.1% - <5%, <0.1%, <0.1%, Sample not taken, and No marker found and/or monitoring not feasible.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "diwholo",
+            "description": "Diwholo column contains codes for childhood Leukemia cancer treatment, based on the Diagnosgrupp WHO long new classification.",
+            "details": {
+                "11": "Ia-ALL",
+                "13": "Ic-AML",
+                "21": "IIa-Hodgkin",
+                "22": "IIb-NHL",
+                "25": "IIe-Histiocytosis-X",
+                "26": "IIf-Other Reticuloendothelial",
+                "27": "IIg-Histiocytosis-UNS",
+                "31": "IIIa-Ependymom",
+                "32": "IIIb-Astrocytom",
+                "33": "IIIc-Medulloblastoma/PNET",
+                "34": "IIId-Other gliomas",
+                "35": "IIIe-Other spec(cranio,pineal,meningeom)",
+                "36": "IIIf- CNS-Unspecified",
+                "41": "IVa-Neuroblastoma",
+                "42": "IVb-Other symp nervous system tumors",
+                "50": "V-Retinoblastoma",
+                "51": "Va-Retinoblastoma, unilateral",
+                "52": "Vb-Retinoblastoma, bilateral",
+                "61": "VIa-Wilms",
+                "62": "VIb-Renal carcinoma",
+                "63": "VIc-Other and unspec.",
+                "71": "VIIa-Hepatoblastom",
+                "72": "VIIb-Hepatocellular  carcinoma",
+                "73": "VIIc-Other and unspec.",
+                "81": "VIIIa-Osteosarcoma",
+                "82": "VIIIb-Chondrosarcoma",
+                "83": "VIIIc-Ewings",
+                "84": "VIIId-Other and unspec.",
+                "91": "IXa-Rhabdomyosarkoma,embr. sarc. soft tis",
+                "92": "IXb-Fibrosarkoma, neurofibrosarkoma,other",
+                "93": "IXc-Other soft tissue sarcoma",
+                "101": "Xa-Non-gonadal germ-cell and trophoblast",
+                "102": "Xb-Gonadal germ-cell and trophoblastic n",
+                "103": "Xc-Gonadal carcinoma",
+                "104": "Xd-Other and unspec mal gonadal tumors",
+                "111": "XIa-Adenocarcinoma",
+                "112": "XIb-Thyroid carcinoma",
+                "113": "XIc-Nasopharyngeal carcinoma",
+                "114": "XId-Melanomatous neoplasma",
+                "115": "XIe-Other carcinoma",
+                "120": "XII-Others not specified",
+                "135": "WIII Perifer PNET",
+                "140": "Group U",
+                "145": "Group UNS/GG",
+                "150": "XIV-UNS",
+                "155": "XV-Adenom/Fibrom m.m.",
+                "160": "XVI-No Tumors",
+                "170": "Carcinoid"
+            }
+        },
+        {
+            "column_name": "p79resultgroupcl",
+            "description": "p79resultgroupcl: Result group from MRD PCR on day 79, indicating the percentage of leukemia cells present (1: \u226525%, 2: \u22655%, 3: \u22650.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "fpric_resultgroupcl",
+            "description": "fpric_resultgroupcl: Result of MRD FLOW analysis of leukemia cancer treatment, with values ranging from >=25% to <0.1%, as well as 'Sample not taken' and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "mbdown",
+            "description": "Description: Column indicating whether a patient has Down Syndrome (1=yes, 2=no).",
+            "details": {
+                "1": "DOWN=excluded",
+                "2": "No DOWN"
+            }
+        },
+        {
+            "column_name": "rtprotocol",
+            "description": "Description: Treatment protocol used for childhood Leukemia, including NOPHO high-risk, BFM-Rez, RALLE, Other named protocol, Other, R3, and IntReALL.",
+            "details": {
+                "1": "NOPHO high-risk",
+                "2": "BFM-Rez",
+                "3": "RALLE",
+                "4": "Other named protocol",
+                "5": "Other",
+                "6": "R3",
+                "7": "IntReALL"
+            }
+        },
+        {
+            "column_name": "rnd3mrinormalyn",
+            "description": "Description: Indicates whether the patient's third round of brain and spinal cord MRI scan was normal (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "pretreatment",
+            "description": "Description: This column indicates whether the patient received any pretreatment (e.g. GC/chemo) prior to diagnosis of childhood Leukemia (0=no pretreatment, 1=pretreatment).",
+            "details": {
+                "0": "no pretreatment=included",
+                "1": "pretreatment GC/chemo=excluded"
+            }
+        },
+        {
+            "column_name": "P79ResultGroup",
+            "description": "P79ResultGroup: Measurement of minimal residual disease (MRD) flow on day 79 of childhood Leukemia treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "clinic",
+            "description": "Description: Clinic column indicating whether the patient is receiving treatment at a Child or Adult treatment clinic.",
+            "details": {
+                "1": "Child treatment clinic",
+                "2": "Adult treatment clinic"
+            }
+        },
+        {
+            "column_name": "rndawaitingsctyn",
+            "description": "Description: Indicates whether a patient is awaiting SCT (Stem Cell Transplant) for childhood Leukemia treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rndlt3prevneurotoxyn",
+            "description": "Description: Presence of persistent grade 3 or higher neurotoxicity due to previous treatment for childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rndconteaspyn",
+            "description": "Description: Indicates whether a patient continued treatment with Erwinia Asp (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "remphbotr",
+            "description": "Description: This column indicates the response to treatment for childhood Leukemia, with values of <5(M1), 5-25(M2), and >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "F15_ResultGroup",
+            "description": "F15_ResultGroup: Result of MRD flow test for childhood Leukemia, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "remrdrotr",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Ralle other response, with values of 1 for >=10^-3, 2 for (10^-3)-(10^-4), and 3 for <10^-4.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "trblock9",
+            "description": "Description: trblock9 column indicates the type of treatment Block 9 for childhood Leukemia cancer.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "predisposition",
+            "description": "Description: This column indicates whether the patient has a predisposition syndrome (AT, Blooms, etc.) for childhood leukemia treatment, with 0 indicating no predisposition and 1 indicating a predisposition.",
+            "details": {
+                "0": "no predisposition syndrome=included",
+                "1": "presisposition syndrome=excluded"
+            }
+        },
+        {
+            "column_name": "strat1",
+            "description": "Description: Stratification at diagnosis based on NOPHO-2008 criteria, with 0 indicating insufficient data, 1 indicating Non-High Risk, 2 indicating Non-High Risk, 3 indicating High Risk, and 9 indicating Excluded.",
+            "details": {
+                "0": "Insufficient data",
+                "1": "NOPHO-2008 Non - HighRisk",
+                "2": "NOPHO-2008 Non - High Risk",
+                "3": "NOPHO-2008 High Risk",
+                "9": "Excluded"
+            }
+        },
+        {
+            "column_name": "saeseizures",
+            "description": "Description: Seizures (CTC grade 2, 3, or 4) reported in childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "bm15blko",
+            "description": "Description: BM15-blast code indicating the amount of blasts in the peripheral blood of a child with Leukemia (0: missing, 1: <5(M1), 2: 5-<=25(M2), 3: >25(M3)).",
+            "details": {
+                "0": "missing",
+                "1": "<5(M1)",
+                "2": "5-<=25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "cytstgrp",
+            "description": "Description: Cytogenetic Stratifying Group indicating the presence of specific chromosomal changes related to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "No Stratfying Change Detected",
+                "2": "11q23/MLL-rearrangements",
+                "3": "t(9;22)q(34;q11)/BCR-ABL = excluded",
+                "4": "t(1;19)(q23;p13)/E2A-PBX1",
+                "5": "Hypodiploidy (<45 chromosomes)",
+                "6": "dic(9;20)",
+                "7": "iAMPchr21",
+                "9": "not complete analysis"
+            }
+        },
+        {
+            "column_name": "remphothr",
+            "description": "Description: Relative early response morphological other protein response (remphothr) to childhood leukemia cancer treatment, categorized as <5(M1), 5-25(M2), and >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "FAftC_ResultGroup",
+            "description": "FAftC_ResultGroup: Result of MRD flow cytometry test, indicating the percentage of leukemia cells in the sample (1: >=25%, 2: <25%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "trunk_peg_asp",
+            "description": "Description: Indicates whether the PEG-asp. was truncated in the treatment of childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "ethnicfa",
+            "description": "Description: Ethnicity of the father of a child with leukemia.",
+            "details": {
+                "1": "Nordic/Scandinavian (N/S)",
+                "2": "Other European/Caucasian(E/C)",
+                "3": "Asien",
+                "4": "Arab",
+                "5": "African",
+                "6": "American-white",
+                "7": "Amarican-black",
+                "8": "Others"
+            }
+        },
+        {
+            "column_name": "testis",
+            "description": "Description: Column indicating whether or not the patient has testis, with values of 'Yes', 'No', or 'Missing'.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Missing"
+            }
+        },
+        {
+            "column_name": "deadccr",
+            "description": "Description: Indicates whether a patient with childhood Leukemia has died from cancer-related causes (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "excluded",
+            "description": "Description: Indicates whether a patient was excluded from the study of childhood Leukemia cancer treatment (Yes/No).",
+            "details": {
+                "0": "No",
+                "1": "Yes"
+            }
+        },
+        {
+            "column_name": "P15ResultGroup",
+            "description": "P15ResultGroup: Result of MRD flow test for childhood Leukemia, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rndrand2consent",
+            "description": "Description: Indicates whether written consent was obtained for Randomization 2 of childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Consent obtained = included",
+                "2": "No writen consent"
+            }
+        },
+        {
+            "column_name": "saevod",
+            "description": "Description: Saevod column indicates whether a patient has Veno-occlusive disease, a complication of childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "remrdn29r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Nopho day 29 response (1: >=10^-3, 2: (10^-3)-(10^-4), 3: <10^-4).",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "rndrand1",
+            "description": "Description: Result of randomization 1 for childhood Leukemia cancer treatment, which can be either fixed 6-MP dose or 6-MP increments.",
+            "details": {
+                "1": "Fixed 6-MP dose",
+                "2": "6-MP increments"
+            }
+        },
+        {
+            "column_name": "cnstt",
+            "description": "Description: CNS-reg traumatic tap indicating presence or absence of Leukemia (1: no TLP (<=10 erytrocytes), 2: TLP (>10 erythrocytes) no Leukemia, 3: TLP (>10 erythrocytes) with Leukemia, 9: data missing).",
+            "details": {
+                "1": "no TLP (<=10 erytrocytes)",
+                "2": "TLP (>10 erythrocytes) no Leukemia",
+                "3": "TLP (>10 erythrocytes) with Leukemia",
+                "9": "data missing"
+            }
+        },
+        {
+            "column_name": "hypodiploid",
+            "description": "Description: Hypodiploidy is a measure of the number of chromosomes in a cell, with 'Yes <44' indicating high-risk (HR), 'Yes, 44' indicating intermediate-risk (IR), 'No>/=45' indicating standard-risk (SR), and 'Not analysed' indicating not SR.",
+            "details": {
+                "1": "Yes <44",
+                "2": "yes,44",
+                "3": "No>/=45",
+                "9": "Not analysed"
+            }
+        },
+        {
+            "column_name": "ppricresultgroupcl",
+            "description": "Description: The ppricresultgroupcl column indicates the percentage of minimal residual disease (MRD) detected by PCR in a patient's sample, as part of their leukemia treatment.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "downantracyclin",
+            "description": "Description: Indicates if antraccyclins were given to the patient with Down Syndrome and Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "saeother",
+            "description": "Description: Column 'saeother' contains information on adverse events related to childhood Leukemia cancer treatment, including Somnolence, Arachnoiditis, Leucoencephalopathy, Unbearable paresthesia, and Grade 3-4 neurotox. not rel. to others.",
+            "details": {
+                "1": "Somnolence",
+                "2": "Arachnoiditis",
+                "3": "Leucoencephalopathy",
+                "4": "Unbearable paresthesia",
+                "5": "Grade 3-4 neurotox. not rel. to others"
+            }
+        },
+        {
+            "column_name": "saeanaphylaxis",
+            "description": "Description: SAE Anaphylaxis: Life-threatening allergic reaction (CTC Grade 4) to childhood leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "highhyperdip",
+            "description": "Description: Highhyperdip column indicates whether a patient has Hyperdiploid (>/=50 chromosomes) or not (not hyperdiploid, not analysed).",
+            "details": {
+                "1": "Hyperdiploid >/=50 chromosomes",
+                "2": "not hyperdiploid",
+                "9": "not analysed"
+            }
+        },
+        {
+            "column_name": "F92_ResultGroup",
+            "description": "F92_ResultGroup: Measurement of MRD (minimal residual disease) levels at day 92 of treatment for childhood Leukemia.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "PAftCResultGroup",
+            "description": "Description: PAftCResultGroup is a column that indicates the MRD flow of a patient's leukemia treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "PPriBResultGroup",
+            "description": "Description: PPriBResultGroup is a column that indicates the MRD flow results of a patient's leukemia treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "spleno",
+            "description": "Description: Spleno column indicates whether a patient has had a splenectomy (yes/no/missing).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Missing"
+            }
+        },
+        {
+            "column_name": "dnalt085",
+            "description": "The dnalt085 column indicates whether the DNA index of a patient with childhood Leukemia is less than 0.85 (Yes <0.85), between 0.85 and 1.16 (No >/=0.85-<1.16), greater than 1.16 (No hyperdiploid >/=1.16), or not analysed (9: Not analysed).",
+            "details": {
+                "1": "Yes <0.85",
+                "2": "No >/=0.85-<1.16",
+                "3": "No hyperdiploid >/=1.16",
+                "9": "Not analysed"
+            }
+        },
+        {
+            "column_name": "trblock8",
+            "description": "Description: trblock8 column indicates the type of treatment Block 8 for childhood Leukemia cancer.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "rndincr6mpd50yn",
+            "description": "Description: Indicates whether the 6MP dosage was increased on day 50 of childhood Leukemia treatment (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "t922",
+            "description": "Description: t(9;22) FISH/PCR results (yes=excluded, no=present, NA=not analysed).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "tpmtgenotype",
+            "description": "Description: TPMT genotype on day 29 of childhood Leukemia cancer treatment, with values of 1 = Wild type, 2 = Heterozygous low active, 3 = Deficient, and 9 = Data missing.",
+            "details": {
+                "1": "Wild type",
+                "2": "Heterozygous low active",
+                "3": "Deficient",
+                "9": "Data missing"
+            }
+        },
+        {
+            "column_name": "rndpacriyn",
+            "description": "Description: Indicates whether a patient developed pancreatitis as a result of childhood leukemia cancer treatment (1 = Yes, 2 = No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "cnsresponse",
+            "description": "Description: The cnsresponse column indicates the CNS-response (Central Nervous System) status at diagnosis and after 2TIT (Intrathecal Triple Therapy) and/or DepoCyte (Cytarabine) treatment for childhood Leukemia.",
+            "details": {
+                "1": "CNS1 at diagnosis",
+                "2": "CNS2 with CNS-CR after 2TIT",
+                "3": "CNS3 at diagnosis CNS-CR after 2TIT",
+                "4": "CNS2/3 at dx, no CR after 2TIT but CR after DepoCyte",
+                "5": "CNS2/3 at Dx no CR after DepoCyte=Event"
+            }
+        },
+        {
+            "column_name": "lymfoall",
+            "description": "Description: Indicates if a patient has been diagnosed with Leukemia and is receiving Lymfo ALL treatment (Yes/No/Missing).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Missing"
+            }
+        },
+        {
+            "column_name": "saepres",
+            "description": "Description: saepres column indicates whether a patient has received treatment for childhood Leukemia (Yes/No/Remark).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "gl3cm",
+            "description": "Description: Indicates whether the patient has a Leukemia Lymphoblastic Lymphoma (LGL) tumor size of 3 cm or greater (Yes/No/Missing).",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "9": "Missing"
+            }
+        },
+        {
+            "column_name": "saeliverdysf",
+            "description": "Description: Presence of liver dysfunction encephalopathy in patients with childhood leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "trblock4",
+            "description": "Description: trblock4 column contains information on the type of treatment Block 4 received by patients with childhood Leukemia.",
+            "details": {
+                "1": "A",
+                "2": "B",
+                "3": "C"
+            }
+        },
+        {
+            "column_name": "dnaindexyn",
+            "description": "Description: DNA-indexing performed to determine if a patient has childhood Leukemia?",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "primevstatus",
+            "description": "Description: The primevstatus column indicates the current status of a patient's childhood Leukemia treatment, including CR1 (complete remission 1), induction failure, resistant disease, relapse, DCR1 (disease control remission 1), and SMN (stable minimal residual disease).",
+            "details": {
+                "0": "CR1",
+                "1": "induction failure",
+                "2": "resistant disease",
+                "3": "relapse",
+                "4": "DCR1",
+                "5": "SMN"
+            }
+        },
+        {
+            "column_name": "saehyperglycemia",
+            "description": "Description: Severe hyperglycemia requiring insulin treatment in childhood Leukemia patients.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "remrdra2r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Ralle A2 Response (values: >10^-3, (10^-3)-(10^-4), <10^-4).",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "prednisol",
+            "description": "Description: Prednisolone pre-phase given (Yes/No) for childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "therapyd29",
+            "description": "Description: Therapy administered on day 29 of childhood Leukemia cancer treatment according to NOPHO-2008 Standard, Intermediate, High risk chemo, or High risk SCT in CR1 protocols, or other.",
+            "details": {
+                "1": "NOPHO-2008 Standard risk",
+                "2": "NOPHO-2008 Intermediate risk",
+                "3": "NOPHO-2008 High risk chemo",
+                "4": "NOPHO-2008 High risk SCT in CR1",
+                "5": "Other"
+            }
+        },
+        {
+            "column_name": "rnd3neuroexmnormalyn",
+            "description": "Description: Indicates whether the third neurological exam was normal (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "p29resultgroupcl",
+            "description": "p29resultgroupcl: Result group from MRD PCR day 29, indicating the percentage of leukemia cells present in the sample (1: >=25%, 2: >=5%, 3: >=0.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "FPriC_ResultGroup",
+            "description": "FPriC_ResultGroup: Result of MRD flow cytometry testing, which measures the percentage of cancer cells in a sample of blood or bone marrow (1: \u226525%, 2: <25%, 3: \u22650.1% - <5%, 4: <0.1%, 5: <0.1%, 8: Sample not taken, 9: No marker found and/or monitoring not feasible).",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "trnotreathelpdesk",
+            "description": "Description: Indicates whether a help-desk was consulted when a patient was not treated according to the intended protocol for childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Unknown"
+            }
+        },
+        {
+            "column_name": "remrdbf1r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) BFM F1 Response, with values of 1 (>=10^-3), 2 ((10^-3)-(10^-4)) and 3 (<10^-4).",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "rdbmblast1",
+            "description": "Description: Relative Blast in Bone Marrow at time of relapse1, categorized as M1 (<5%), M2 (5-25%), and M3 (>25%).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "rndcontpegaspyn",
+            "description": "Description: Indicates whether PEG-Asp should be continued in the treatment of childhood Leukemia (Yes/No).",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "PPriCResultGroup",
+            "description": "Description: PPriCResultGroup: Result of MRD flow cytometry test for childhood Leukemia, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rnd3psychdeficityn",
+            "description": "Description: Presence of neuropsychological deficits in children with leukemia after third round of treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "exclusionclinical",
+            "description": "Description: Clinical reasons for exclusion from childhood Leukemia cancer treatment (default=no reasons for exclusion).",
+            "details": {
+                "0": "no reasons for exclusion",
+                "1": "clinical decision to exclude patient for other reason"
+            }
+        },
+        {
+            "column_name": "ethnicmo",
+            "description": "Description: Ethnicity of the mother of a child with Leukemia, with categories including Nordic/Scandinavian (N/S), Other European/Caucasian (E/C), Asian, Arab, African, American-white, American-black, and Others.",
+            "details": {
+                "1": "Nordic/Scandinavian (N/S)",
+                "2": "Other European/Caucasian(E/C)",
+                "3": "Asien",
+                "4": "Arab",
+                "5": "African",
+                "6": "American-white",
+                "7": "Amarican-black",
+                "8": "Others"
+            }
+        },
+        {
+            "column_name": "therapyd79",
+            "description": "Description: Therapy administered after day 79 for childhood Leukemia cancer treatment according to NOPHO-2008 Standard, Intermediate, High risk chemo, and High risk SCT in CR1, or other.",
+            "details": {
+                "1": "NOPHO-2008 Standard risk",
+                "2": "NOPHO-2008 Intermediate risk",
+                "3": "NOPHO-2008 High risk chemo",
+                "4": "NOPHO-2008 High risk SCT in CR1",
+                "5": "Other"
+            }
+        },
+        {
+            "column_name": "rectyp2",
+            "description": "Description: Rectyp2 column indicates the second relapse site of childhood Leukemia, with 1=Bone Marrow, 2=Central Nervous System, 3=Testis, 4=Bone Marrow + Central Nervous System, 5=Bone Marrow + Testis, 6=Central Nervous System + Testis, 7=Bone Marrow + Central Nervous System + Testis, 8=Other site(s), 15=Bone Marrow + Other site",
+            "details": {
+                "1": "1=BM",
+                "2": "2=CNS",
+                "3": "3=TESTIS",
+                "4": "4=BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        {
+            "column_name": "fuactstatus",
+            "description": "The fuactstatus column describes the outcome of childhood Leukemia cancer treatment, including first complete remission (CR1), continued complete remission (CCR), induction failure, resistant disease, relapse, second malignant neoplasms (SMN), acute myeloid leukemia (AML), and myelodysplastic syndromes (MDS).",
+            "details": {
+                "0": "Early (no CR1 yet)",
+                "1": "Induction Death",
+                "2": "Resistant disease CR on non-NOPHO therapy, alive",
+                "3": "Resistant disease-CR on non-NOPHO therapy then death",
+                "4": "Alive in CR1 (CCR)",
+                "5": "Relapsed, alive with disease",
+                "6": "Relapsed, alive in CR>/=2",
+                "7": "Dead after relapse(s)",
+                "8": "SMN alive with disease",
+                "9": "SMN alive in CR>/=2",
+                "10": "Dead after SMN",
+                "11": "Dead in CR1 (DCR1)"
+            }
+        },
+        {
+            "column_name": "fuevent",
+            "description": "Description: Fuevent column contains information on the treatment outcome of childhood Leukemia patients, including Too Early, CR1, InducFail, ResistDis, Relapse, DCR1, and SMN.",
+            "details": {
+                "0": "Too early",
+                "1": "CR1",
+                "2": "InducFail",
+                "3": "ResistDis",
+                "4": "Relapse",
+                "5": "DCR1",
+                "6": "SMN"
+            }
+        },
+        {
+            "column_name": "faftc_resultgroupcl",
+            "description": "Description: Result of minimal residual disease (MRD) flow cytometry after chemotherapy for childhood leukemia.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "rndrand1excl",
+            "description": "Description: This column indicates the reasons for exclusion from Randomization 1 in childhood Leukemia cancer treatment, such as Clinical decision, Parental refusal, Administrative reasons, Lost to follow-up, Not known, or Other.",
+            "details": {
+                "1": "No, no reasons for exclusion",
+                "2": "Clinical decision",
+                "3": "Parental refusal",
+                "4": "Administrative reasons (incl. errors)",
+                "5": "Lost to follow-up",
+                "6": "Not known",
+                "99": "Other"
+            }
+        },
+        {
+            "column_name": "remphnexr",
+            "description": "Description: The remphnexr column indicates the response of the patient to treatment for childhood Leukemia, with values of <5(M1), 5-25(M2), and >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "monstatus",
+            "description": "Description: Monstatus column indicates the monitoring status of childhood Leukemia cancer treatment, with values of 1 (Not monitored), 2 (Monitored, under correction), 3 (Monitored, complete), and 4 (Excluded).",
+            "details": {
+                "1": "Not monitored",
+                "2": "Monitored, under correction",
+                "3": "Monitored, complete",
+                "4": "Excluded"
+            }
+        },
+        {
+            "column_name": "rndrand1consent",
+            "description": "Description: Indicates whether written consent was obtained for Randomization 1 of childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Consent obtained = included",
+                "2": "No writen consent"
+            }
+        },
+        {
+            "column_name": "saecnsbleeding",
+            "description": "Description: Presence of CNS or catastrophic bleeding in children with Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "saeparalysis",
+            "description": "Description: Presence or absence of peripheral paralysis in patients with childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "smntype",
+            "description": "Description: Type of SMN, which refers to the type of childhood Leukemia cancer treatment (AML, MDS, or Other).",
+            "details": {
+                "1": "AML",
+                "2": "MDS",
+                "3": "Other"
+            }
+        },
+        {
+            "column_name": "therapyd15",
+            "description": "Description: Therapy administered after day 15 for childhood Leukemia cancer treatment, including NOPHO-2008 Standard/Intermediate risk (cont. ind. Pred), NOPHO-2008 High Risk (cont. ind. Dexa), NOPHO-2008 High risk (block therapy), and Other.",
+            "details": {
+                "1": "NOPHO-2008 Standard/Intermediate risk (cont. ind. Pred)",
+                "2": "NOPHO-2008 High Risk (cont. ind. Dexa)",
+                "3": "NOPHO-2008 High risk (block therapy)",
+                "9": "Other"
+            }
+        },
+        {
+            "column_name": "f15_resultgroupcl",
+            "description": "f15_resultgroupcl: Result of MRD flow test for childhood Leukemia, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', and 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "sp1labid",
+            "description": "The sp1labid column contains a lab id that identifies the hospital where a child with Leukemia received treatment.",
+            "details": {
+                "1010012": "S:t Eriks Sjukhus",
+                "1010013": "Sabbatsbergs Sjukhus",
+                "1011001": "Karolinska Sjukhuset-Centra",
+                "1011002": "Huddinge",
+                "1012001": "Uppsala-UAS-Centra",
+                "1013010": "Eskilstuna",
+                "1013011": "Nyk\u00f6ping",
+                "1021001": "Link\u00f6ping-Centra",
+                "1021013": "Norrk\u00f6ping-Vrinnevi",
+                "1022010": "J\u00f6nk\u00f6ping-Ryhov",
+                "1023010": "V\u00e4xj\u00f6",
+                "1024010": "V\u00e4stervik",
+                "1025010": "Kalmar",
+                "1026010": "Visby",
+                "1027010": "Karlskrona",
+                "1028010": "Kristianstad",
+                "1030001": "Malm\u00f6-MAS-Centra",
+                "1041001": "Lund-Centra",
+                "1041012": "Helsingborg",
+                "1042010": "Halmstad",
+                "1051001": "G\u00f6teborg-(Sahlgrenska&DrottningSilvias)-Centra",
+                "1051010": "Uddevalla",
+                "1051013": "Trollh\u00e4ttan-N\u00c4L",
+                "1051014": "Bor\u00e5s",
+                "1053014": "Sk\u00f6vde",
+                "1054010": "Karlstad",
+                "1055010": "\u00d6rebro",
+                "1056010": "V\u00e4ster\u00e5s",
+                "1057010": "Falun",
+                "1057011": "Mora lasarett",
+                "1061010": "G\u00e4vle",
+                "1061012": "Hudiksvall",
+                "1062010": "Sundsvall",
+                "1062011": "\u00d6rnsk\u00f6ldsvik",
+                "1062012": "H\u00e4rn\u00f6sand",
+                "1062013": "Sollefte\u00e5",
+                "1063010": "\u00d6stersund",
+                "1064001": "Ume\u00e5-Centra",
+                "1064010": "Skellefte\u00e5",
+                "1065012": "G\u00e4llivare",
+                "1065015": "Kiruna",
+                "1065016": "Sunderby Boden-Lule\u00e5",
+                "1180101": "Copenhagen-Rikshospitalet-Centra",
+                "1180110": "Herlev-Vuxenmedicin-Centra",
+                "1180111": "Glostrup",
+                "1180112": "Hvidovre",
+                "1180201": "Odense-Centra",
+                "1180301": "\u00c5lborg-Aalborg-Centra",
+                "1180401": "\u00c5rhus-Aarhus-Skejby-Centra",
+                "1280101": "Oslo-RH-Centra",
+                "1280201": "Olso-Ullev\u00e5l-Centra",
+                "1280211": "Vest-Agder",
+                "1280212": "T\u00f6nsberg",
+                "1280213": "Porsgrunn",
+                "1280214": "Drammen",
+                "1280215": "Hamar",
+                "1280216": "Lillehammar",
+                "1280217": "Elverum",
+                "1280301": "Bergen-Centra",
+                "1280311": "Stavanger",
+                "1280401": "Trondheim-Centra",
+                "1280411": "\u00c5lesund",
+                "1280501": "Troms\u00f6-Centra",
+                "1280511": "Bod\u00f6",
+                "1380101": "Helsinki-Helsingfors-Centra",
+                "1380111": "Lappeenranta",
+                "1380112": "Jorvi",
+                "1380113": "Hyvink\u00e4\u00e4",
+                "1380114": "Tammisaari",
+                "1380115": "Kuusankoski",
+                "1380116": "Porvoo",
+                "1380201": "Turku-\u00c5bo-Centra",
+                "1380211": "Pori",
+                "1380301": "Oulu-Ule\u00e5borg-Centra",
+                "1380311": "Rovaniemi",
+                "1380312": "Kemi",
+                "1380313": "Kokkola",
+                "1380401": "Tampere-Tammerfors-Centra",
+                "1380411": "Lahti",
+                "1380412": "Sein\u00e4joki",
+                "1380413": "H\u00e4meenlinna",
+                "1380414": "Vaasa",
+                "1380501": "Kuopio-Centra",
+                "1380511": "Jyv\u00e4skyl\u00e4",
+                "1380512": "Mikkeli",
+                "1380513": "Joensuu",
+                "1380514": "Savonlinna",
+                "1480101": "Reyjkjavik-Centra",
+                "1580101": "Tallinn-Estland-Centra",
+                "1580102": "Tartu-Estland-Centra",
+                "1680101": "Riga-Lettland-Centra",
+                "1780101": "Vilnius-Litauen",
+                "1780102": "Kaunas-Litauen",
+                "1880101": "B01 Gent",
+                "1880102": "B02 Li\u00e8ge",
+                "1880103": "B03 Leuven",
+                "1880104": "B04 Bruxelles-UZ",
+                "1880105": "B05 Bruxelles-HUDERF",
+                "1880106": "B06 Montegn\u00e9e",
+                "1880107": "B07 Bruxelles-UCL",
+                "1980101": "Amsterdam-VU",
+                "1980102": "Amsterdam-AMC",
+                "1980103": "Rotterdam-Erasmus",
+                "1980104": "Utrecht",
+                "1980105": "Leiden",
+                "1980106": "Nijmegen",
+                "1980107": "Groningen",
+                "1980108": "Princess Maxima Centre",
+                "2580101": "Hong Kong-Centra",
+                "2580102": "Queen Mary Hospital",
+                "2580103": "Prince of Wales Hospital",
+                "3080101": "Ruth Rappaport Childrens Hospital",
+                "3080102": "Schnider Childrens Medical Center",
+                "3080103": "The Chaim Sheba Medical Center",
+                "3080104": "IL01 Ruth-Rambam",
+                "3080105": "IL02 Schnider",
+                "3080106": "IL03 Chaim Sheba",
+                "3080107": "IL04 Hadassah Hebrew University Hospital",
+                "3080108": "IL05 Sourasky (Ichilov Tel Aviv medical center)",
+                "3080109": "IL06 Soroka",
+                "3080110": "IL07 Bnai-Zion",
+                "3480010": "Hospital Universitario Miguel Servet",
+                "3480021": "Hospital Universitario La Paz",
+                "3480022": "Hospital Universitario Gregorio Mara\u00f1\u00f3n",
+                "3480023": "Hospital Ni\u00f1o Jesus Madrid",
+                "3480030": "hospital universitario cruces",
+                "3480040": "Hospital Universitario Virgen del Roc\u00edo",
+                "3480050": "Hospital de la Santa Creu i Sant Pau",
+                "3480051": "Hospital Vall d\u00b4Hebron",
+                "3480052": "Hospital Sant Joan de D\u00e9u",
+                "3480060": "Hospital Regional Universitario de M\u00e1laga (Salamanca)",
+                "3480070": "Hospital Universitari i Polit\u00e8cnic la Fe",
+                "3480071": "Hospital General Universitario de Alicante",
+                "3480072": "Hospital Cl\u00ednico Universitario de Valencia",
+                "3480080": "Hospital Cl\u00ednico Universitario de Santiago",
+                "3481000": "Sociedad Espa\u00f1ola de Hematolog\u00eda y Oncolog\u00eda Pedi\u00e1tricas",
+                "3481001": "Hospital Universitario Son Espases",
+                "3481002": "Hospital Materno Infantil, Complejo Hospitalario University",
+                "3481100": "Hospital Clinic Universitario Virgen de la Arrixaca",
+                "3680101": "Semmelweis University",
+                "3680102": "National Insititute of Clinical Neurosciences",
+                "4480010": "Alder Hey Childrens NHS Foundation Trust Liverpool",
+                "4480101": "London",
+                "4480102": "Manchester",
+                "4480103": "Liverpool",
+                "4480104": "Nottingham",
+                "4480105": "Bristol",
+                "4580131": "Edinburgh",
+                "4580141": "Glasgow",
+                "4910101": "T\u00fcbingen hospital",
+                "9999999": "Not Defined"
+            }
+        },
+        {
+            "column_name": "rdallosct",
+            "description": "Description: Relapse after allogenic stem cell transplant in first complete remission of childhood Leukemia.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rtinttreat",
+            "description": "Description: The rtinttreat column indicates the relative intention to treatment for childhood Leukemia, with options of Intention to cure by allogeneic stem cell transplantation (if donor available), Intention to cure by chemotherapy in CR2, Palliation, or Other intention.",
+            "details": {
+                "1": "Int. to cure by allo. SCT (if donor available)",
+                "2": "Int. to cure by chemotherapy in CR2",
+                "3": "Palliation",
+                "4": "Other intention"
+            }
+        },
+        {
+            "column_name": "ppriaresultgroupcl",
+            "description": "Description: ppriaresultgroupcl: Result of MRD PCR pri A test for childhood Leukemia, with values of >=25%, >=5%, >=0.1%-<5%, <0.1%, <0.1%, Sample not taken, and No marker found and/or monitoring not feasible.",
+            "details": {
+                "1": ">=25%",
+                "2": ">=5%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "saeavasosteo",
+            "description": "Description: Avascular osteonecrosis (CTC 2,3 and 4) in relation to childhood Leukemia cancer treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Remark"
+            }
+        },
+        {
+            "column_name": "BFMpure",
+            "description": "BFMpure is a column related to childhood Leukemia cancer treatment, containing four subtypes (S1, S2, S3, S4).",
+            "details": {
+                "1": "S1",
+                "2": "S2",
+                "3": "S3",
+                "4": "S4"
+            }
+        },
+        {
+            "column_name": "rectyp3",
+            "description": "Description: Rectyp3 column indicates the type of site(s) of childhood Leukemia cancer treatment (BM=Bone Marrow, CNS=Central Nervous System, TESTIS=Testis, PL=Pleura, AS=Ascites, MED.MASS=Mediastinal Mass).",
+            "details": {
+                "1": "1=BM",
+                "2": "2=CNS",
+                "3": "3=TESTIS",
+                "4": "4=BM+CNS",
+                "5": "BM+T",
+                "6": "CNS+T",
+                "7": "BM+CNS+T",
+                "8": "Other site(s)",
+                "15": "BM+other site",
+                "18": "BM+PL+AS",
+                "21": "CNS+MED.MASS"
+            }
+        },
+        {
+            "column_name": "t119",
+            "description": "The t119 column indicates whether a patient has a t(1;19) chromosomal translocation, as determined by FISH/PCR testing. A 'Yes' indicates that the patient does not require final stratification, while a 'No' or 'Not analysed' indicates that the patient does require final stratification.",
+            "details": {
+                "1": "Yes",
+                "2": "No",
+                "3": "Not analysed"
+            }
+        },
+        {
+            "column_name": "remrdn15r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Nopho day 15.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "intolerance",
+            "description": "Description: Intolerance to anticancer drugs (default=no).",
+            "details": {
+                "0": "no known intolerance",
+                "1": "known intolerance (f ex cardiomyopathy)=excluded"
+            }
+        },
+        {
+            "column_name": "rnditmedyn",
+            "description": "Description: Indicates whether IT medications were administered according to protocol for childhood Leukemia treatment.",
+            "details": {
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rdeathreas",
+            "description": "Description: Cause of death after relapse in childhood Leukemia treatment.",
+            "details": {
+                "1": "Death before relapse-therapy started",
+                "2": "Ind. death/progres. dis. during rel.-ther. (disease-related)",
+                "3": "Ind. death during rel-therapy (response but aplasia)",
+                "4": "Death in CR2 (not disease related)",
+                "5": "Death after relapse2",
+                "6": "Death after SMN"
+            }
+        },
+        {
+            "column_name": "country",
+            "description": "Description: Country of origin of patients receiving childhood Leukemia cancer treatment.",
+            "details": {
+                "0": "Sweden",
+                "1": "Denmark",
+                "2": "Norway",
+                "3": "Finland",
+                "4": "Iceland",
+                "5": "Estonia",
+                "6": "Latvia",
+                "7": "Lithuania",
+                "8": "Belgium",
+                "9": "The Netherlands",
+                "25": "Hongkong",
+                "30": "Israel",
+                "34": "Spain",
+                "36": "Hungary",
+                "44": "United Kingdom",
+                "45": "Scotland",
+                "49": "Germany"
+            }
+        },
+        {
+            "column_name": "BFMBMT",
+            "description": "BFMBMT column: Status of childhood Leukemia cancer treatment, including S1 (pre-treatment), S2 (post-treatment), S3 (in remission), S4 (relapse) and after BMT in CR1 (bone marrow transplant in complete remission).",
+            "details": {
+                "1": "S1",
+                "2": "S2",
+                "3": "S3",
+                "4": "S4",
+                "5": "after BMT in CR1"
+            }
+        },
+        {
+            "column_name": "remrdra1r",
+            "description": "Description: Relative early response to minimal residual disease (MRD) Ralle A1 Response, with values of >=10^-3, (10^-3)-(10^-4), and <10^-4.",
+            "details": {
+                "1": ">=10^-3",
+                "2": "(10^-3)-(10^-4)",
+                "3": "<10^-4"
+            }
+        },
+        {
+            "column_name": "P29ResultGroup",
+            "description": "P29ResultGroup: Result of MRD flow test on day 29 of childhood Leukemia treatment, with values of '>=25%', '<25%', '>=0.1% - <5%', '<0.1%', '<0.1%', 'Sample not taken', or 'No marker found and/or monitoring not feasible'.",
+            "details": {
+                "1": ">=25%",
+                "2": "<25%",
+                "3": ">=0.1% - <5%",
+                "4": "<0.1%",
+                "5": "<0.1%",
+                "8": "Sample not taken",
+                "9": "No marker found and/or monitoring not feasible"
+            }
+        },
+        {
+            "column_name": "trnotreatreason",
+            "description": "Description: Reasons why patients were not treated according to the intention of the protocol for childhood Leukemia cancer treatment (e.g. toxicity, clinician's choice protocol violation, patient's choice abandonment).",
+            "details": {
+                "1": "Toxicity",
+                "2": "Clinician's choice Protocol (Violation)",
+                "3": "Patient's choice (Abandonment)"
+            }
+        },
+        {
+            "column_name": "rpresctmphs",
+            "description": "Description: Rel. Stat. pre-allo SCT morphological status, with 1 indicating <5(M1), 2 indicating 5-25(M2), and 3 indicating >25(M3).",
+            "details": {
+                "1": "<5(M1)",
+                "2": "5-25(M2)",
+                "3": ">25(M3)"
+            }
+        },
+        {
+            "column_name": "remjn",
+            "description": "Description: Column 'remjn' indicates whether a patient with childhood Leukemia has achieved remission (Yes/No).",
+            "details": {
+                "0": "Too early",
+                "1": "Yes",
+                "2": "No"
+            }
+        },
+        {
+            "column_name": "rndsaeduringcon",
+            "description": "Description: Number of Serious Adverse Events (SAEs) during consolidation treatment for childhood Leukemia.",
+            "details": {
+                "1": "Yes, SAE during cons.",
+                "2": "No, no reasons for exclusion"
+            }
+        }
+    ]
+}

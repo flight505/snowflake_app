@@ -1,0 +1,11 @@
+{
+    "column_name": "BFMBMT",
+    "description": "BFMBMT column: Status of childhood Leukemia cancer treatment, including S1 (pre-treatment), S2 (post-treatment), S3 (in remission), S4 (relapse) and after BMT in CR1 (bone marrow transplant in complete remission).",
+    "details": {
+        "1": "S1",
+        "2": "S2",
+        "3": "S3",
+        "4": "S4",
+        "5": "after BMT in CR1"
+    }
+}

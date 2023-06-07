@@ -1,0 +1,8 @@
+{
+    "column_name": "lostatfu",
+    "description": "Description: Indicates whether a patient with childhood Leukemia was lost to follow-up at the FU-y/n stage.",
+    "details": {
+        "1": "Yes-definitely",
+        "2": "Yes-temporarily?"
+    }
+}

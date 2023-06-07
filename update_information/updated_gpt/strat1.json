@@ -1,0 +1,11 @@
+{
+    "column_name": "strat1",
+    "description": "Description: Stratification at diagnosis based on NOPHO-2008 criteria, with 0 indicating insufficient data, 1 indicating Non-High Risk, 2 indicating Non-High Risk, 3 indicating High Risk, and 9 indicating Excluded.",
+    "details": {
+        "0": "Insufficient data",
+        "1": "NOPHO-2008 Non - HighRisk",
+        "2": "NOPHO-2008 Non - High Risk",
+        "3": "NOPHO-2008 High Risk",
+        "9": "Excluded"
+    }
+}

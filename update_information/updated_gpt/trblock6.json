@@ -1,0 +1,9 @@
+{
+    "column_name": "trblock6",
+    "description": "Description: trblock6 column indicates the type of treatment Block 6 for childhood Leukemia cancer.",
+    "details": {
+        "1": "A",
+        "2": "B",
+        "3": "C"
+    }
+}

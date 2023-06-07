@@ -1,0 +1,12 @@
+{
+    "column_name": "strat4",
+    "description": "Strat4 column is a stratification of patients based on their response to treatment on day 29, with 0 indicating insufficient data, 1 indicating NOPHO-2008 Standard Risk, 2 indicating NOPHO-2008 Intermediate Risk, 5 indicating NOPHO-2008 High Risk chemo, 6 indicating NOPHO-2008 High Risk SCTCR1, and 9 indicating exclusion.",
+    "details": {
+        "0": "Insufficient data",
+        "1": "NOPHO-2008 Standard Risk",
+        "2": "NOPHO-2008 Intermediate Risk",
+        "5": "NOPHO-2008 High Risk chemo",
+        "6": "NOPHO-2008 High Risk SCTCR1",
+        "9": "Excluded"
+    }
+}

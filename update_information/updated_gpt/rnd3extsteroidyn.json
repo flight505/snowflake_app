@@ -1,0 +1,8 @@
+{
+    "column_name": "rnd3extsteroidyn",
+    "description": "Description: Indicates whether a patient received an additional glucocorticoid during the third round of treatment for childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

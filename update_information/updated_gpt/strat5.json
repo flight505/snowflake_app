@@ -1,0 +1,13 @@
+{
+    "column_name": "strat5",
+    "description": "Strat5 column indicates the final stratification of childhood Leukemia cancer treatment after day 79, with values ranging from 0 (Insufficient data) to 9 (Excluded).",
+    "details": {
+        "0": "Insufficient data",
+        "1": "NOPHO-2008 Standard Risk",
+        "2": "NOPHO-2008 Intermediate Risk",
+        "5": "NOPHO-2008 High Rrisk chemo",
+        "6": "NOPHO-2008 High Risk SCTCR1",
+        "7": "Event",
+        "9": "Excluded"
+    }
+}

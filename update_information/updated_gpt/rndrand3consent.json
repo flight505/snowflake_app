@@ -1,0 +1,8 @@
+{
+    "column_name": "rndrand3consent",
+    "description": "Description: Indicates whether written consent was obtained for Randomization 3 of childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Writen consent obtained",
+        "2": "No writen consent = excluded"
+    }
+}

@@ -1,0 +1,1 @@
+{"column_name": "cnsresponse", "description": "CNS-response (of importance if CNS2 or CNS3 at diagnosis)", "details": {"1": "CNS1 at diagnosis", "2": "CNS2 with CNS-CR after 2TIT", "3": "CNS3 at diagnosis CNS-CR after 2TIT", "4": "CNS2/3 at dx, no CR after 2TIT but CR after DepoCyte", "5": "CNS2/3 at Dx no CR after DepoCyte=Event"}}

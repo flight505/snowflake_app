@@ -1,0 +1,8 @@
+{
+    "column_name": "gbkaryonormal",
+    "description": "Description: G-band karyotyping result indicating whether the sample is normal or abnormal.",
+    "details": {
+        "1": "Normal",
+        "2": "Abnormal"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "column_name": "trnotreatreason",
+    "description": "Description: Reasons why patients were not treated according to the intention of the protocol for childhood Leukemia cancer treatment (e.g. toxicity, clinician's choice protocol violation, patient's choice abandonment).",
+    "details": {
+        "1": "Toxicity",
+        "2": "Clinician's choice Protocol (Violation)",
+        "3": "Patient's choice (Abandonment)"
+    }
+}

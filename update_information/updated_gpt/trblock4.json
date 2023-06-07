@@ -1,0 +1,9 @@
+{
+    "column_name": "trblock4",
+    "description": "Description: trblock4 column contains information on the type of treatment Block 4 received by patients with childhood Leukemia.",
+    "details": {
+        "1": "A",
+        "2": "B",
+        "3": "C"
+    }
+}

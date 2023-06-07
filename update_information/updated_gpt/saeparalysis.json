@@ -1,0 +1,9 @@
+{
+    "column_name": "saeparalysis",
+    "description": "Description: Presence or absence of peripheral paralysis in patients with childhood Leukemia.",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

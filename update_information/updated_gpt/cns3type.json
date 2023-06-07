@@ -1,0 +1,11 @@
+{
+    "column_name": "cns3type",
+    "description": "Description: Column indicating presence of CNS3 (Central Nervous System) involvement in childhood Leukemia treatment, with values of 1 (only cells in CSF), 2 (cranial nerve palsy), 3 (mass on MRI (CNS3c)), 4 (retinal involvement (CNS3e)), and 5 (combinations of 1-4).",
+    "details": {
+        "1": "only cells in CSF",
+        "2": "cranial nerve palsy",
+        "3": "mass on MRI (CNS3c)",
+        "4": "retinal involvement (CNS3e)",
+        "5": "combinations of 1-4"
+    }
+}

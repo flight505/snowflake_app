@@ -1,0 +1,1 @@
+{"column_name": "testisrespons", "description": "If testis positive at diagnosis, otherwise default=not appl)", "details": {"1": "no remaining leukemia (Ultrasound+possibly biopsy)", "2": "remaining leukemia = Event"}}

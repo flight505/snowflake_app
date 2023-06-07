@@ -1,0 +1,8 @@
+{
+    "column_name": "prednisol",
+    "description": "Description: Prednisolone pre-phase given (Yes/No) for childhood Leukemia cancer treatment.",
+    "details": {
+        "1": "Yes",
+        "2": "No"
+    }
+}

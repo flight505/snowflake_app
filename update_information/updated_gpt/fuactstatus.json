@@ -1,0 +1,18 @@
+{
+    "column_name": "fuactstatus",
+    "description": "The fuactstatus column describes the outcome of childhood Leukemia cancer treatment, including first complete remission (CR1), continued complete remission (CCR), induction failure, resistant disease, relapse, second malignant neoplasms (SMN), acute myeloid leukemia (AML), and myelodysplastic syndromes (MDS).",
+    "details": {
+        "0": "Early (no CR1 yet)",
+        "1": "Induction Death",
+        "2": "Resistant disease CR on non-NOPHO therapy, alive",
+        "3": "Resistant disease-CR on non-NOPHO therapy then death",
+        "4": "Alive in CR1 (CCR)",
+        "5": "Relapsed, alive with disease",
+        "6": "Relapsed, alive in CR>/=2",
+        "7": "Dead after relapse(s)",
+        "8": "SMN alive with disease",
+        "9": "SMN alive in CR>/=2",
+        "10": "Dead after SMN",
+        "11": "Dead in CR1 (DCR1)"
+    }
+}

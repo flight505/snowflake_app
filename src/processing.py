@@ -28,20 +28,6 @@ def preview_sample(df: pd.DataFrame, label: str = "Sample", n_samples: int = 100
     with st.expander(label):
         st.dataframe(df.sample(n_samples, replace=replace))
 
-@st.cache_data(show_spinner="Fetching data from database...")
-def fetch_hdm_plasma_data(_conn):
-    query = "SELECT * FROM hdm_plasma_table;"
-    _conn.execute(query)
-    data = _conn.fetch_pandas_all()
-    return data
-
-@st.cache_data(show_spinner="Fetching data from database...")
-def fetch_hdm_mtx_data(_conn):
-    query = "SELECT * FROM hdm_mtx_table;"
-    _conn.execute(query)
-    data = _conn.fetch_pandas_all()
-    return data
-
 def custom_sort(col_name):
     if col_name == 'INFNO':
         return ("", -1)
@@ -112,10 +98,12 @@ def create_time_intervals(df1, df2):
 
     return result_df
 
+
 def load_blood_samples_by_treatment(
     hdm_plasma: pd.DataFrame, infusion_times: pd.DataFrame):
     # Merge blood samples to treatments
-    clean_infusion_times = remove_patients_with_duplicate_treatments(infusion_times)
+    clean_infusion_times = infusion_times
+    # clean_infusion_times = remove_patients_with_duplicate_treatments(infusion_times)
     samples_with_treatment_no = merge_blood_samples_to_treatment(
         hdm_plasma, clean_infusion_times
     )

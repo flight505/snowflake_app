@@ -1,0 +1,18 @@
+{
+    "column_name": "efgenkod",
+    "description": "The efgenkod column contains information about the cytogenetic group of a patient's leukemia, including t(9;22), KMT2A rearrangement, near haploidy (23-29), low hypodiploidy (30-39)/near triploidy, iAMP21, dic(9;20), t(1;19), t(12;21), high hyperdiploidy (51-67), other cl",
+    "details": {
+        "1": "t(9;22)",
+        "2": "KMT2A rearrangement",
+        "3": "Near haploidy (23-29)",
+        "4": "Low Hypodiploidy (30-39)/Near triploidy",
+        "6": "iAMP21",
+        "7": "dic(9;20)",
+        "8": "t(1;19)",
+        "9": "t(12;21)",
+        "10": "High hyperdiploidy (51-67)",
+        "11": "Other clonal aberration",
+        "12": "Normal",
+        "13": "No result / unknown"
+    }
+}

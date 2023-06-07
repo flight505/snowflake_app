@@ -1,0 +1,9 @@
+{
+    "column_name": "remrdn29r",
+    "description": "Description: Relative early response to minimal residual disease (MRD) Nopho day 29 response (1: >=10^-3, 2: (10^-3)-(10^-4), 3: <10^-4).",
+    "details": {
+        "1": ">=10^-3",
+        "2": "(10^-3)-(10^-4)",
+        "3": "<10^-4"
+    }
+}

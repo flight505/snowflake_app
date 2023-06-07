@@ -1,0 +1,11 @@
+{
+    "column_name": "trunk_peg_asp_reas",
+    "description": "Description: Trunk_peg_asp_reas column contains reasons for truncation of childhood Leukemia cancer treatment, such as Allergy, Pancreatitis, Thrombosis, Liver toxicity, or Other.",
+    "details": {
+        "1": "Allergy",
+        "2": "Pancreatitis",
+        "3": "Thrombosis",
+        "4": "Liver toxicity",
+        "5": "Other"
+    }
+}

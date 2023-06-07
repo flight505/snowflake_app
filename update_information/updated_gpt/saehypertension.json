@@ -1,0 +1,9 @@
+{
+    "column_name": "saehypertension",
+    "description": "Description: Hypertensive crisis related to childhood Leukemia cancer treatment (Yes/No/Remark).",
+    "details": {
+        "1": "Yes",
+        "2": "No",
+        "3": "Remark"
+    }
+}

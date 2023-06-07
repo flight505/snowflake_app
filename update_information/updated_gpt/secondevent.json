@@ -1,0 +1,12 @@
+{
+    "column_name": "secondevent",
+    "description": "Description: Outcome of long-term follow-up of childhood Leukemia treatment, including CR2, Death in aplasia during re-induction, RD, Relapse, Death in CR2, and SMN.",
+    "details": {
+        "0": "CR2",
+        "1": "Death in aplasia during re-induction",
+        "2": "RD",
+        "3": "Relapse",
+        "4": "Death in CR2",
+        "5": "SMN"
+    }
+}

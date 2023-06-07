@@ -1,0 +1,13 @@
+{
+    "column_name": "fuevent",
+    "description": "Description: Fuevent column contains information on the treatment outcome of childhood Leukemia patients, including Too Early, CR1, InducFail, ResistDis, Relapse, DCR1, and SMN.",
+    "details": {
+        "0": "Too early",
+        "1": "CR1",
+        "2": "InducFail",
+        "3": "ResistDis",
+        "4": "Relapse",
+        "5": "DCR1",
+        "6": "SMN"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "column_name": "intolerance",
+    "description": "Description: Intolerance to anticancer drugs (default=no).",
+    "details": {
+        "0": "no known intolerance",
+        "1": "known intolerance (f ex cardiomyopathy)=excluded"
+    }
+}
